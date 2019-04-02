@@ -34,8 +34,9 @@ public class Voiture : MonoBehaviour
         {
             UI.SetActive(false);
             Player3DExample.Instance.gameObject.SetActive(false);
+            GoToChenil();
+            drawSystem.SetActive(true);
         }
-        GoToChenil();
-        drawSystem.SetActive(true);
+        
     }
 }
