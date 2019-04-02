@@ -20,6 +20,7 @@ public class ContextualButtonInput : MonoBehaviour
     private void Start()
     {
         Instance = this;
+        
     }
 
    
