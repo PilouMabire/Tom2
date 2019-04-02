@@ -8,7 +8,9 @@ public class Chien_Laisse : MonoBehaviour
     Rigidbody rb;
 
     public AnimationCurve forceOverDistance;
-    public float leadDistance;
+     float leadDistance = 4.5f;
+    public float basicLeadDist = 4.5f;
+    public float interactionLeadDist = 2;
     public bool isAttatchedToPlayer = true;
 
     public bool followPlayer;
@@ -34,6 +36,18 @@ public class Chien_Laisse : MonoBehaviour
         LeadAttraction();
         FollowObject();
         FollowPlayer();
+
+        
+
+        if (ContextualButtonInput.Instance.maintain)
+        {
+            leadDistance = interactionLeadDist;
+        }
+        else
+        {
+            leadDistance = basicLeadDist;
+        }
+
     }
 
     void FollowPlayer()
