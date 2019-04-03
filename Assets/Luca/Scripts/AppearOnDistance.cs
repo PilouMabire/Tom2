@@ -10,7 +10,9 @@ public class AppearOnDistance : MonoBehaviour
     public float distanceToAppear;
     public float distanceToDisapear;
 
-    public Animator anim;
+    public TestMaterialInstance matManager;
+
+    public bool isAppeared;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,10 @@ public class AppearOnDistance : MonoBehaviour
         {
             if (Vector3.Distance(objectReference.transform.position, transform.position) > distanceToDisapear)
             {
-                anim.Play("RoomDisparition");
+                print("r");
+                isAppeared = false;
+                
+                matManager.Disparition();
             }
         }
         
@@ -33,7 +38,10 @@ public class AppearOnDistance : MonoBehaviour
         {
             if (Vector3.Distance(objectReference.transform.position, transform.position) < distanceToAppear)
             {
-                anim.Play("RoomApparition");
+                print("r");
+                isAppeared = true;
+                matManager.Apparition();
+               
             } 
         }
         

@@ -8,6 +8,9 @@ public class TestMaterialInstance : MonoBehaviour
 
     public List<Renderer> rends;
     public List<Material> _mats;
+
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,16 @@ public class TestMaterialInstance : MonoBehaviour
         //UpdateMaterials();
 
 
+    }
+
+    public void Apparition()
+    {
+        anim.Play("Managing_Apparition");
+    }
+
+    public void Disparition()
+    {
+        anim.Play("Managing_Disparition");
     }
 
     public void UpdateMaterials()
