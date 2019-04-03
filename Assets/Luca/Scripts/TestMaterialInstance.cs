@@ -32,12 +32,20 @@ public class TestMaterialInstance : MonoBehaviour
 
     public void Apparition()
     {
-        anim.Play("Managing_Apparition");
+        if(anim != null)
+        {
+            anim.Play("Managing_Apparition");
+
+        }
     }
 
     public void Disparition()
     {
-        anim.Play("Managing_Disparition");
+        if (anim != null)
+        {
+            anim.Play("Managing_Disparition");
+
+        }
     }
 
     public void UpdateMaterials()
