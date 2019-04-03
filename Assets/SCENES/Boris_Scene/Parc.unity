@@ -37,44 +37,45 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 268153124}
   m_IndirectSpecularColor: {r: 0.18365489, g: 0.2291251, b: 0.3051335, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
-    m_BakeResolution: 40
-    m_AtlasSize: 1024
+    m_BakeResolution: 20
+    m_AtlasSize: 2048
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
     m_Padding: 2
-    m_LightmapParameters: {fileID: 0}
+    m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000,
+      type: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 2
-    m_BakeBackend: 1
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 500
+    m_PVRDirectSampleCount: 8
+    m_PVRSampleCount: 100
     m_PVRBounces: 2
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
@@ -88,8 +89,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingDataAsset: {fileID: 112000000, guid: a8be257a8be27344eac7cdf870766897,
+    type: 2}
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -127,7 +129,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -207,7 +209,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -284,6 +286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -356,7 +363,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -421,6 +428,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 18279808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &25242950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25242951}
+  - component: {fileID: 25242952}
+  m_Layer: 0
+  m_Name: Point Light (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25242951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25242950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.95, y: 16.23, z: -5.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &25242952
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25242950}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.9021843, g: 0.317647, b: 0.9254902, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!4 &31871851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
@@ -438,6 +514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -502,6 +583,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 32803182}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &37232204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe J (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.336845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.62172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62171954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33684498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 123.103004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a, type: 3}
+--- !u!4 &37232205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+    type: 3}
+  m_PrefabInstance: {fileID: 37232204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &39247911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,7 +678,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -594,6 +755,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe J (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -669,6 +835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -743,6 +914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -822,7 +998,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -905,6 +1081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -979,6 +1160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -1055,6 +1241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1129,6 +1320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -1208,7 +1404,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -1288,7 +1484,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -1369,6 +1565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -1460,6 +1661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1541,6 +1747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1619,7 +1830,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -1699,7 +1910,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -1775,6 +1986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -1854,7 +2070,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -1934,7 +2150,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -2014,7 +2230,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -2091,6 +2307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2159,6 +2380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -2238,7 +2464,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -2318,7 +2544,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -2395,6 +2621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2468,8 +2699,9 @@ GameObject:
   m_Component:
   - component: {fileID: 268153125}
   - component: {fileID: 268153124}
+  - component: {fileID: 268153126}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2491,12 +2723,12 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0
+    m_NormalBias: 0
     m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -2505,7 +2737,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2521,12 +2753,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268153123}
   m_LocalRotation: {x: 0.18928419, y: 0.30380028, z: -0.36961415, w: 0.8574744}
-  m_LocalPosition: {x: 0, y: 4.47, z: 0}
+  m_LocalPosition: {x: 5.8057814, y: 15.110151, z: -4.8750257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1674033133}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 33.312, y: 27.129002, z: -38.38}
+--- !u!114 &268153126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268153123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UsePipelineSettings: 1
 --- !u!4 &271163292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
@@ -2544,6 +2789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -2623,7 +2873,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -2703,7 +2953,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -2783,7 +3033,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -2863,7 +3113,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -2943,7 +3193,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -3020,6 +3270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe J (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3095,6 +3350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3169,6 +3429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -3248,7 +3513,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -3328,7 +3593,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -3409,6 +3674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -3506,6 +3776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3578,7 +3853,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -3658,7 +3933,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -3740,6 +4015,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3818,7 +4098,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -3898,7 +4178,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -3975,6 +4255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4048,6 +4333,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758809119692196186, guid: 3552bb38d689ac1409a52bd623bfa80f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7758809119692196181, guid: 3552bb38d689ac1409a52bd623bfa80f,
         type: 3}
@@ -4133,7 +4423,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -4210,6 +4500,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4285,6 +4580,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4358,6 +4658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -4452,7 +4757,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -4529,6 +4834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4603,6 +4913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -4682,7 +4997,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -4759,6 +5074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4834,6 +5154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4908,6 +5233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -4987,7 +5317,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -5052,6 +5382,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 493426560}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &504239788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504239789}
+  - component: {fileID: 504239790}
+  m_Layer: 0
+  m_Name: Point Light (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504239789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504239788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.46, y: 13.83, z: -14.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &504239790
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504239788}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0, b: 0.13899946, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &507267783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5067,7 +5466,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -5144,6 +5543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5216,7 +5620,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -5299,6 +5703,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5373,6 +5782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -5452,7 +5866,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -5532,7 +5946,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -5609,6 +6023,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5683,6 +6102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -5840,7 +6264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0e94bb4efb47c18418c6cbd938a5af56, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e94bb4efb47c18418c6cbd938a5af56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5927,7 +6351,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -6087,6 +6511,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6162,6 +6591,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe J (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6236,6 +6670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -6366,6 +6805,36 @@ PrefabInstance:
       propertyPath: prewarm
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae8cc3a39653da4e92db1504ef65658, type: 3}
 --- !u!4 &672371000 stripped
@@ -6391,6 +6860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -6470,7 +6944,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -6546,6 +7020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -6631,7 +7110,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -6696,6 +7175,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 706966726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &714620632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714620633}
+  - component: {fileID: 714620634}
+  m_Layer: 0
+  m_Name: Point Light (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714620633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714620632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.46, y: 19.74, z: -2.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &714620634
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714620632}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.9245283, g: 0.43078926, b: 0.31835172, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &720809424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6711,7 +7259,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -6793,6 +7341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2452548255905537, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2452548255905536, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.000206
@@ -6864,15 +7416,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.46
+      value: 7.555
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.72
+      value: 1.083
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.96
+      value: 1.744
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6914,6 +7466,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: abb392fda9392544083625c1171cbc77, type: 2}
+    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
 --- !u!1001 &751154437
@@ -6931,7 +7487,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -7007,6 +7563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -7086,7 +7647,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -7166,7 +7727,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -7251,7 +7812,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &786373338
 Transform:
@@ -7264,14 +7825,27 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2157719537913949505}
-  - {fileID: 2123177729}
-  - {fileID: 978952224}
+  - {fileID: 1310678610}
+  - {fileID: 1488614260}
+  - {fileID: 93055522}
+  - {fileID: 55220460}
   - {fileID: 2121681664}
   - {fileID: 1697345071}
   - {fileID: 821985422}
   - {fileID: 165121448}
   - {fileID: 704446111}
+  - {fileID: 2157719537913949505}
+  - {fileID: 1999033562}
+  - {fileID: 1298126752}
+  - {fileID: 2123177729}
+  - {fileID: 1319220383}
+  - {fileID: 978952224}
+  - {fileID: 1406810735}
+  - {fileID: 1424220872}
+  - {fileID: 1431456697}
+  - {fileID: 890354620}
+  - {fileID: 37232205}
+  - {fileID: 1714074601}
   - {fileID: 890399639}
   - {fileID: 31871851}
   - {fileID: 1281146503}
@@ -7337,12 +7911,8 @@ Transform:
   - {fileID: 2022781035}
   - {fileID: 589853132}
   - {fileID: 2114153963}
-  - {fileID: 55220460}
-  - {fileID: 93055522}
-  - {fileID: 1488614260}
-  - {fileID: 1310678610}
-  - {fileID: 1422654509}
   - {fileID: 1254010277}
+  - {fileID: 1422654509}
   m_Father: {fileID: 2112695616}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7362,6 +7932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -7462,7 +8037,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -7527,6 +8102,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 802180540}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &810038335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810038336}
+  - component: {fileID: 810038337}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810038336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810038335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.39, y: 14.18, z: -9.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &810038337
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810038335}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.9245283, g: 0.43078926, b: 0.31835172, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &810517143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7538,6 +8182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -7613,6 +8262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -7704,7 +8358,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -7784,7 +8438,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -7864,7 +8518,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -7944,7 +8598,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &843314375
 Transform:
@@ -7986,6 +8640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -8097,7 +8756,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -8177,7 +8836,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -8242,6 +8901,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 879744503}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &890354619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe J (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.336845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.62172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62171954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33684498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 123.103004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a, type: 3}
+--- !u!4 &890354620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+    type: 3}
+  m_PrefabInstance: {fileID: 890354619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &890399639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
@@ -8259,6 +8998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -8334,6 +9078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -8414,6 +9163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427343642721239777, guid: dbe231e5f10636346939a75adfea79dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5427343642721239790, guid: dbe231e5f10636346939a75adfea79dd,
         type: 3}
@@ -8507,7 +9261,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &901998513
 Transform:
@@ -8584,7 +9338,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -8660,6 +9414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -8739,7 +9498,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -8821,6 +9580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -8906,7 +9670,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -8982,6 +9746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -9061,7 +9830,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -9141,7 +9910,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -9228,6 +9997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758809119692196186, guid: 3552bb38d689ac1409a52bd623bfa80f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7758809119692196181, guid: 3552bb38d689ac1409a52bd623bfa80f,
         type: 3}
@@ -9319,6 +10093,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9393,6 +10172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -9472,7 +10256,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -9549,6 +10333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9624,6 +10413,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9698,6 +10492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -9777,7 +10576,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -9869,7 +10668,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -9949,7 +10748,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -10029,7 +10828,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -10108,7 +10907,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1151696935
 Transform:
@@ -10139,6 +10938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -10208,6 +11012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -10283,6 +11092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -10362,7 +11176,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -10442,7 +11256,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -10528,7 +11342,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -10608,7 +11422,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -10684,6 +11498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -10763,7 +11582,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -10840,6 +11659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10914,6 +11738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -11030,7 +11859,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -11110,7 +11939,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -11186,6 +12015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -11265,7 +12099,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -11345,7 +12179,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -11431,7 +12265,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -11496,6 +12330,155 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1282698530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283485168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1283485169}
+  - component: {fileID: 1283485170}
+  m_Layer: 0
+  m_Name: Point Light (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283485169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283485168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.27, y: 14.18, z: -4.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1283485170
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283485168}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.9254902, g: 0.5880953, b: 0.317647, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1001 &1298126751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe B (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2080173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.17072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.026871309
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7065962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7065959
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.02687139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 184.35599
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a499efec193af247aba8f7f758c4d94, type: 3}
+--- !u!4 &1298126752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 1298126751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1299599491 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
@@ -11517,7 +12500,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -11593,6 +12576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2452548255905537, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2452548255905536, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.999744
@@ -11656,6 +12643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -11731,6 +12723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -11810,7 +12807,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -11875,6 +12872,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1314799719}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1319220382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe B (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.23853199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.66565955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.66565937
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.238532
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 140.571
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a499efec193af247aba8f7f758c4d94, type: 3}
+--- !u!4 &1319220383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319220382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1324363601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11891,6 +12968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758809119692196186, guid: 3552bb38d689ac1409a52bd623bfa80f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7758809119692196181, guid: 3552bb38d689ac1409a52bd623bfa80f,
         type: 3}
@@ -11985,7 +13067,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -12061,6 +13143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -12140,7 +13227,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -12218,7 +13305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5f8580f71b570b14ea14d489fe3085f4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f8580f71b570b14ea14d489fe3085f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12250,7 +13337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f8580f71b570b14ea14d489fe3085f4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f8580f71b570b14ea14d489fe3085f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12311,6 +13398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -12380,6 +13472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -12456,6 +13553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12525,6 +13627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12582,6 +13689,86 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3dd37050f43c0547a3b70f9fd8eb4e2, type: 3}
+--- !u!1001 &1406810734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe B (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.889982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8532791
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.026871309
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7065962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7065959
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.02687139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 184.35599
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a499efec193af247aba8f7f758c4d94, type: 3}
+--- !u!4 &1406810735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406810734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1416641004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12593,6 +13780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -12669,6 +13861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12737,6 +13934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -12813,6 +14015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12876,6 +14083,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1422654508}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1424220871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe J (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.1200004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.336845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.62172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62171954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33684498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 123.103004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a, type: 3}
+--- !u!4 &1424220872 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424220871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1424297331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12887,6 +14174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -12963,6 +14255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13026,6 +14323,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1429627027}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1431456696
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe J (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0660871
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7040119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7040116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.06608691
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 169.274
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a, type: 3}
+--- !u!4 &1431456697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431456696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1442986029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13041,7 +14418,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -13118,6 +14495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13186,6 +14568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -13266,6 +14653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427343642721239777, guid: dbe231e5f10636346939a75adfea79dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5427343642721239790, guid: dbe231e5f10636346939a75adfea79dd,
         type: 3}
@@ -13360,7 +14752,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -13436,6 +14828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -13515,7 +14912,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -13595,7 +14992,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -13681,7 +15078,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -13758,6 +15155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13833,6 +15235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13896,6 +15303,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1533051173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1533978773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533978774}
+  - component: {fileID: 1533978775}
+  m_Layer: 0
+  m_Name: Point Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1533978774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533978773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.82, y: 14.18, z: 7.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1674033133}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1533978775
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533978773}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.9254902, g: 0.3923154, b: 0.317647, a: 1}
+  m_Intensity: 12.54
+  m_Range: 14.19
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1539185462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13910,7 +15386,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1539185463
 Transform:
@@ -13953,6 +15429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -14029,6 +15510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14103,6 +15589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -14182,7 +15673,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -14262,7 +15753,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -14339,6 +15830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14413,6 +15909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -14492,7 +15993,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -14568,6 +16069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -14647,7 +16153,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -14723,6 +16229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -14802,7 +16313,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -14882,7 +16393,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -14962,7 +16473,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -15042,7 +16553,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -15125,6 +16636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15200,6 +16716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15257,6 +16778,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3dd37050f43c0547a3b70f9fd8eb4e2, type: 3}
+--- !u!1 &1674033132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674033133}
+  m_Layer: 0
+  m_Name: LIGHTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674033133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674033132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.8057814, y: -10.640151, z: 4.8750257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 268153125}
+  - {fileID: 810038336}
+  - {fileID: 1533978774}
+  - {fileID: 1283485169}
+  - {fileID: 504239789}
+  - {fileID: 714620633}
+  - {fileID: 25242951}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1678584652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15272,7 +16830,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -15354,6 +16912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -15439,7 +17002,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -15504,6 +17067,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1711718195}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1714074600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe J (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.888
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.336845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.62172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62171954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33684498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 123.103004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a, type: 3}
+--- !u!4 &1714074601 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1714074600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1733290318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15519,7 +17162,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -15596,6 +17239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15668,7 +17316,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -15805,6 +17453,36 @@ PrefabInstance:
       propertyPath: prewarm
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae8cc3a39653da4e92db1504ef65658, type: 3}
 --- !u!4 &1760069526 stripped
@@ -15828,7 +17506,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -15908,7 +17586,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -15985,6 +17663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16060,6 +17743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16132,7 +17820,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -16209,6 +17897,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16284,6 +17977,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16352,6 +18050,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -16431,7 +18134,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -16507,6 +18210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -16586,7 +18294,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -16666,7 +18374,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -16742,6 +18450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -16821,7 +18534,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -16958,6 +18671,36 @@ PrefabInstance:
       propertyPath: prewarm
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae8cc3a39653da4e92db1504ef65658, type: 3}
 --- !u!4 &1857221679 stripped
@@ -16977,6 +18720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -17053,6 +18801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17126,6 +18879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427343642721239777, guid: dbe231e5f10636346939a75adfea79dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5427343642721239790, guid: dbe231e5f10636346939a75adfea79dd,
         type: 3}
@@ -17205,7 +18963,7 @@ PrefabInstance:
     - target: {fileID: 1741762225440510135, guid: 6a9c982d02991174d8cecc7cbc41a064,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1741762225440607383, guid: 6a9c982d02991174d8cecc7cbc41a064,
         type: 3}
@@ -17281,6 +19039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2452548255905537, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2452548255905536, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.0002
@@ -17344,6 +19106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -17423,7 +19190,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -17499,6 +19266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -17577,7 +19349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1918970224
 Transform:
@@ -17625,7 +19397,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -17702,6 +19474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17770,6 +19547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: parc_arbre 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -17849,7 +19631,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -17932,6 +19714,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18011,6 +19798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758809119692196186, guid: 3552bb38d689ac1409a52bd623bfa80f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7758809119692196181, guid: 3552bb38d689ac1409a52bd623bfa80f,
         type: 3}
@@ -18102,6 +19894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe R (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18175,6 +19972,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427343642721239777, guid: dbe231e5f10636346939a75adfea79dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5427343642721239790, guid: dbe231e5f10636346939a75adfea79dd,
         type: 3}
@@ -18250,6 +20052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -19241,7 +21048,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 70
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -23027,7 +24834,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -23104,6 +24911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23178,6 +24990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -23254,6 +25071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23317,6 +25139,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1998192646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1999033561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 786373338}
+    m_Modifications:
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_Name
+      value: Touffe_Herbe B (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.23853199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.66565955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.66565937
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.238532
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 140.571
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a499efec193af247aba8f7f758c4d94, type: 3}
+--- !u!4 &1999033562 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 1999033561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2017313809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23333,6 +25235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427343642721239777, guid: dbe231e5f10636346939a75adfea79dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5427343642721239790, guid: dbe231e5f10636346939a75adfea79dd,
         type: 3}
@@ -23427,7 +25334,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -23504,6 +25411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23578,6 +25490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -23662,7 +25579,7 @@ PrefabInstance:
     - target: {fileID: 6743702289553303978, guid: 362cc678a81761a48ab82242245f4787,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.125
+      value: 1.142
       objectReference: {fileID: 0}
     - target: {fileID: 6743702289553303978, guid: 362cc678a81761a48ab82242245f4787,
         type: 3}
@@ -23709,6 +25626,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6950910932126363767, guid: 362cc678a81761a48ab82242245f4787,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 362cc678a81761a48ab82242245f4787, type: 3}
 --- !u!1001 &2051613391
@@ -23726,7 +25648,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -23803,6 +25725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe J (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23878,6 +25805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23952,6 +25884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -24031,7 +25968,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -24107,6 +26044,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -24186,7 +26128,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -24262,6 +26204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sol_Route 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
@@ -24341,7 +26288,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
@@ -24417,6 +26364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -24495,7 +26447,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2112695616
 Transform:
@@ -24526,6 +26478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -24601,6 +26558,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe J (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
@@ -24680,7 +26642,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -24760,7 +26722,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -24849,6 +26811,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe B (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24922,6 +26889,10 @@ PrefabInstance:
     - target: {fileID: 2452548255905537, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
       propertyPath: m_Name
       value: Sol_Route 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452548255905537, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2452548255905536, guid: eb50f556c6ceef747a9d75aa716b8e85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29681,7 +31652,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &1741762225876269175
 PrefabInstance:
@@ -29698,7 +31669,7 @@ PrefabInstance:
     - target: {fileID: 1741762225440510135, guid: 6a9c982d02991174d8cecc7cbc41a064,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1741762225440607383, guid: 6a9c982d02991174d8cecc7cbc41a064,
         type: 3}
@@ -29784,7 +31755,7 @@ PrefabInstance:
     - target: {fileID: 3743836024531499317, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3743836024531499314, guid: 49adedaf10eb3a64a88278eca2631397,
         type: 3}
@@ -29858,7 +31829,7 @@ PrefabInstance:
     - target: {fileID: 4206845252605975749, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4206845252605975748, guid: a4e6018eb7038dc4e8577793fd0c4fac,
         type: 3}
@@ -29932,7 +31903,7 @@ PrefabInstance:
     - target: {fileID: 4439176593622127702, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4439176593622127703, guid: 73e393daa9f8a314780d3ad5e229a5d7,
         type: 3}
@@ -30002,6 +31973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: parc_arbre 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438313164530707029, guid: bc85ab81a253a834d88398d310d2aa43,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5438313164530707028, guid: bc85ab81a253a834d88398d310d2aa43,
         type: 3}
@@ -30129,8 +32105,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
         type: 3}
-      propertyPath: prewarm
+      propertyPath: InitialModule.startColor.maxColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5814499240443375766, guid: 7ae8cc3a39653da4e92db1504ef65658,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae8cc3a39653da4e92db1504ef65658, type: 3}
@@ -30145,6 +32146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe R
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096885342288915708, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7096885343318747954, guid: f3dd37050f43c0547a3b70f9fd8eb4e2,
         type: 3}
@@ -30214,6 +32220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Touffe_Herbe B
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482531810719538762, guid: 4a499efec193af247aba8f7f758c4d94,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8893657408839900674, guid: 4a499efec193af247aba8f7f758c4d94,
         type: 3}
@@ -30463,6 +32474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Touffe_Herbe J
       objectReference: {fileID: 0}
+    - target: {fileID: 7502194834020048149, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7502194834965448138, guid: 08e7dbdf64a0e5d4cb2d9c8e9fd9129a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30532,6 +32548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol_Route 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7676694528306582575, guid: bf64b9a41896b8644aa651265afff503,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676694528306582574, guid: bf64b9a41896b8644aa651265afff503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30600,6 +32621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: parc_arbre 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758809119692196186, guid: 3552bb38d689ac1409a52bd623bfa80f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7758809119692196181, guid: 3552bb38d689ac1409a52bd623bfa80f,
         type: 3}
@@ -30780,7 +32806,7 @@ PrefabInstance:
     - target: {fileID: 9004621804320840306, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9004621804320840307, guid: 10013a194f40bb1438c65edf7228cef5,
         type: 3}
