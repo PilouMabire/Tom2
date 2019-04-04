@@ -17,6 +17,7 @@ public class Baboule_Controller : MonoBehaviour
     [Header ("Parc")]
     public bool parcsStick;
     public int iterations;
+    public GameObject toDisable;
     public GameObject goTo;
 
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class Baboule_Controller : MonoBehaviour
         if (iterations >= 2)
         {
             transform.position = Vector3.Lerp(transform.position, goTo.transform.position, 0.01f);
+            toDisable.SetActive(false);
         }
     }
 
