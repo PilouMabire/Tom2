@@ -7,7 +7,7 @@ public class TestMaterialInstance : MonoBehaviour
     public float parameter = 1;
 
     public List<Renderer> rends;
-    public List<Material> _mats;
+    //public List<Material> _mats;
 
     public Animator anim;
 
@@ -20,7 +20,7 @@ public class TestMaterialInstance : MonoBehaviour
             for (int m = 0; m < rends[i].materials.Length; m++)
             {
                 Material _mat = (Instantiate<Material>(rends[i].materials[m]));
-                _mats.Add(_mat);
+                //_mats.Add(_mat);
                 rends[i].materials[m] = _mat;
             }
             
