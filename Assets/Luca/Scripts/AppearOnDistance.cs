@@ -27,7 +27,6 @@ public class AppearOnDistance : MonoBehaviour
         {
             if (Vector3.Distance(objectReference.transform.position, transform.position) > distanceToDisapear)
             {
-                print("r");
                 isAppeared = false;
                 
                 matManager.Disparition();
