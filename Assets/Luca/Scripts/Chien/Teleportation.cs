@@ -25,5 +25,6 @@ public class Teleportation : MonoBehaviour
         {
             other.transform.position = goTo.transform.position;
         }
+
     }
 }

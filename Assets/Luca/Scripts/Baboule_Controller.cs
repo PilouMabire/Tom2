@@ -16,7 +16,8 @@ public class Baboule_Controller : MonoBehaviour
 
     [Header ("Parc")]
     public bool parcsStick;
-    int iterations;
+    public int iterations;
+    public GameObject toDisable;
     public GameObject goTo;
 
     // Start is called before the first frame update
@@ -53,15 +54,16 @@ public class Baboule_Controller : MonoBehaviour
                 
             }
         }
-        if (iterations == 2)
+        if (iterations >= 2)
         {
             transform.position = Vector3.Lerp(transform.position, goTo.transform.position, 0.01f);
+            toDisable.SetActive(false);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Player3DExample>())
+        if(collision.gameObject.GetComponent<Player3DExample>() && iterations <2)
         {
             //col.enabled = false;
             caughtByPlayer = true;
