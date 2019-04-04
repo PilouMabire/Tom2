@@ -7,6 +7,8 @@ public class CameraFollow : MonoBehaviour
     public static CameraFollow Instance;
     IEnumerator moveToTarget;
 
+    public Camera cam;
+
     public bool followPlayer;
     public bool followObject;
     public GameObject objectToFollow;
@@ -56,5 +58,22 @@ public class CameraFollow : MonoBehaviour
             yield return new WaitForEndOfFrame();
             transform.position = Vector3.Lerp(transform.position, target.transform.position + new Vector3(3, 17, -10), 0.1f);
         }
+    }
+
+    public IEnumerator CinematicTo(GameObject goTo)
+    {
+        
+        for (int i = 0; i < 100; i++)
+        {
+            yield return new WaitForEndOfFrame();
+            transform.rotation = Quaternion.Lerp(transform.rotation, goTo.transform.rotation, Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, goTo.transform.position, Time.deltaTime);
+            cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, Vector3.zero, Time.deltaTime);
+            cam.transform.localRotation = Quaternion.Lerp(cam.transform.localRotation, Quaternion.identity, Time.deltaTime);
+        }
+        transform.rotation = goTo.transform.rotation;
+        transform.position = goTo.transform.position;
+        cam.transform.localPosition = Vector3.zero;
+        cam.transform.localRotation = Quaternion.identity;
     }
 }
