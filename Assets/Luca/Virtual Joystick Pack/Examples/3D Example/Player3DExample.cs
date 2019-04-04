@@ -20,7 +20,7 @@ public class Player3DExample : MonoBehaviour {
 
     void FixedUpdate () 
 	{
-        Vector3 moveVector = (Vector3.right * joystick.Horizontal + Vector3.forward * joystick.Vertical);
+        Vector3 moveVector = (Vector3.right * joystick.Horizontal + new Vector3(0,0,1f) * joystick.Vertical);
 
         if (moveVector != Vector3.zero)
         {
