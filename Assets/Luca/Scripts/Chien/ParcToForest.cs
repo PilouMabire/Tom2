@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ParcToForest : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class ParcToForest : MonoBehaviour
     {
         if(other.GetComponent<Player3DExample>() && stick.iterations >= 2)
         {
-            
+            SceneManager.LoadScene(0);
         }
     }
 }
