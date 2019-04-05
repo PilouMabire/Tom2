@@ -425,11 +425,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: -100
   far clip plane: 1000
   field of view: 109
   orthographic: 1
-  orthographic size: 7.9
+  orthographic size: 7.51
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -599,6 +599,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0db5e50f62bf72642bd0614fbcb64fd4, type: 2}
+    - target: {fileID: 2300000, guid: 5b6caec65f6540f408d19ddd5c06d466, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6caec65f6540f408d19ddd5c06d466, type: 3}
 --- !u!4 &1712398753 stripped
