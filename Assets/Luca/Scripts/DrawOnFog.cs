@@ -49,6 +49,8 @@ public class DrawOnFog : MonoBehaviour
             timers[index] = globalTimer;
             //trails[index].transform.LookAt(trails[index - 1].transform.position, new Vector3(-0.5f,0.5f,0));
             trails[index].transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
+            //trails[index].transform.position = new Vector3(trails[index].transform.position.x, 11, trails[index].transform.position.z);
+            //trails[index].transform.LookAt(Camera.main.transform);
             if (index > 198)
             {
                 index = 1;
