@@ -29,6 +29,7 @@ public class Voiture : MonoBehaviour
     void GoToChenil()
     {
         anim.Play("Go");
+        StartCoroutine(WaitAndGoToScene());
     }
 
     IEnumerator WaitAndGoToScene()
@@ -45,6 +46,8 @@ public class Voiture : MonoBehaviour
             Player3DExample.Instance.gameObject.SetActive(false);
             GoToChenil();
             drawSystem.SetActive(true);
+            
+            
         }
         
     }
