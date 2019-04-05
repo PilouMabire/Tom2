@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Voiture : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Voiture : MonoBehaviour
     public GameObject cam;
 
     public GameObject drawSystem;
+
+    public string nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,13 @@ public class Voiture : MonoBehaviour
     void GoToChenil()
     {
         anim.Play("Go");
+        StartCoroutine(WaitAndGoToScene());
+    }
+
+    IEnumerator WaitAndGoToScene()
+    {
+        yield return new WaitForSeconds(20f);
+        SceneManager.LoadScene(nextScene);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -36,6 +46,8 @@ public class Voiture : MonoBehaviour
             Player3DExample.Instance.gameObject.SetActive(false);
             GoToChenil();
             drawSystem.SetActive(true);
+            
+            
         }
         
     }

@@ -2850,6 +2850,7 @@ GameObject:
   - component: {fileID: 273111534}
   - component: {fileID: 273111533}
   - component: {fileID: 273111532}
+  - component: {fileID: 273111536}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -2878,7 +2879,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273111531}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2930,6 +2931,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &273111536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273111531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ce45d89d4c9e945a23c05872da56d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newRenderQ: 2002
 --- !u!1001 &276942422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5124,7 +5138,7 @@ PrefabInstance:
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.94
+      value: -12.38
       objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
@@ -17263,6 +17277,7 @@ GameObject:
   - component: {fileID: 1309655728}
   - component: {fileID: 1309655727}
   - component: {fileID: 1309655726}
+  - component: {fileID: 1309655730}
   m_Layer: 0
   m_Name: TriggerScene
   m_TagString: Untagged
@@ -17342,6 +17357,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -18.537, z: 0}
+--- !u!114 &1309655730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309655725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7fd7d82e3682b4bb8a84f75253f8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Chien_04_Forest 3
 --- !u!1001 &1313673337
 PrefabInstance:
   m_ObjectHideFlags: 0

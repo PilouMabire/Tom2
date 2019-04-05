@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ParcToForest : MonoBehaviour
 {
     public Baboule_Controller stick;
+
+    public string nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,7 @@ public class ParcToForest : MonoBehaviour
     {
         if(other.GetComponent<Player3DExample>() && stick.iterations >= 2)
         {
-            
+            SceneManager.LoadScene(nextScene);
         }
     }
 }
