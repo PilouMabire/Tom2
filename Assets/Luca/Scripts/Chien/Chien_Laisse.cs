@@ -70,6 +70,7 @@ public class Chien_Laisse : MonoBehaviour
         {
             transform.Translate(Vector3.Normalize( objectToFollow.transform.position - transform.position)
                 * ChienSpeed * Time.deltaTime , Space.World);
+            transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
 
         }
     }

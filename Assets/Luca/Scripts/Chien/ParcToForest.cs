@@ -7,6 +7,8 @@ public class ParcToForest : MonoBehaviour
 {
     public Baboule_Controller stick;
 
+    public string nextScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class ParcToForest : MonoBehaviour
     {
         if(other.GetComponent<Player3DExample>() && stick.iterations >= 2)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(nextScene);
         }
     }
 }
