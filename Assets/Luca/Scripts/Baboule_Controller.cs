@@ -68,6 +68,7 @@ public class Baboule_Controller : MonoBehaviour
             //col.enabled = false;
             caughtByPlayer = true;
             rb.useGravity = false;
+            transform.position = Player3DExample.Instance.forward.transform.position;
             transform.SetParent(Player3DExample.Instance.transform);
             localPosition = transform.localPosition;
         }
