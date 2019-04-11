@@ -16,17 +16,17 @@ public class FloatingJoystick : Joystick
 
             //Direction est egal à la différence entre la position du doigt par rapport au centre du joystick
         Vector2 direction = eventData.position - joystickCenter;
-        //Si la magnitude est suppérieur à la taille du cercle de fond, la direction est égale au maximum, sinon, elle est égale à la force donnée.
+        //Si la magnitude est supérieur à la taille du cercle de fond, la direction est égale au maximum, sinon, elle est égale à la force donnée.
         inputVector = (direction.magnitude > background.sizeDelta.x / 2.5f) ? direction.normalized : direction / (background.sizeDelta.x / 2.5f);
         //feedback visuel du joystick
         ClampJoystick();
         handle.anchoredPosition = (inputVector * background.sizeDelta.x / 2f) * handleLimit;
         //tp le joystick
-        if(direction.magnitude > background.sizeDelta.x / 3.5)
-        {
-            background.position = Vector3.Lerp(background.position,  eventData.position - direction.normalized/2, Time.deltaTime);
+        //if(direction.magnitude > background.sizeDelta.x / 3.5)
+        //{
+        //    background.position = Vector3.Lerp(background.position,  eventData.position - direction.normalized/2, Time.deltaTime);
 
-        }
+        //}
     }
 
     public override void OnPointerDown(PointerEventData eventData) //lorsque le pointeur appuye sur la zone limite
