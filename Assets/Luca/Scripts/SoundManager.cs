@@ -53,4 +53,22 @@ public class SoundManager : MonoBehaviour
             soundIndex = 0;
         }
     }
+
+    public void PlayLongSound(string name)
+    {
+        for (int i = 0; i < sounds.Count; i++)
+        {
+            if (musicsAndVoices[i].name == name)
+            {
+                musicAndVoiceSources[soundIndex].clip = musicsAndVoices[i].clip;
+                break;
+            }
+
+        }
+        musicIndex++;
+        if (musicIndex > 20)
+        {
+            soundIndex = 0;
+        }
+    }
 }

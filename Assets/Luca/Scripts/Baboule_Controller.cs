@@ -58,6 +58,8 @@ public class Baboule_Controller : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, goTo.transform.position, 0.01f);
             toDisable.SetActive(false);
+            col.enabled = false;
+            rb.useGravity = false;
         }
     }
 
@@ -68,6 +70,7 @@ public class Baboule_Controller : MonoBehaviour
             //col.enabled = false;
             caughtByPlayer = true;
             rb.useGravity = false;
+            transform.position = Player3DExample.Instance.forward.transform.position;
             transform.SetParent(Player3DExample.Instance.transform);
             localPosition = transform.localPosition;
         }
