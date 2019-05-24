@@ -23,19 +23,26 @@ public class ContextualButtonInput : MonoBehaviour
         
     }
 
-   
+   IEnumerator OneFrameDelay()
+    {
+        yield return new WaitForEndOfFrame();
+        released = false;
+        pressed = false;
+    }
 
     public void ButtonPressed()
     {
         //print("relaché");
         released = true;
+        StartCoroutine(OneFrameDelay());
     }
 
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        //print("pressé");
+        print("pressé");
         pressed = true;
         maintain = true;
+        StartCoroutine(OneFrameDelay());
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -64,8 +71,7 @@ public class ContextualButtonInput : MonoBehaviour
     }
     private void LateUpdate()
     {
-        released = false;
-        pressed = false;
+        
     }
 }
  
