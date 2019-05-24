@@ -74,5 +74,6 @@ public class Baboule_Controller : MonoBehaviour
             transform.SetParent(Player3DExample.Instance.transform);
             localPosition = transform.localPosition;
         }
+
     }
 }
