@@ -34,7 +34,7 @@ public class SimpleTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(needInteraction)
+        if (needInteraction)
         {
             if (ContextualButtonInput.Instance.maintain)
             {
