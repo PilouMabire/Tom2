@@ -37,7 +37,6 @@ public class AppearOnDistance : MonoBehaviour
         {
             if (Vector3.Distance(objectReference.transform.position, transform.position) < distanceToAppear)
             {
-                print("r");
                 isAppeared = true;
                 matManager.Apparition();
                

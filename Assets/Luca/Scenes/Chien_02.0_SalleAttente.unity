@@ -5607,11 +5607,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939301876}
     m_Modifications:
-    - target: {fileID: 1598855498270426901, guid: 529f45c403f38494abc06e0f20c76ff0,
-        type: 3}
-      propertyPath: m_Name
-      value: Ecran PC001
-      objectReference: {fileID: 0}
     - target: {fileID: 1598855497730231435, guid: 529f45c403f38494abc06e0f20c76ff0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5666,6 +5661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598855498270426901, guid: 529f45c403f38494abc06e0f20c76ff0,
+        type: 3}
+      propertyPath: m_Name
+      value: Ecran PC001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 529f45c403f38494abc06e0f20c76ff0, type: 3}
@@ -9741,6 +9741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212890255}
   - component: {fileID: 1212890254}
+  - component: {fileID: 1212890256}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9755,7 +9756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212890253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d576fd9cc1409f84f8a4974a32fe6cb6, type: 3}
   m_Name: 
@@ -9775,6 +9776,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212890256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212890253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01391fb47d785ff46852a3b017998620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualRoom: {fileID: 0}
 --- !u!1001 &1223069901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11123,6 +11137,7 @@ GameObject:
   - component: {fileID: 1323237580}
   - component: {fileID: 1323237579}
   - component: {fileID: 1323237578}
+  - component: {fileID: 1323237583}
   m_Layer: 0
   m_Name: Teleporter
   m_TagString: Untagged
@@ -11137,7 +11152,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323237577}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed7fd7d82e3682b4bb8a84f75253f8e7, type: 3}
   m_Name: 
@@ -11215,6 +11230,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323237583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323237577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca077cccec2534047ae984a44fb0ba2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1212890256}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chien_02.5_Chenil
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1324051366
 PrefabInstance:
   m_ObjectHideFlags: 0
