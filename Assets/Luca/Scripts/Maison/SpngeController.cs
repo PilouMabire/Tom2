@@ -34,7 +34,7 @@ public class SpngeController : MonoBehaviour
             //transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(-20, Vector3.up);
             transform.position += moveVector * moveSpeed * moveSpeedModifier;
             waiter++;
-            if(waiter > 5)
+            if(waiter > 10)
             {
                 var _mask = Instantiate(mask, transform.position, transform.rotation);
                 masks.Add(_mask);

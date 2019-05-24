@@ -11,6 +11,7 @@ public class HouseManager : MonoBehaviour
     public int nbrOfPlates;
     public Animator plateAnim;
     public SpngeController sponge;
+    public bool canDoVaiselle = true;
 
 
     bool isDoingVaiselle;
@@ -59,8 +60,13 @@ public class HouseManager : MonoBehaviour
 
     public void Vaiselle()
     {
+        if(canDoVaiselle == true)
+        {
+            canDoVaiselle = false;
         Player3DExample.Instance.canMove = false;
         vaiselleUI.SetActive(true);
         isDoingVaiselle = true;
+
+        }
     }
 }
