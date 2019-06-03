@@ -21,7 +21,11 @@ public class TakableObject : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if(ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false)
+        if (collision.gameObject.GetComponent<Player3DExample>())
+        {
+            UIManager.Instance.canInteract = true;
+        }
+            if (ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false)
         {
             if(collision.gameObject.GetComponent<Player3DExample>())
             {

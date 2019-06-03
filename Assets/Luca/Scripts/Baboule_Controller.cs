@@ -32,6 +32,7 @@ public class Baboule_Controller : MonoBehaviour
     {
         if(caughtByPlayer)
         {
+            UIManager.Instance.canInteract = true;
             transform.localPosition = localPosition;
             transform.localRotation = Quaternion.identity;
             if(chien)

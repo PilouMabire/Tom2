@@ -6,7 +6,7 @@ public class HouseManager : MonoBehaviour
 {
 
     public List<Camera> cameras;
-
+    public Animator anim;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -24,6 +24,8 @@ public class HouseManager : MonoBehaviour
         
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
@@ -40,25 +42,26 @@ public class HouseManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            print("azdazd");
-            StartCoroutine(CameraSwitch(cameras[0]));
+            StartCoroutine(CameraSwitch(cameras[0], 0));
 
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2)) 
         {
-            StartCoroutine(CameraSwitch(cameras[1]));
-            print("azdazd");
+            StartCoroutine(CameraSwitch(cameras[1], 1));
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            StartCoroutine(CameraSwitch(cameras[2]));
+            StartCoroutine(CameraSwitch(cameras[2], 2));
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            StartCoroutine(CameraSwitch(cameras[3]));
+            StartCoroutine(CameraSwitch(cameras[3], 3));
         }
     }
-
+    public void RoomSwitcher(int index)
+    {
+        StartCoroutine(CameraSwitch(cameras[index], index));
+    }
 
     void IsDoingVaiselle()
     {
@@ -93,9 +96,25 @@ public class HouseManager : MonoBehaviour
         }
     }
 
-    IEnumerator CameraSwitch(Camera newCam)
+    IEnumerator CameraSwitch(Camera newCam, int index)
     {
-        print("oui");
+        switch (index)
+        {
+            case 0 :
+                anim.Play("HouseCuisine");
+                break;
+            case 1:
+                anim.Play("HouseSalon");
+                break;
+            case 2:
+                anim.Play("HouseToilets");
+                break;
+            case 3:
+                anim.SetTrigger("reset");
+                break;
+            default:
+                break;
+        }
         for (int i = 0; i < 50; i++)
         {
             yield return new WaitForEndOfFrame();

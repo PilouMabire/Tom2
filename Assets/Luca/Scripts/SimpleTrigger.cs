@@ -11,7 +11,10 @@ public class SimpleTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(needInteraction)
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -34,8 +37,14 @@ public class SimpleTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+
         if (needInteraction)
         {
+            if (other.GetComponent<Player3DExample>())
+            {
+                UIManager.Instance.canInteract = true;
+            }
+            
             if (ContextualButtonInput.Instance.maintain)
             {
                 if (other.GetComponent<Player3DExample>())
