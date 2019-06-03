@@ -2,6 +2,7 @@
 
 public class Player3DExample : MonoBehaviour {
 
+    public float angleCorrector = -20;
     public float moveSpeed = 8f;
     public Joystick joystick;
     [HideInInspector]
@@ -37,7 +38,7 @@ public class Player3DExample : MonoBehaviour {
 
             if (moveVector != Vector3.zero)
             {
-                transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(-20, Vector3.up);
+                transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector, Vector3.up);
                 rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
 
                 //rb.AddForce(moveVector * moveSpeed);

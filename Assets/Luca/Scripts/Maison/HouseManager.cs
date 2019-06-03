@@ -5,6 +5,8 @@ using UnityEngine;
 public class HouseManager : MonoBehaviour
 {
 
+    public List<Camera> cameras;
+
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -25,7 +27,8 @@ public class HouseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDoingVaiselle)
+        
+        if (isDoingVaiselle)
         {
             IsDoingVaiselle();
         }
@@ -33,6 +36,26 @@ public class HouseManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.M))
         {
             Vaiselle();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            print("azdazd");
+            StartCoroutine(CameraSwitch(cameras[0]));
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            StartCoroutine(CameraSwitch(cameras[1]));
+            print("azdazd");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            StartCoroutine(CameraSwitch(cameras[2]));
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            StartCoroutine(CameraSwitch(cameras[3]));
         }
     }
 
@@ -67,6 +90,17 @@ public class HouseManager : MonoBehaviour
         vaiselleUI.SetActive(true);
         isDoingVaiselle = true;
 
+        }
+    }
+
+    IEnumerator CameraSwitch(Camera newCam)
+    {
+        print("oui");
+        for (int i = 0; i < 50; i++)
+        {
+            yield return new WaitForEndOfFrame();
+            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.05f);
+            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f);
         }
     }
 }
