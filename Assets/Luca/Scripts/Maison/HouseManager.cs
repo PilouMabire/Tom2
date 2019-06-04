@@ -105,6 +105,10 @@ public class HouseManager : MonoBehaviour
         {
             StartCoroutine(CameraSwitch(cameras[3], 3));
         }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            StartCoroutine(CameraSwitch(cameras[4], 4));
+        }
     }
     public void RoomSwitcher(int index)
     {
@@ -162,14 +166,27 @@ public class HouseManager : MonoBehaviour
             case 3:
                 anim.SetTrigger("reset");
                 break;
+            case 4:
+                anim.Play("HouseEtage");
+                break;
+            case 5:
+                anim.CrossFade("HouseSdB", 0.75f);
+                break;
+            case 6:
+                //anim.Play("HouseChambre");
+                anim.CrossFade("HouseChambre", 0.75f);
+                break;
+            case 7:
+                anim.CrossFade("HouseChambrePa", 0.75f);
+                break;
             default:
                 break;
         }
         for (int i = 0; i < 50; i++)
         {
             yield return new WaitForEndOfFrame();
-            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.05f);
-            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f);
+            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i/150f);
+            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i/150f);
         }
     }
 
