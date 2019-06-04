@@ -7,6 +7,7 @@ public class HouseManager : MonoBehaviour
 
     public List<Camera> cameras;
     public Animator anim;
+    public GameObject triggerDaronne;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -34,6 +35,7 @@ public class HouseManager : MonoBehaviour
     public GameObject taskList;
     bool isOpeningTasks;
 
+    int frame;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,16 @@ public class HouseManager : MonoBehaviour
     {
         if (aspirateurDone == false)
         {
+            if(aspirateur.activeInHierarchy)
+            {
+                frame++;
+                if(frame == 10)
+                {
+                    Vibration.Vibrate(100);
+                    frame = 0;
+                }
+                
+            }
             if(taches[0] == null)
             {
                 taches.RemoveAt(0);
@@ -108,6 +120,11 @@ public class HouseManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             StartCoroutine(CameraSwitch(cameras[4], 4));
+        }
+
+        if(vaiselleDone && rangementDone && aspirateurDone)
+        {
+            triggerDaronne.SetActive(true);
         }
     }
     public void RoomSwitcher(int index)
@@ -214,5 +231,11 @@ public class HouseManager : MonoBehaviour
         taskList.SetActive(false);
         Player3DExample.Instance.canMove = true;
         isOpeningTasks = false;
+    }
+
+    public void DaronneArrive()
+    {
+        anim.Play("MereArrive");
+        Player3DExample.Instance.canMove = false;
     }
 }

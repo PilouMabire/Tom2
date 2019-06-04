@@ -41,7 +41,7 @@ public class Baboule_Controller : MonoBehaviour
             }
             if (ContextualButtonInput.Instance.maintain)
             {
-                print("shhot");
+                Vibration.Vibrate(100);
                 rb.velocity = (transform.forward * Random.Range(9, 15));
                 caughtByPlayer = false;
                 transform.SetParent(null);
