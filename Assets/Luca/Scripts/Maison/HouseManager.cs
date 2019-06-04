@@ -7,6 +7,7 @@ public class HouseManager : MonoBehaviour
 
     public List<Camera> cameras;
     public Animator anim;
+    public GameObject triggerDaronne;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -34,6 +35,7 @@ public class HouseManager : MonoBehaviour
     public GameObject taskList;
     bool isOpeningTasks;
 
+    int frame;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,16 @@ public class HouseManager : MonoBehaviour
     {
         if (aspirateurDone == false)
         {
+            if(aspirateur.activeInHierarchy)
+            {
+                frame++;
+                if(frame == 10)
+                {
+                    Vibration.Vibrate(100);
+                    frame = 0;
+                }
+                
+            }
             if(taches[0] == null)
             {
                 taches.RemoveAt(0);
@@ -105,6 +117,15 @@ public class HouseManager : MonoBehaviour
         {
             StartCoroutine(CameraSwitch(cameras[3], 3));
         }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            StartCoroutine(CameraSwitch(cameras[4], 4));
+        }
+
+        if(vaiselleDone && rangementDone && aspirateurDone)
+        {
+            triggerDaronne.SetActive(true);
+        }
     }
     public void RoomSwitcher(int index)
     {
@@ -162,14 +183,27 @@ public class HouseManager : MonoBehaviour
             case 3:
                 anim.SetTrigger("reset");
                 break;
+            case 4:
+                anim.Play("HouseEtage");
+                break;
+            case 5:
+                anim.CrossFade("HouseSdB", 0.75f);
+                break;
+            case 6:
+                //anim.Play("HouseChambre");
+                anim.CrossFade("HouseChambre", 0.75f);
+                break;
+            case 7:
+                anim.CrossFade("HouseChambrePa", 0.75f);
+                break;
             default:
                 break;
         }
         for (int i = 0; i < 50; i++)
         {
             yield return new WaitForEndOfFrame();
-            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.05f);
-            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f);
+            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i/150f);
+            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i/150f);
         }
     }
 
@@ -197,5 +231,11 @@ public class HouseManager : MonoBehaviour
         taskList.SetActive(false);
         Player3DExample.Instance.canMove = true;
         isOpeningTasks = false;
+    }
+
+    public void DaronneArrive()
+    {
+        anim.Play("MereArrive");
+        Player3DExample.Instance.canMove = false;
     }
 }
