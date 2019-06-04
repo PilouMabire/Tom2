@@ -39,10 +39,14 @@ public class Player3DExample : MonoBehaviour {
             if (moveVector != Vector3.zero)
             {
                 transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector, Vector3.up);
-                rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
+                rb.velocity = (transform.forward) * moveSpeed * moveSpeedModifier;
 
-                //rb.AddForce(moveVector * moveSpeed);
-                //transform.Translate(moveVector * moveSpeed * Time.deltaTime, Space.World);
+                //rb.AddForce(transform.forward * moveSpeed * moveSpeedModifier);
+                //if(rb.velocity.magnitude > (transform.forward * moveSpeed * moveSpeedModifier).magnitude)
+                //{
+                //    rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
+                //}
+
             }
             joystickVelocity = moveVector * moveSpeed * moveSpeedModifier;
         }

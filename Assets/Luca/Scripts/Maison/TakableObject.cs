@@ -42,6 +42,7 @@ public class TakableObject : MonoBehaviour
             {
                 if (collision.gameObject.GetComponent<ObjectTaker>().objectID == objectID)
                 {
+                    Player3DExample.Instance.carrying = false;
                     Destroy(gameObject);
                 }
                     

@@ -23,9 +23,11 @@ public class ContextualButtonInput : MonoBehaviour
         
     }
 
+    
+
    IEnumerator OneFrameDelay()
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForFixedUpdate();
         released = false;
         pressed = false;
     }
@@ -62,14 +64,20 @@ public class ContextualButtonInput : MonoBehaviour
         {
             pressed = true;
             maintain = true;
+            StartCoroutine(OneFrameDelay());
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
             maintain = false;
-            released = true;
+
         }
     }
     private void LateUpdate()
+    {
+        
+    }
+
+    private void FixedUpdate()
     {
         
     }

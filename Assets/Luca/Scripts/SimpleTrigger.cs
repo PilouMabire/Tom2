@@ -45,7 +45,7 @@ public class SimpleTrigger : MonoBehaviour
                 UIManager.Instance.canInteract = true;
             }
             
-            if (ContextualButtonInput.Instance.maintain)
+            if (ContextualButtonInput.Instance.pressed)
             {
                 if (other.GetComponent<Player3DExample>())
                 {

@@ -14,9 +14,26 @@ public class HouseManager : MonoBehaviour
     public Animator plateAnim;
     public SpngeController sponge;
     public bool canDoVaiselle = true;
-
-
     bool isDoingVaiselle;
+    public bool vaiselleDone;
+    public GameObject vaiselleCheckBox;
+
+
+    [Header("Aspirateur")]
+    public GameObject aspirateur;
+    public List<GameObject> taches;
+    public bool aspirateurDone;
+    public GameObject aspirateurCheckBox;
+
+    [Header("Rangement")]
+    public List<GameObject> objects;
+    public bool rangementDone;
+    public GameObject rangementCheckBox;
+
+    [Header("Tasks")]
+    public GameObject taskList;
+    bool isOpeningTasks;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +41,43 @@ public class HouseManager : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        if (aspirateurDone == false)
+        {
+            if(taches[0] == null)
+            {
+                taches.RemoveAt(0);
+            }
 
+            if (taches.Count == 0)
+            {
+                Destroy(aspirateur);
+                Player3DExample.Instance.carrying = false;
+                aspirateurDone = true;
+                aspirateurCheckBox.SetActive(true);
+            }
+        }
+
+        if (rangementDone == false)
+        {
+            if (objects[0] == null)
+            {
+                objects.RemoveAt(0);
+            }
+
+            if (objects.Count == 0)
+            {
+                rangementDone = true;
+                rangementCheckBox.SetActive(true);
+            }
+        }
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
         if (isDoingVaiselle)
         {
             IsDoingVaiselle();
@@ -79,6 +127,8 @@ public class HouseManager : MonoBehaviour
                 Player3DExample.Instance.canMove = true;
                 vaiselleUI.SetActive(false);
                 isDoingVaiselle = false;
+                vaiselleDone = true;
+                vaiselleCheckBox.SetActive(true);
             }
             
         }
@@ -121,5 +171,31 @@ public class HouseManager : MonoBehaviour
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.05f);
             Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f);
         }
+    }
+
+    public void InteractWithTasks()
+    {
+        if(isOpeningTasks)
+        {
+            CloseTasks();
+        }
+        else
+        {
+            OpenTasks();
+        }
+    }
+
+    void OpenTasks()
+    {
+        isOpeningTasks = true;
+        Player3DExample.Instance.canMove = false;
+        taskList.SetActive(true);
+    }
+
+    void CloseTasks()
+    {
+        taskList.SetActive(false);
+        Player3DExample.Instance.canMove = true;
+        isOpeningTasks = false;
     }
 }
