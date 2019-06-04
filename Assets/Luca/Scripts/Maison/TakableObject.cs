@@ -7,6 +7,9 @@ public class TakableObject : MonoBehaviour
     public bool taken;
     public string objectID;
 
+    public bool isMask;
+    public GameObject mask;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +32,21 @@ public class TakableObject : MonoBehaviour
         {
             if(collision.gameObject.GetComponent<Player3DExample>())
             {
-                taken = true;
-                transform.position = Player3DExample.Instance.forward.transform.position;
-                transform.SetParent(Player3DExample.Instance.transform);
-                Player3DExample.Instance.carrying = true;
+                if(!isMask)
+                {
+                    Vibration.Vibrate(50);
+                    taken = true;
+                    transform.position = Player3DExample.Instance.forward.transform.position;
+                    transform.SetParent(Player3DExample.Instance.transform);
+                    Player3DExample.Instance.carrying = true;
+                }
+                else
+                {
+                    Vibration.Vibrate(50);
+                    mask.SetActive(true);
+                    Destroy(gameObject);
+                }
+                
             }
             
         }
@@ -42,6 +56,7 @@ public class TakableObject : MonoBehaviour
             {
                 if (collision.gameObject.GetComponent<ObjectTaker>().objectID == objectID)
                 {
+                    Vibration.Vibrate(100);
                     Player3DExample.Instance.carrying = false;
                     Destroy(gameObject);
                 }
