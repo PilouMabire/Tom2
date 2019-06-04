@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public RoomScript actualRoom;
 
+    public GameObject player;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,4 +33,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
     }
 
+    public void Teleportation(GameObject newPos)
+    {
+        player.transform.position = newPos.transform.position;
+    }
 }
