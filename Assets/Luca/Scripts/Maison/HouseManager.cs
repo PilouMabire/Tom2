@@ -5,6 +5,8 @@ using UnityEngine;
 public class HouseManager : MonoBehaviour
 {
 
+    public bool isChapFinal;
+
     public List<Camera> cameras;
     public Animator anim;
     public GameObject triggerDaronne;
@@ -45,32 +47,20 @@ public class HouseManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (aspirateurDone == false)
+        if(!isChapFinal)
         {
-            if(aspirateur.activeInHierarchy)
-            {
-                frame++;
-                if(frame == 10)
-                {
-                    Vibration.Vibrate(100);
-                    frame = 0;
-                }
-                
-            }
-            if(taches[0] == null)
-            {
-                taches.RemoveAt(0);
-            }
-
-            if (taches.Count == 0)
-            {
-                Destroy(aspirateur);
-                Player3DExample.Instance.carrying = false;
-                aspirateurDone = true;
-                aspirateurCheckBox.SetActive(true);
-            }
+            AspirateurUpdate();
+            RangementUpdate();
         }
+        else
+        {
+            
+        }
+        
 
+    }
+    void RangementUpdate()
+    {
         if (rangementDone == false)
         {
             if (objects[0] == null)
@@ -84,48 +74,52 @@ public class HouseManager : MonoBehaviour
                 rangementCheckBox.SetActive(true);
             }
         }
+    }
+    void AspirateurUpdate()
+    {
+        if (aspirateurDone == false)
+        {
+            if (aspirateur.activeInHierarchy)
+            {
+                frame++;
+                if (frame == 10)
+                {
+                    Vibration.Vibrate(100);
+                    frame = 0;
+                }
 
+            }
+            if (taches[0] == null)
+            {
+                taches.RemoveAt(0);
+            }
+
+            if (taches.Count == 0)
+            {
+                Destroy(aspirateur);
+                Player3DExample.Instance.carrying = false;
+                aspirateurDone = true;
+                aspirateurCheckBox.SetActive(true);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDoingVaiselle)
+        if(!isChapFinal)
         {
-            IsDoingVaiselle();
-        }
+            if (isDoingVaiselle)
+            {
+                IsDoingVaiselle();
+            }
 
-        if(Input.GetKeyDown(KeyCode.M))
-        {
-            Vaiselle();
+            if (vaiselleDone && rangementDone && aspirateurDone)
+            {
+                triggerDaronne.SetActive(true);
+            }
         }
-
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine(CameraSwitch(cameras[0], 0));
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        {
-            StartCoroutine(CameraSwitch(cameras[1], 1));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            StartCoroutine(CameraSwitch(cameras[2], 2));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            StartCoroutine(CameraSwitch(cameras[3], 3));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            StartCoroutine(CameraSwitch(cameras[4], 4));
-        }
-
-        if(vaiselleDone && rangementDone && aspirateurDone)
-        {
-            triggerDaronne.SetActive(true);
-        }
+        
     }
     public void RoomSwitcher(int index)
     {
@@ -237,6 +231,12 @@ public class HouseManager : MonoBehaviour
     {
         anim.Play("MereArrive");
         Player3DExample.Instance.canMove = false;
+        RoomSwitcher(8);
+    }
+
+    public void Fuite()
+    {
+        anim.Play("Fuite");
         RoomSwitcher(8);
     }
 }
