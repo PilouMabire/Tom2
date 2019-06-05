@@ -237,5 +237,6 @@ public class HouseManager : MonoBehaviour
     {
         anim.Play("MereArrive");
         Player3DExample.Instance.canMove = false;
+        RoomSwitcher(8);
     }
 }
