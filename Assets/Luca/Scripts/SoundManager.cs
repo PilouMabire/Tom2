@@ -23,10 +23,27 @@ public class SoundManager : MonoBehaviour
     int soundIndex;
     int musicIndex;
 
+    public static SoundManager Instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //if(Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    if(Instance == this)
+        //    {
+
+        //    }
+        //    else
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
     }
 
     // Update is called once per frame

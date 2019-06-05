@@ -7,6 +7,9 @@ public class SimpleTrigger : MonoBehaviour
 {
     public bool needInteraction;
     public UnityEvent functionOnTrigger;
+    public bool triggerOnce;
+
+    bool alreadyTriggered;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +32,15 @@ public class SimpleTrigger : MonoBehaviour
         {
             if (other.GetComponent<Player3DExample>())
             {
-                functionOnTrigger.Invoke();
+                if(triggerOnce)
+                {
+                    alreadyTriggered = true;
+                }
+                if(!alreadyTriggered)
+                {
+                    functionOnTrigger.Invoke();
+                }
+                
             }
         }
         
