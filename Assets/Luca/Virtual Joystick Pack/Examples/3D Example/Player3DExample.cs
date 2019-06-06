@@ -21,6 +21,10 @@ public class Player3DExample : MonoBehaviour {
 
     public bool carrying;
 
+    public GameObject ray1;
+    public GameObject ray2;
+    public GameObject ray3;
+
     private void Start()
     {
         Instance = this;
@@ -32,10 +36,20 @@ public class Player3DExample : MonoBehaviour {
 
     }
 
+    int countMagnet;
+
     void FixedUpdate () 
 	{
+       
+        
         if(canMove)
         {
+
+            if (countMagnet > -5)
+            {
+                countMagnet--;
+            }
+
             Vector3 moveVector = (Vector3.right * joystick.Horizontal + new Vector3(0, 0, 1f) * joystick.Vertical);
 
             if (moveVector != Vector3.zero)
@@ -49,6 +63,25 @@ public class Player3DExample : MonoBehaviour {
                 //{
                 //    rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
                 //}
+                if(Physics.Linecast(transform.position, ray1.transform.position))
+                {
+                    if (!Physics.Linecast(transform.position, ray2.transform.position))
+                    {
+                        transform.position += Vector3.up/5;
+                        countMagnet = 5;
+                    }
+                }
+                if(countMagnet < 0)
+                {
+                    if (!Physics.Linecast(transform.position, ray3.transform.position))
+                    {
+                        transform.position -= Vector3.up / 5;
+                        countMagnet = 5;
+                        print("magnet");
+                    }
+                }
+                
+
 
             }
             else
