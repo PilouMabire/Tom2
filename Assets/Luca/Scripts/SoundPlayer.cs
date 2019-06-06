@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundPlayer : MonoBehaviour
 {
+    public bool dontDestroyOnLoad;
 
     public AudioSource sound;
     public AudioSource sound2;
@@ -12,9 +13,15 @@ public class SoundPlayer : MonoBehaviour
     public AudioSource sound5;
     public AudioSource sound6;
 
+    public float destroyDelay;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(dontDestroyOnLoad)
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
         
     }
 
@@ -95,5 +102,16 @@ public class SoundPlayer : MonoBehaviour
 
         sound.Stop();
         sound.volume = startVolume;
+    }
+
+    public void DestroyThisObjectIn()
+    {
+        StartCoroutine(DestroyThis());
+    }
+
+    IEnumerator DestroyThis()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(this.gameObject);
     }
 }
