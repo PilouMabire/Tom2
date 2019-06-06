@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     public bool canInteract;
     public GameObject contextualButton;
 
+    bool desactivationSecurity;
+
     int frame;
     // Start is called before the first frame update
     void Start()
@@ -20,25 +22,36 @@ public class UIManager : MonoBehaviour
     private void FixedUpdate()
     {
         frame++;
-        if (frame >= 20)
+        if (frame == 20)
         {
             canInteract = false;
-            frame = 0;
         }
+        else if(frame == 25)
+        {
+            desactivationSecurity = true;
+            frame = 0;
+            
+        }
+        else if(frame == 1)
+        {
+            desactivationSecurity = false;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(canInteract)
+
+        if(!canInteract && desactivationSecurity)
         {
-            contextualButton.SetActive(true);
+            contextualButton.SetActive(false);
 
             
         }
-        else
+        if(canInteract)
         {
-            contextualButton.SetActive(false);
+            contextualButton.SetActive(true);
         }
 
        

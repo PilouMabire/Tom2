@@ -32,14 +32,17 @@ public class SimpleTrigger : MonoBehaviour
         {
             if (other.GetComponent<Player3DExample>())
             {
-                if(triggerOnce)
-                {
-                    alreadyTriggered = true;
-                }
-                if(!alreadyTriggered)
+                if (!alreadyTriggered)
                 {
                     functionOnTrigger.Invoke();
+
                 }
+                if (triggerOnce)
+                {
+                    alreadyTriggered = true;
+                    
+                }
+                
                 
             }
         }
