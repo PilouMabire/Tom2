@@ -216,12 +216,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10f4440faca2384788f0d16bfd0ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxPif: {fileID: 4874236469895184311}
+  angleCorrector: -20
   moveSpeed: 4
   joystick: {fileID: 0}
   rb: {fileID: 0}
   moveSpeedModifier: 1
   joystickVelocity: {x: 0, y: 0, z: 0}
   forward: {fileID: 931060100}
+  canMove: 1
+  carrying: 0
 --- !u!54 &4347657832289476318
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -336,6 +340,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27271f34cf0b6c341b2e5d410dcf8149, type: 3}
+--- !u!1 &4874236469895184311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 120819321016621251, guid: 27271f34cf0b6c341b2e5d410dcf8149,
+    type: 3}
+  m_PrefabInstance: {fileID: 4758607945559189364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8928090913281015235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4174568398395136695, guid: 27271f34cf0b6c341b2e5d410dcf8149,
