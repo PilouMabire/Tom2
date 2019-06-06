@@ -5,10 +5,13 @@ public class FloatingJoystick : Joystick
 {
     Vector2 joystickCenter = Vector2.zero;
 
+    public static Joystick Instance;
+
     void Start()
     {
         //le joystick commence invisible
         background.gameObject.SetActive(false);
+        Instance = this;
     }
 
     public override void OnDrag(PointerEventData eventData) //lorsque le pointeur drag
