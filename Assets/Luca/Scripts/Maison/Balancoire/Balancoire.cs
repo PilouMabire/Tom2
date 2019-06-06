@@ -23,7 +23,9 @@ public class Balancoire : MonoBehaviour
             Player3DExample.Instance.gameObject.transform.position = assise.transform.position;
             Player3DExample.Instance.gameObject.transform.rotation = assise.transform.rotation;
             UIManager.Instance.canInteract = true;
-            if (ContextualButtonInput.Instance.maintain)
+
+            //|| Vector3.right * FloatingJoystick.Instance.Horizontal + new Vector3(0, 0, 1f) * FloatingJoystick.Instance.Vertical != Vector3.zero
+            if (ContextualButtonInput.Instance.maintain )
             {                 
                 anim.SetBool("go", true);
             }
