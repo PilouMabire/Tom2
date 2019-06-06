@@ -2,6 +2,8 @@
 
 public class Player3DExample : MonoBehaviour {
 
+    public bool isMoving;
+    public GameObject fxPif;
     public float angleCorrector = -20;
     public float moveSpeed = 8f;
     public Joystick joystick;
@@ -38,6 +40,7 @@ public class Player3DExample : MonoBehaviour {
 
             if (moveVector != Vector3.zero)
             {
+                isMoving = true;
                 transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector, Vector3.up);
                 rb.velocity = (transform.forward) * moveSpeed * moveSpeedModifier;
 
@@ -48,7 +51,24 @@ public class Player3DExample : MonoBehaviour {
                 //}
 
             }
+            else
+            {
+                isMoving = false;
+            }
             joystickVelocity = moveVector * moveSpeed * moveSpeedModifier;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+        if(isMoving)
+        {
+            fxPif.SetActive(true);
+        }
+        else
+        {
+            fxPif.SetActive(false);
         }
 
         
