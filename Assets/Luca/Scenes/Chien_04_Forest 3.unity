@@ -90,7 +90,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000000, guid: cbe6aea03a873574795341d46bb94794,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -18116,6 +18116,7 @@ GameObject:
   - component: {fileID: 1306863796}
   - component: {fileID: 1306863798}
   - component: {fileID: 1306863797}
+  - component: {fileID: 1306863799}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -18426,6 +18427,19 @@ MonoBehaviour:
   - {fileID: 778172555}
   - {fileID: 452827391}
   anim: {fileID: 0}
+--- !u!114 &1306863799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306863795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7fd7d82e3682b4bb8a84f75253f8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: House_01_Day1
 --- !u!1001 &1307387299
 PrefabInstance:
   m_ObjectHideFlags: 0
