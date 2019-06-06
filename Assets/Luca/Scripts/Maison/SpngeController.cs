@@ -27,6 +27,12 @@ public class SpngeController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //MoveWithJoystick();
+        MoveWithFinger();
+    }
+
+    public void MoveWithJoystick()
+    {
         Vector3 moveVector = (Vector3.right * joystick.Horizontal + new Vector3(0, 0, 1f) * joystick.Vertical);
 
         if (moveVector != Vector3.zero)
@@ -34,17 +40,33 @@ public class SpngeController : MonoBehaviour
             //transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(-20, Vector3.up);
             transform.position += moveVector * moveSpeed * moveSpeedModifier;
             waiter++;
-            if(waiter > 10)
+            if (waiter > 20)
             {
                 var _mask = Instantiate(mask, transform.position, transform.rotation);
                 masks.Add(_mask);
                 waiter = 0;
             }
-            
+
             //rb.AddForce(moveVector * moveSpeed);
             //transform.Translate(moveVector * moveSpeed * Time.deltaTime, Space.World);
         }
         joystickVelocity = moveVector * moveSpeed * moveSpeedModifier;
+    }
+
+    void MoveWithFinger()
+    {
+        
+        if(Input.GetMouseButton(0))
+        {
+            transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
+            waiter++;
+            if (waiter > 1)
+            {
+                var _mask = Instantiate(mask, transform.position, transform.rotation);
+                masks.Add(_mask);
+                waiter = 0;
+            }
+        }
     }
 
     public void ChangePlate()

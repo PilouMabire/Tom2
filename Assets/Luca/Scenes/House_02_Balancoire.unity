@@ -17790,11 +17790,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17850,35 +17845,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4874236469895184311, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 374117764}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: angleCorrector
-      value: 240
-      objectReference: {fileID: 0}
-    - target: {fileID: 1516331422454922975, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8779811939026766203, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 931060100, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
 --- !u!1001 &1027400834
@@ -19335,6 +19306,7 @@ MonoBehaviour:
   cameras: []
   anim: {fileID: 0}
   triggerDaronne: {fileID: 0}
+  joystick: {fileID: 0}
   vaiselleUI: {fileID: 0}
   nbrOfPlates: 3
   plateAnim: {fileID: 0}

@@ -28130,6 +28130,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1995835881}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: angleCorrector
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 7044626266671523981, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -28155,11 +28165,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1995835881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
 --- !u!1001 &1578682194
@@ -33720,26 +33725,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
-        type: 3}
-      propertyPath: chien
-      value: 
-      objectReference: {fileID: 2046645551}
-    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
-        type: 3}
-      propertyPath: parcsStick
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
-        type: 3}
-      propertyPath: goTo
-      value: 
-      objectReference: {fileID: 1597705841}
-    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
-        type: 3}
-      propertyPath: toDisable
-      value: 
-      objectReference: {fileID: 1991488377}
     - target: {fileID: 6828132759949890060, guid: 50f314030b7476e4a86eda1a5c73e88d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33820,6 +33805,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
+        type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 2046645551}
+    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
+        type: 3}
+      propertyPath: parcsStick
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
+        type: 3}
+      propertyPath: goTo
+      value: 
+      objectReference: {fileID: 1597705841}
+    - target: {fileID: 6828132759949890056, guid: 50f314030b7476e4a86eda1a5c73e88d,
+        type: 3}
+      propertyPath: toDisable
+      value: 
+      objectReference: {fileID: 1991488377}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50f314030b7476e4a86eda1a5c73e88d, type: 3}
 --- !u!1 &1975942495
