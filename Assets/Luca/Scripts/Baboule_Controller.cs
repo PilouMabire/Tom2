@@ -14,6 +14,8 @@ public class Baboule_Controller : MonoBehaviour
 
     Vector3 localPosition;
 
+    public AudioSource kickSound;
+
     [Header ("Parc")]
     public bool parcsStick;
     public int iterations;
@@ -41,6 +43,7 @@ public class Baboule_Controller : MonoBehaviour
             }
             if (ContextualButtonInput.Instance.maintain)
             {
+                kickSound.Play();
                 Vibration.Vibrate(100);
                 rb.velocity = (transform.forward * Random.Range(9, 15));
                 caughtByPlayer = false;

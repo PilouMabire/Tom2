@@ -34,7 +34,7 @@ public class Voiture : MonoBehaviour
 
     IEnumerator WaitAndGoToScene()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(30f);
         SceneManager.LoadScene(nextScene);
     }
 

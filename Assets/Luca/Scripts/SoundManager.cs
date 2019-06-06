@@ -59,7 +59,9 @@ public class SoundManager : MonoBehaviour
         {
             if(sounds[i].name == name)
             {
+                
                 sources[soundIndex].clip = sounds[i].clip;
+                sources[soundIndex].Play();
                 break;
             }
 
@@ -77,7 +79,8 @@ public class SoundManager : MonoBehaviour
         {
             if (musicsAndVoices[i].name == name)
             {
-                musicAndVoiceSources[soundIndex].clip = musicsAndVoices[i].clip;
+                musicAndVoiceSources[musicIndex].clip = musicsAndVoices[i].clip;
+                musicAndVoiceSources[musicIndex].Play();
                 break;
             }
 
