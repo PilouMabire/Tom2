@@ -75,5 +75,25 @@ public class SoundPlayer : MonoBehaviour
         sound6.Stop();
     }
 
+    public float FadeTime;
 
+    public void FadeAway()
+    {
+        StartCoroutine(FadeOut( sound,  FadeTime));
+    }
+
+    IEnumerator FadeOut(AudioSource sound, float FadeTime)
+    {
+        float startVolume = sound.volume;
+
+        while (sound.volume > 0)
+        {
+            sound.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        sound.Stop();
+        sound.volume = startVolume;
+    }
 }
