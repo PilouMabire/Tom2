@@ -10,7 +10,7 @@ public class HouseManager : MonoBehaviour
     public List<Camera> cameras;
     public Animator anim;
     public GameObject triggerDaronne;
-
+    public GameObject joystick;
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
     public int nbrOfPlates;
@@ -111,7 +111,12 @@ public class HouseManager : MonoBehaviour
         {
             if (isDoingVaiselle)
             {
+                joystick.gameObject.SetActive(false);
                 IsDoingVaiselle();
+            }
+            else
+            {
+                joystick.gameObject.SetActive(true);
             }
 
             if (vaiselleDone && rangementDone && aspirateurDone)
@@ -139,6 +144,7 @@ public class HouseManager : MonoBehaviour
             }
             else
             {
+                sponge.ChangePlate();
                 Player3DExample.Instance.canMove = true;
                 vaiselleUI.SetActive(false);
                 isDoingVaiselle = false;
