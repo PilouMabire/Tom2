@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundPlayer : MonoBehaviour
 {
+    public bool dontDestroyOnLoad;
 
     public AudioSource sound;
     public AudioSource sound2;
@@ -12,9 +13,15 @@ public class SoundPlayer : MonoBehaviour
     public AudioSource sound5;
     public AudioSource sound6;
 
+    public float destroyDelay;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(dontDestroyOnLoad)
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
         
     }
 
@@ -75,5 +82,36 @@ public class SoundPlayer : MonoBehaviour
         sound6.Stop();
     }
 
+    public float FadeTime;
 
+    public void FadeAway()
+    {
+        StartCoroutine(FadeOut( sound,  FadeTime));
+    }
+
+    IEnumerator FadeOut(AudioSource sound, float FadeTime)
+    {
+        float startVolume = sound.volume;
+
+        while (sound.volume > 0)
+        {
+            sound.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        sound.Stop();
+        sound.volume = startVolume;
+    }
+
+    public void DestroyThisObjectIn()
+    {
+        StartCoroutine(DestroyThis());
+    }
+
+    IEnumerator DestroyThis()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(this.gameObject);
+    }
 }

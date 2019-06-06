@@ -75,7 +75,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayLongSound(string name)
     {
-        for (int i = 0; i < sounds.Count; i++)
+        for (int i = 0; i < musicsAndVoices.Count; i++)
         {
             if (musicsAndVoices[i].name == name)
             {
