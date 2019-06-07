@@ -41,7 +41,11 @@ public class TakableObject : MonoBehaviour
 
                 if(!isMask)
                 {
-                    klaxonSound.Play();
+                    if(klaxonSound != null)
+                    {
+                        klaxonSound.Play();
+                    }
+                    
                     Vibration.Vibrate(50);
                     taken = true;
                     transform.position = Player3DExample.Instance.forward.transform.position;
