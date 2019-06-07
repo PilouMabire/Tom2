@@ -30,7 +30,7 @@ public class CameraFollow : MonoBehaviour
     {
         if(followPlayer)
         {
-            transform.position = Vector3.Lerp(transform.position,  Player3DExample.Instance.transform.position, 0.1f);
+            transform.position = Vector3.Lerp(transform.position,  objectToFollow.transform.position, 0.1f);
             
         }
         else if(followObject)
