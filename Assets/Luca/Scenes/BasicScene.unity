@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!1 &88410010
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   objectID: 
+  isMask: 0
+  mask: {fileID: 0}
+  isTakable: 1
 --- !u!1 &273111531
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +668,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  triggerOnce: 0
 --- !u!65 &767699085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -826,6 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actualRoom: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &1212890255
 Transform:
   m_ObjectHideFlags: 0
@@ -847,18 +853,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212890253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d7ec1ce5dd17d04e8a5927219258da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isChapFinal: 0
+  animHouse: 0
   cameras: []
   anim: {fileID: 0}
+  triggerDaronne: {fileID: 0}
+  joystick: {fileID: 0}
   vaiselleUI: {fileID: 865515734}
   nbrOfPlates: 3
   plateAnim: {fileID: 865515736}
   sponge: {fileID: 1228439056}
   canDoVaiselle: 1
+  vaiselleDone: 0
+  vaiselleCheckBox: {fileID: 0}
+  aspirateur: {fileID: 0}
+  taches: []
+  aspirateurDone: 0
+  aspirateurCheckBox: {fileID: 0}
+  objects: []
+  rangementDone: 0
+  rangementCheckBox: {fileID: 0}
+  taskList: {fileID: 0}
+  daronneDansLit: {fileID: 0}
+  fauteil: {fileID: 0}
 --- !u!114 &1228439056 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 170083874197826515, guid: 70edc3058e36e6e4e9c75fd678fa9de1,

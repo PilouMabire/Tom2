@@ -30,6 +30,6 @@ public class GoToSceneOnTrigger : MonoBehaviour
 
     public void GoTo()
     {
-        SceneManager.LoadScene(sceneName);
+        UIManager.Instance.ChangeScene(sceneName);
     }
 }

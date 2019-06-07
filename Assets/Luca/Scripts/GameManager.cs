@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        UIManager.Instance.ChangeScene(sceneName);
+        //SceneManager.LoadScene(sceneName);
     }
 
     IEnumerator FadeBlack()
