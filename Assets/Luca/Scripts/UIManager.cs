@@ -15,6 +15,9 @@ public class UIManager : MonoBehaviour
     public Animator fade;
     bool desactivationSecurity;
 
+
+    bool pause;
+
     [Header("FadeDeDébut")]
     public Color color = Color.black;
     public bool dontFade;
@@ -77,6 +80,19 @@ public class UIManager : MonoBehaviour
         if(canInteract)
         {
             contextualButton.SetActive(true);
+        }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            pause = !pause;
+            if(pause)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
         }
 
        
