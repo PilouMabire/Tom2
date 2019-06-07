@@ -10,6 +10,8 @@ public class TakableObject : MonoBehaviour
     public bool isMask;
     public GameObject mask;
 
+    public AudioSource klaxonSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class TakableObject : MonoBehaviour
             {
                 if(!isMask)
                 {
+                    klaxonSound.Play();
                     Vibration.Vibrate(50);
                     taken = true;
                     transform.position = Player3DExample.Instance.forward.transform.position;

@@ -11,6 +11,7 @@ public class HouseManager : MonoBehaviour
     public Animator anim;
     public GameObject triggerDaronne;
     public GameObject joystick;
+    public AudioSource listSound;
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
     public int nbrOfPlates;
@@ -221,6 +222,7 @@ public class HouseManager : MonoBehaviour
 
     void OpenTasks()
     {
+        listSound.Play();
         isOpeningTasks = true;
         Player3DExample.Instance.canMove = false;
         taskList.SetActive(true);
