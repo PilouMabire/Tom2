@@ -10,11 +10,11 @@ public class TakableObject : MonoBehaviour
     public bool isMask;
     public GameObject mask;
 
-<<<<<<< HEAD
+
     public AudioSource klaxonSound;
-=======
+
     public bool isTakable = true;
->>>>>>> master
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,10 +38,14 @@ public class TakableObject : MonoBehaviour
             }
             if (ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false)
             {
-<<<<<<< HEAD
+
                 if(!isMask)
                 {
-                    klaxonSound.Play();
+                    if(klaxonSound != null)
+                    {
+                        klaxonSound.Play();
+                    }
+                    
                     Vibration.Vibrate(50);
                     taken = true;
                     transform.position = Player3DExample.Instance.forward.transform.position;
@@ -49,9 +53,9 @@ public class TakableObject : MonoBehaviour
                     Player3DExample.Instance.carrying = true;
                 }
                 else
-=======
+
                 if (collision.gameObject.GetComponent<Player3DExample>())
->>>>>>> master
+
                 {
                     if (!isMask)
                     {
