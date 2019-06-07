@@ -29,6 +29,16 @@ public class Player3DExample : MonoBehaviour {
     public GameObject ray2;
     public GameObject ray3;
 
+    public GameObject mainGauche;
+    public GameObject mainDroite;
+    public GameObject tete;
+    public Animator handsAnim;
+
+    public TakableObject carriedObject;
+
+    [Header("SpecificShit")]
+    public GameObject aspirateur;
+
     private void Start()
     {
         Instance = this;
@@ -42,11 +52,11 @@ public class Player3DExample : MonoBehaviour {
 
     int countMagnet;
 
-    void FixedUpdate () 
-	{
-       
-        
-        if(canMove)
+    void FixedUpdate()
+    {
+
+
+        if (canMove)
         {
 
             if (countMagnet > -5)
@@ -67,9 +77,9 @@ public class Player3DExample : MonoBehaviour {
                 //{
                 //    rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
                 //}
-                
 
-                if(canClimb)
+
+                if (canClimb)
                 {
                     if (Physics.Linecast(transform.position, ray1.transform.position))
                     {
@@ -81,7 +91,7 @@ public class Player3DExample : MonoBehaviour {
                     }
                 }
 
-                if(magnet)
+                if (magnet)
                 {
                     if (countMagnet < 0)
                     {
@@ -93,8 +103,8 @@ public class Player3DExample : MonoBehaviour {
                         }
                     }
                 }
-                
-                
+
+
 
 
             }
@@ -109,15 +119,47 @@ public class Player3DExample : MonoBehaviour {
             isMoving = false;
         }
 
-        if(isMoving)
+        if (isMoving)
         {
             fxPif.SetActive(true);
+            handsAnim.Play("handsWalk");
+
+
         }
         else
         {
             fxPif.SetActive(false);
+            handsAnim.CrossFade("handsIdle", 0.75f);
+
         }
 
+        if (carrying)
+        {
+            handsAnim.enabled = false;
+            if(carriedObject != null)
+            {
+                mainDroite.transform.position = carriedObject.emplacementMainDroite.transform.position;
+                mainGauche.transform.position = carriedObject.emplacementMainGauche.transform.position;
+            }
+        }
+        else
+        {
+            handsAnim.enabled = true;
+        }
+
+        if (aspirateur != null)
+        {
+            if (aspirateur.activeInHierarchy)
+            {
+                mainGauche.SetActive(false);
+                mainDroite.SetActive(false);
+            }
+            else
+            {
+                mainGauche.SetActive(true);
+                mainDroite.SetActive(true);
+            }
+        }
         
 
 
