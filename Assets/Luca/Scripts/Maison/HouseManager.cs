@@ -9,6 +9,8 @@ public class HouseManager : MonoBehaviour
 
     public bool animHouse;
 
+    bool blockSwitches;
+
     public List<Camera> cameras;
     public Animator anim;
     public GameObject triggerDaronne;
@@ -178,6 +180,7 @@ public class HouseManager : MonoBehaviour
     {
         if(animHouse)
         {
+            
             switch (index)
             {
                 case 0:
@@ -210,12 +213,16 @@ public class HouseManager : MonoBehaviour
             }
         }
         
-        for (int i = 0; i < 50; i++)
+        if(!blockSwitches)
         {
-            yield return new WaitForEndOfFrame();
-            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i/150f);
-            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i/150f);
+            for (int i = 0; i < 50; i++)
+            {
+                yield return new WaitForEndOfFrame();
+                Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i / 150f);
+                Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i / 150f);
+            }
         }
+
     }
 
     public void InteractWithTasks()
@@ -250,6 +257,7 @@ public class HouseManager : MonoBehaviour
         anim.Play("MereArrive");
         Player3DExample.Instance.canMove = false;
         RoomSwitcher(8);
+        blockSwitches = true;
     }
 
     public void DaronneArriveButHandicaped()
@@ -257,6 +265,7 @@ public class HouseManager : MonoBehaviour
         anim.Play("MereArriveButHandicaped");
         Player3DExample.Instance.canMove = false;
         RoomSwitcher(8);
+        blockSwitches = true;
     }
 
 
@@ -264,6 +273,7 @@ public class HouseManager : MonoBehaviour
     {
         anim.Play("Fuite");
         RoomSwitcher(8);
+        blockSwitches = true;
     }
 
     public void LeveMere()
