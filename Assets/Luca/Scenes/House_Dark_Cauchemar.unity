@@ -90,7 +90,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000000, guid: 38034b2e0ac5b124381e7777658ac83b,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1711,6 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!1001 &52223526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4024,6 +4025,8 @@ MonoBehaviour:
   objectID: 
   isMask: 1
   mask: {fileID: 1786502233}
+  klaxonSound: {fileID: 0}
+  isTakable: 1
 --- !u!1001 &136405200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10418,6 +10421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420434327}
+  - component: {fileID: 420434328}
   m_Layer: 0
   m_Name: Cauchemar
   m_TagString: Untagged
@@ -10445,6 +10449,19 @@ Transform:
   m_Father: {fileID: 342630646}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420434328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420434326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7fd7d82e3682b4bb8a84f75253f8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1001 &426820824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12876,6 +12893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!65 &541469555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15555,6 +15573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!65 &651662246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15660,6 +15679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!65 &653510234
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17177,6 +17197,8 @@ MonoBehaviour:
   objectID: 2
   isMask: 0
   mask: {fileID: 0}
+  klaxonSound: {fileID: 0}
+  isTakable: 1
 --- !u!65 &697231958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22225,6 +22247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!65 &873637013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25325,6 +25348,8 @@ MonoBehaviour:
   objectID: 2
   isMask: 0
   mask: {fileID: 0}
+  klaxonSound: {fileID: 0}
+  isTakable: 1
 --- !u!65 &999823547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30233,6 +30258,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   triggerDaronne: {fileID: 7519148456924312365}
   joystick: {fileID: 1854614911}
+  listSound: {fileID: 0}
   vaiselleUI: {fileID: 170083873243076038}
   nbrOfPlates: 3
   plateAnim: {fileID: 170083873243076037}
@@ -30256,6 +30282,8 @@ MonoBehaviour:
   rangementDone: 0
   rangementCheckBox: {fileID: 924225412}
   taskList: {fileID: 2082756743}
+  daronneDansLit: {fileID: 0}
+  fauteil: {fileID: 0}
 --- !u!1 &1220588292
 GameObject:
   m_ObjectHideFlags: 0
@@ -39703,6 +39731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 
+  setActive: {fileID: 0}
 --- !u!65 &1727112420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41397,6 +41426,8 @@ MonoBehaviour:
   objectID: 
   isMask: 0
   mask: {fileID: 0}
+  klaxonSound: {fileID: 0}
+  isTakable: 1
 --- !u!65 &1786502236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41544,6 +41575,8 @@ MonoBehaviour:
   objectID: 8
   isMask: 1
   mask: {fileID: 2113815763}
+  klaxonSound: {fileID: 0}
+  isTakable: 1
 --- !u!65 &1794485902
 BoxCollider:
   m_ObjectHideFlags: 0
