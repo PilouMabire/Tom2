@@ -7,6 +7,8 @@ public class HouseManager : MonoBehaviour
 
     public bool isChapFinal;
 
+    public bool animHouse;
+
     public List<Camera> cameras;
     public Animator anim;
     public GameObject triggerDaronne;
@@ -36,6 +38,10 @@ public class HouseManager : MonoBehaviour
     [Header("Tasks")]
     public GameObject taskList;
     bool isOpeningTasks;
+
+    [Header("LastChapter")]
+    public Animator daronneDansLit;
+    public TakableObject fauteil;
 
     int frame;
 
@@ -169,36 +175,40 @@ public class HouseManager : MonoBehaviour
 
     IEnumerator CameraSwitch(Camera newCam, int index)
     {
-        switch (index)
+        if(animHouse)
         {
-            case 0 :
-                anim.Play("HouseCuisine");
-                break;
-            case 1:
-                anim.Play("HouseSalon");
-                break;
-            case 2:
-                anim.Play("HouseToilets");
-                break;
-            case 3:
-                anim.SetTrigger("reset");
-                break;
-            case 4:
-                anim.Play("HouseEtage");
-                break;
-            case 5:
-                anim.CrossFade("HouseSdB", 0.75f);
-                break;
-            case 6:
-                //anim.Play("HouseChambre");
-                anim.CrossFade("HouseChambre", 0.75f);
-                break;
-            case 7:
-                anim.CrossFade("HouseChambrePa", 0.75f);
-                break;
-            default:
-                break;
+            switch (index)
+            {
+                case 0:
+                    anim.Play("HouseCuisine");
+                    break;
+                case 1:
+                    anim.Play("HouseSalon");
+                    break;
+                case 2:
+                    anim.Play("HouseToilets");
+                    break;
+                case 3:
+                    anim.SetTrigger("reset");
+                    break;
+                case 4:
+                    anim.Play("HouseEtage");
+                    break;
+                case 5:
+                    anim.CrossFade("HouseSdB", 0.75f);
+                    break;
+                case 6:
+                    //anim.Play("HouseChambre");
+                    anim.CrossFade("HouseChambre", 0.75f);
+                    break;
+                case 7:
+                    anim.CrossFade("HouseChambrePa", 0.75f);
+                    break;
+                default:
+                    break;
+            }
         }
+        
         for (int i = 0; i < 50; i++)
         {
             yield return new WaitForEndOfFrame();
@@ -240,9 +250,23 @@ public class HouseManager : MonoBehaviour
         RoomSwitcher(8);
     }
 
+    public void DaronneArriveButHandicaped()
+    {
+        anim.Play("MereArriveButHandicaped");
+        Player3DExample.Instance.canMove = false;
+        RoomSwitcher(8);
+    }
+
+
     public void Fuite()
     {
         anim.Play("Fuite");
         RoomSwitcher(8);
+    }
+
+    public void LeveMere()
+    {
+        daronneDansLit.Play("Lever");
+        fauteil.isTakable = true;
     }
 }

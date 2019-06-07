@@ -2,6 +2,10 @@
 
 public class Player3DExample : MonoBehaviour {
 
+    public bool magnet = true;
+    public bool canClimb = true;
+
+
     public bool isMoving;
     public GameObject fxPif;
     public float angleCorrector = -20;
@@ -63,23 +67,33 @@ public class Player3DExample : MonoBehaviour {
                 //{
                 //    rb.velocity = transform.forward * moveSpeed * moveSpeedModifier;
                 //}
-                if(Physics.Linecast(transform.position, ray1.transform.position))
+                
+
+                if(canClimb)
                 {
-                    if (!Physics.Linecast(transform.position, ray2.transform.position))
+                    if (Physics.Linecast(transform.position, ray1.transform.position))
                     {
-                        transform.position += Vector3.up/5;
-                        countMagnet = 5;
+                        if (!Physics.Linecast(transform.position, ray2.transform.position))
+                        {
+                            transform.position += Vector3.up / 5;
+                            countMagnet = 5;
+                        }
                     }
                 }
-                if(countMagnet < 0)
+
+                if(magnet)
                 {
-                    if (!Physics.Linecast(transform.position, ray3.transform.position))
+                    if (countMagnet < 0)
                     {
-                        transform.position -= Vector3.up / 5;
-                        countMagnet = 5;
-                        print("magnet");
+                        if (!Physics.Linecast(transform.position, ray3.transform.position))
+                        {
+                            transform.position -= Vector3.up / 5;
+                            countMagnet = 5;
+                            print("magnet");
+                        }
                     }
                 }
+                
                 
 
 
