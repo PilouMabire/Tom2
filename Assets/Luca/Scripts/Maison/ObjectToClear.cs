@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectToClear : MonoBehaviour
 {
     public string objectID;
+    public GameObject setActive;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,10 @@ public class ObjectToClear : MonoBehaviour
             if(other.GetComponent<TakableObject>().objectID == objectID)
             {
                 Destroy(gameObject);
+                if(setActive)
+                {
+                    setActive.SetActive(true);
+                }
             }
         }
     }
