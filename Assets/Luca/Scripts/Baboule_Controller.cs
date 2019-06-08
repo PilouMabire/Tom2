@@ -43,11 +43,18 @@ public class Baboule_Controller : MonoBehaviour
             }
             if (ContextualButtonInput.Instance.maintain)
             {
+                if(parcsStick)
+                {
+                    transform.position += transform.forward;
+                }
                 kickSound.Play();
                 Vibration.Vibrate(100);
-                rb.velocity = (transform.forward * Random.Range(9, 15));
+                rb.velocity = ((Player3DExample.Instance.transform.forward ) * Random.Range(9, 15));
                 caughtByPlayer = false;
                 transform.SetParent(null);
+                col.enabled = true;
+                canTake = false;
+                StartCoroutine(CanTakeAgain());
                 //col.enabled = true;
                 rb.useGravity = true;
                 if(parcsStick)
@@ -67,15 +74,34 @@ public class Baboule_Controller : MonoBehaviour
         }
     }
 
+    bool canTake = true;
+
+    IEnumerator CanTakeAgain()
+    {
+        yield return new WaitForSeconds(0.2f);
+        canTake = true;
+
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Player3DExample>() && iterations <2)
+        if(collision.gameObject.GetComponent<Player3DExample>() && iterations <2&& canTake)
         {
             //col.enabled = false;
             caughtByPlayer = true;
             rb.useGravity = false;
-            transform.position = Player3DExample.Instance.forward.transform.position;
-            transform.SetParent(Player3DExample.Instance.transform);
+            if(parcsStick)
+            {
+                transform.position = Player3DExample.Instance.mainDroite.transform.position;
+                transform.SetParent(Player3DExample.Instance.mainDroite.transform);
+                col.enabled = false;
+            }
+            else
+            {
+                transform.position = Player3DExample.Instance.forward.transform.position;
+                transform.SetParent(Player3DExample.Instance.transform);
+            }
+            
             localPosition = transform.localPosition;
         }
 

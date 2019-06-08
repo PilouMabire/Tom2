@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
 
+
     public static UIManager Instance;
 
     public bool canInteract;
