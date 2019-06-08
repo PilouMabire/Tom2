@@ -15,9 +15,13 @@ public class HouseManager : MonoBehaviour
     public Animator anim;
     public GameObject triggerDaronne;
     public GameObject joystick;
+
     public AudioSource listSound;
     public AudioSource tacheFinie;
     public AudioSource listeFinie;
+    public AudioSource vaisselleSound;
+    public AudioSource aspirateurSound;
+
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
     public int nbrOfPlates;
@@ -87,6 +91,9 @@ public class HouseManager : MonoBehaviour
             }
         }
     }
+
+    bool trigOnceAspi;
+
     void AspirateurUpdate()
     {
         if (aspirateurDone == false)
@@ -100,6 +107,12 @@ public class HouseManager : MonoBehaviour
                     frame = 0;
                 }
 
+                if (trigOnceAspi == false)
+                {
+                    trigOnceAspi = true;
+                    aspirateurSound.Play();
+                }
+
             }
             if (taches[0] == null)
             {
@@ -108,6 +121,7 @@ public class HouseManager : MonoBehaviour
 
             if (taches.Count == 0)
             {
+                aspirateurSound.Stop();
                 tacheFinie.Play();
                 Destroy(aspirateur);
                 Player3DExample.Instance.carrying = false;
@@ -120,12 +134,17 @@ public class HouseManager : MonoBehaviour
     bool trigOnce;
 
     // Update is called once per frame
+
+    bool trigOnceVaisselle;
+
     void Update()
     {
         if(!isChapFinal)
         {
             if (isDoingVaiselle)
             {
+                
+                    
                 joystick.gameObject.SetActive(false);
                 IsDoingVaiselle();
             }
@@ -153,6 +172,11 @@ public class HouseManager : MonoBehaviour
 
     void IsDoingVaiselle()
     {
+        if (trigOnceVaisselle == false)
+        {
+            vaisselleSound.Play();
+            trigOnceVaisselle = true;
+        }
         if (ContextualButtonInput.Instance.pressed)
         {
             Vibration.Vibrate(100);
