@@ -38,6 +38,8 @@ public class Player3DExample : MonoBehaviour {
     public GameObject tete;
     public Animator handsAnim;
 
+    public Animator anim;
+
     public TakableObject carriedObject;
 
     [Header("SpecificShit")]
@@ -132,6 +134,7 @@ public class Player3DExample : MonoBehaviour {
         {
             fxPif.SetActive(true);
             handsAnim.Play("handsWalk");
+            anim.Play("walk");
             //play run
 
 
@@ -143,11 +146,17 @@ public class Player3DExample : MonoBehaviour {
             if(isSitted)
             {
                 //playsitted
-                fxPif.SetActive(false);
+                
+                if(!anim.GetCurrentAnimatorStateInfo(0).IsName("assisIdle") && !anim.GetCurrentAnimatorStateInfo(0).IsName("assis"))
+                {
+                    anim.Play("assis");
+                }
+                    fxPif.SetActive(false);
             }
             else
             {
                 //play idle
+                anim.Play("idle");
                 fxPif.SetActive(true);
             }
 
