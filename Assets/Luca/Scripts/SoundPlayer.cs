@@ -6,6 +6,10 @@ public class SoundPlayer : MonoBehaviour
 {
     public bool dontDestroyOnLoad;
 
+    public bool affectReference;
+
+    public static SoundPlayer reference;
+
     public AudioSource sound;
     public AudioSource sound2;
     public AudioSource sound3;
@@ -21,6 +25,7 @@ public class SoundPlayer : MonoBehaviour
         if(dontDestroyOnLoad)
         {
             DontDestroyOnLoad(this.gameObject);
+            reference = this;
         }
         
     }
@@ -89,20 +94,39 @@ public class SoundPlayer : MonoBehaviour
         StartCoroutine(FadeOut( sound,  FadeTime));
     }
 
-    IEnumerator FadeOut(AudioSource sound, float FadeTime)
+    IEnumerator FadeOut(AudioSource _sound, float FadeTime)
     {
-        float startVolume = sound.volume;
-
-        while (sound.volume > 0)
+        if(!affectReference)
         {
-            sound.volume -= startVolume * Time.deltaTime / FadeTime;
+            float startVolume = _sound.volume;
 
-            yield return null;
+            while (_sound.volume > 0)
+            {
+                _sound.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
+
+            _sound.Stop();
+            _sound.volume = startVolume;
         }
+        else
+        {
+            float startVolume = reference.sound.volume;
 
-        sound.Stop();
-        sound.volume = startVolume;
+            while (reference.sound.volume > 0)
+            {
+                reference.sound.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
+
+            reference.sound.Stop();
+            reference.sound.volume = startVolume;
+        }
     }
+        
+  
 
     public void DestroyThisObjectIn()
     {
