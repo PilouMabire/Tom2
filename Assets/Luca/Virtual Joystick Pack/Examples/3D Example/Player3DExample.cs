@@ -7,7 +7,7 @@ public class Player3DExample : MonoBehaviour {
 
 
     public bool isMoving;
-    public GameObject fxPif;
+    public bool isSitted;
     public float angleCorrector = -20;
     public float moveSpeed = 8f;
     public Joystick joystick;
@@ -19,12 +19,14 @@ public class Player3DExample : MonoBehaviour {
     [HideInInspector]
     public Vector3 joystickVelocity;
 
-    public GameObject forward;
 
     public bool canMove = true;
 
     public bool carrying;
 
+    [Header ("Assign")]
+    public GameObject fxPif;
+    public GameObject forward;
     public GameObject ray1;
     public GameObject ray2;
     public GameObject ray3;
@@ -123,6 +125,7 @@ public class Player3DExample : MonoBehaviour {
         {
             fxPif.SetActive(true);
             handsAnim.Play("handsWalk");
+            //play run
 
 
         }
@@ -130,6 +133,14 @@ public class Player3DExample : MonoBehaviour {
         {
             fxPif.SetActive(false);
             handsAnim.CrossFade("handsIdle", 0.75f);
+            if(isSitted)
+            {
+                //playsitted
+            }
+            else
+            {
+                //play idle
+            }
 
         }
 

@@ -43,6 +43,10 @@ public class Baboule_Controller : MonoBehaviour
             }
             if (ContextualButtonInput.Instance.maintain)
             {
+                if(parcsStick)
+                {
+                    transform.position += transform.forward;
+                }
                 kickSound.Play();
                 Vibration.Vibrate(100);
                 rb.velocity = ((Player3DExample.Instance.transform.forward ) * Random.Range(9, 15));

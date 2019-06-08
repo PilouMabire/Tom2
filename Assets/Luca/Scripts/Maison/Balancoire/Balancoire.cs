@@ -40,6 +40,7 @@ public class Balancoire : MonoBehaviour
                 if(Player3DExample.Instance.isMoving)
                 {
                     playerIsOn = false;
+                    Player3DExample.Instance.isSitted = false;
                 }
             }
             else
@@ -47,6 +48,9 @@ public class Balancoire : MonoBehaviour
                 Player3DExample.Instance.canMove = false;
             }
         }
+
+
+        
 
 
         
@@ -63,6 +67,7 @@ public class Balancoire : MonoBehaviour
             {
                 Player3DExample.Instance.canMove = false;
                 playerIsOn = true;
+                Player3DExample.Instance.isSitted = true;
             }
         }
     }
