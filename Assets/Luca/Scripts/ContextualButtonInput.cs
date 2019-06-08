@@ -17,7 +17,7 @@ public class ContextualButtonInput : MonoBehaviour
     public bool released;
     public bool maintain;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
         

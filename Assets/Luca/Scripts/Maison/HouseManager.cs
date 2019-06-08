@@ -5,9 +5,22 @@ using UnityEngine;
 public class HouseManager : MonoBehaviour
 {
 
+    public bool isChapFinal;
+
+    public bool animHouse;
+
+    bool blockSwitches;
+
     public List<Camera> cameras;
     public Animator anim;
     public GameObject triggerDaronne;
+    public GameObject joystick;
+
+    public AudioSource listSound;
+    public AudioSource tacheFinie;
+    public AudioSource listeFinie;
+    public AudioSource vaisselleSound;
+    public AudioSource aspirateurSound;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -35,6 +48,10 @@ public class HouseManager : MonoBehaviour
     public GameObject taskList;
     bool isOpeningTasks;
 
+    [Header("LastChapter")]
+    public Animator daronneDansLit;
+    public TakableObject fauteil;
+
     int frame;
 
     // Start is called before the first frame update
@@ -45,32 +62,20 @@ public class HouseManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (aspirateurDone == false)
+        if(!isChapFinal)
         {
-            if(aspirateur.activeInHierarchy)
-            {
-                frame++;
-                if(frame == 10)
-                {
-                    Vibration.Vibrate(100);
-                    frame = 0;
-                }
-                
-            }
-            if(taches[0] == null)
-            {
-                taches.RemoveAt(0);
-            }
-
-            if (taches.Count == 0)
-            {
-                Destroy(aspirateur);
-                Player3DExample.Instance.carrying = false;
-                aspirateurDone = true;
-                aspirateurCheckBox.SetActive(true);
-            }
+            AspirateurUpdate();
+            RangementUpdate();
         }
+        else
+        {
+            
+        }
+        
 
+    }
+    void RangementUpdate()
+    {
         if (rangementDone == false)
         {
             if (objects[0] == null)
@@ -80,52 +85,85 @@ public class HouseManager : MonoBehaviour
 
             if (objects.Count == 0)
             {
+                tacheFinie.Play();
                 rangementDone = true;
                 rangementCheckBox.SetActive(true);
             }
         }
-
     }
 
+    bool trigOnceAspi;
+
+    void AspirateurUpdate()
+    {
+        if (aspirateurDone == false)
+        {
+            if (aspirateur.activeInHierarchy)
+            {
+                frame++;
+                if (frame == 10)
+                {
+                    Vibration.Vibrate(100);
+                    frame = 0;
+                }
+
+                if (trigOnceAspi == false)
+                {
+                    trigOnceAspi = true;
+                    aspirateurSound.Play();
+                }
+
+            }
+            if (taches[0] == null)
+            {
+                taches.RemoveAt(0);
+            }
+
+            if (taches.Count == 0)
+            {
+                aspirateurSound.Stop();
+                tacheFinie.Play();
+                Destroy(aspirateur);
+                Player3DExample.Instance.carrying = false;
+                aspirateurDone = true;
+                aspirateurCheckBox.SetActive(true);
+            }
+        }
+    }
+
+    bool trigOnce;
+
     // Update is called once per frame
+
+    bool trigOnceVaisselle;
+
     void Update()
     {
-        if (isDoingVaiselle)
+        if(!isChapFinal)
         {
-            IsDoingVaiselle();
-        }
+            if (isDoingVaiselle)
+            {
+                
+                    
+                joystick.gameObject.SetActive(false);
+                IsDoingVaiselle();
+            }
+            else
+            {
+                joystick.gameObject.SetActive(true);
+            }
 
-        if(Input.GetKeyDown(KeyCode.M))
-        {
-            Vaiselle();
+            if (vaiselleDone && rangementDone && aspirateurDone)
+            {
+                triggerDaronne.SetActive(true);
+                if(trigOnce == false)
+                {
+                    trigOnce = true;
+                    listeFinie.Play();
+                }
+            }
         }
-
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine(CameraSwitch(cameras[0], 0));
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        {
-            StartCoroutine(CameraSwitch(cameras[1], 1));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            StartCoroutine(CameraSwitch(cameras[2], 2));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            StartCoroutine(CameraSwitch(cameras[3], 3));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            StartCoroutine(CameraSwitch(cameras[4], 4));
-        }
-
-        if(vaiselleDone && rangementDone && aspirateurDone)
-        {
-            triggerDaronne.SetActive(true);
-        }
+        
     }
     public void RoomSwitcher(int index)
     {
@@ -134,6 +172,11 @@ public class HouseManager : MonoBehaviour
 
     void IsDoingVaiselle()
     {
+        if (trigOnceVaisselle == false)
+        {
+            vaisselleSound.Play();
+            trigOnceVaisselle = true;
+        }
         if (ContextualButtonInput.Instance.pressed)
         {
             Vibration.Vibrate(100);
@@ -145,6 +188,8 @@ public class HouseManager : MonoBehaviour
             }
             else
             {
+                tacheFinie.Play();
+                sponge.ChangePlate();
                 Player3DExample.Instance.canMove = true;
                 vaiselleUI.SetActive(false);
                 isDoingVaiselle = false;
@@ -166,45 +211,55 @@ public class HouseManager : MonoBehaviour
 
         }
     }
+    
 
     IEnumerator CameraSwitch(Camera newCam, int index)
     {
-        switch (index)
+        if(animHouse)
         {
-            case 0 :
-                anim.Play("HouseCuisine");
-                break;
-            case 1:
-                anim.Play("HouseSalon");
-                break;
-            case 2:
-                anim.Play("HouseToilets");
-                break;
-            case 3:
-                anim.SetTrigger("reset");
-                break;
-            case 4:
-                anim.Play("HouseEtage");
-                break;
-            case 5:
-                anim.CrossFade("HouseSdB", 0.75f);
-                break;
-            case 6:
-                //anim.Play("HouseChambre");
-                anim.CrossFade("HouseChambre", 0.75f);
-                break;
-            case 7:
-                anim.CrossFade("HouseChambrePa", 0.75f);
-                break;
-            default:
-                break;
+            
+            switch (index)
+            {
+                case 0:
+                    anim.Play("HouseCuisine");
+                    break;
+                case 1:
+                    anim.Play("HouseSalon");
+                    break;
+                case 2:
+                    anim.Play("HouseToilets");
+                    break;
+                case 3:
+                    anim.SetTrigger("reset");
+                    break;
+                case 4:
+                    anim.Play("HouseEtage");
+                    break;
+                case 5:
+                    anim.CrossFade("HouseSdB", 0.75f);
+                    break;
+                case 6:
+                    //anim.Play("HouseChambre");
+                    anim.CrossFade("HouseChambre", 0.75f);
+                    break;
+                case 7:
+                    anim.CrossFade("HouseChambrePa", 0.75f);
+                    break;
+                default:
+                    break;
+            }
         }
-        for (int i = 0; i < 50; i++)
+        
+        if(!blockSwitches)
         {
-            yield return new WaitForEndOfFrame();
-            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i/150f);
-            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i/150f);
+            for (int i = 0; i < 50; i++)
+            {
+                yield return new WaitForEndOfFrame();
+                Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, newCam.transform.position, 0.065f + i / 150f);
+                Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, newCam.orthographicSize, 0.05f + i / 150f);
+            }
         }
+
     }
 
     public void InteractWithTasks()
@@ -221,6 +276,7 @@ public class HouseManager : MonoBehaviour
 
     void OpenTasks()
     {
+        listSound.Play();
         isOpeningTasks = true;
         Player3DExample.Instance.canMove = false;
         taskList.SetActive(true);
@@ -237,5 +293,29 @@ public class HouseManager : MonoBehaviour
     {
         anim.Play("MereArrive");
         Player3DExample.Instance.canMove = false;
+        RoomSwitcher(8);
+        blockSwitches = true;
+    }
+
+    public void DaronneArriveButHandicaped()
+    {
+        anim.Play("MereArriveButHandicaped");
+        Player3DExample.Instance.canMove = false;
+        RoomSwitcher(8);
+        blockSwitches = true;
+    }
+
+
+    public void Fuite()
+    {
+        anim.Play("Fuite");
+        RoomSwitcher(8);
+        blockSwitches = true;
+    }
+
+    public void LeveMere()
+    {
+        daronneDansLit.Play("Lever");
+        fauteil.isTakable = true;
     }
 }

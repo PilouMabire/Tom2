@@ -50,14 +50,15 @@ public class TestMaterialInstance : MonoBehaviour
 
     public void UpdateMaterials()
     {
-        for (int i = 0; i < rends.Count; i++)
-        {
-            for (int m = 0; m < rends[i].materials.Length; m++)
-            {
-                rends[i].materials[m].SetFloat("_Displace", parameter);
-            }
+        //for (int i = 0; i < rends.Count; i++)
+        //{
+        //    for (int m = 0; m < rends[i].materials.Length; m++)
+        //    {
+        //        rends[i].materials[m].SetFloat("_Displace", parameter);
+        //    }
 
-        }
+        //}
+        rends[0].materials[0].SetFloat("_Displace", parameter);
         //for (int i = 0; i < _mats.Count; i++)
         //{
         //    _mats[i].SetFloat("_Displace", parameter);
@@ -65,7 +66,7 @@ public class TestMaterialInstance : MonoBehaviour
     } 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         UpdateMaterials();
     }

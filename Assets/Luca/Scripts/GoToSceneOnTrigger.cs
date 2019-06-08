@@ -24,7 +24,12 @@ public class GoToSceneOnTrigger : MonoBehaviour
     {
         if(other.GetComponent<Player3DExample>())
         {
-            SceneManager.LoadScene(sceneName);
+            GoTo();
         }
+    }
+
+    public void GoTo()
+    {
+        UIManager.Instance.ChangeScene(sceneName);
     }
 }

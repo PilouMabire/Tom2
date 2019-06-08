@@ -25,7 +25,8 @@ public class ParcToForest : MonoBehaviour
     {
         if(other.GetComponent<Player3DExample>() && stick.iterations >= 2)
         {
-            SceneManager.LoadScene(nextScene);
+            UIManager.Instance.ChangeScene(nextScene);
+            //SceneManager.LoadScene(nextScene);
         }
     }
 }

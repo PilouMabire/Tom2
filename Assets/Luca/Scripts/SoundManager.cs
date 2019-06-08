@@ -23,10 +23,27 @@ public class SoundManager : MonoBehaviour
     int soundIndex;
     int musicIndex;
 
+    public static SoundManager Instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //if(Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    if(Instance == this)
+        //    {
+
+        //    }
+        //    else
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
     }
 
     // Update is called once per frame
@@ -42,7 +59,9 @@ public class SoundManager : MonoBehaviour
         {
             if(sounds[i].name == name)
             {
+                
                 sources[soundIndex].clip = sounds[i].clip;
+                sources[soundIndex].Play();
                 break;
             }
 
@@ -56,11 +75,12 @@ public class SoundManager : MonoBehaviour
 
     public void PlayLongSound(string name)
     {
-        for (int i = 0; i < sounds.Count; i++)
+        for (int i = 0; i < musicsAndVoices.Count; i++)
         {
             if (musicsAndVoices[i].name == name)
             {
-                musicAndVoiceSources[soundIndex].clip = musicsAndVoices[i].clip;
+                musicAndVoiceSources[musicIndex].clip = musicsAndVoices[i].clip;
+                musicAndVoiceSources[musicIndex].Play();
                 break;
             }
 

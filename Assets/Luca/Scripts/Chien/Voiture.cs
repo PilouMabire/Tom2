@@ -23,7 +23,7 @@ public class Voiture : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, transform.position.z);
+        cam.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 
     void GoToChenil()
@@ -34,7 +34,7 @@ public class Voiture : MonoBehaviour
 
     IEnumerator WaitAndGoToScene()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(39f);
         SceneManager.LoadScene(nextScene);
     }
 
