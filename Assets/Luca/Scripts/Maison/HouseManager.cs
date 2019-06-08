@@ -211,6 +211,7 @@ public class HouseManager : MonoBehaviour
 
         }
     }
+    
 
     IEnumerator CameraSwitch(Camera newCam, int index)
     {
