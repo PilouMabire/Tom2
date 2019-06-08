@@ -25,6 +25,7 @@ public class Assise : MonoBehaviour
             if (Player3DExample.Instance.isMoving)
             {
                 playerIsOn = false;
+                Player3DExample.Instance.isSitted = false;
             }
         }
 
@@ -42,6 +43,7 @@ public class Assise : MonoBehaviour
             if (ContextualButtonInput.Instance.pressed)
             {
                 playerIsOn = true;
+                Player3DExample.Instance.isSitted = true;
             }
         }
     }

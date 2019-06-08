@@ -15,6 +15,9 @@ public class TakableObject : MonoBehaviour
 
     public bool isTakable = true;
 
+    public GameObject emplacementMainDroite;
+    public GameObject emplacementMainGauche;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +39,7 @@ public class TakableObject : MonoBehaviour
             {
                 UIManager.Instance.canInteract = true;
             }
-            if (ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false)
+            if (ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false && taken == false)
             {
 
                 if(!isMask)
@@ -50,7 +53,9 @@ public class TakableObject : MonoBehaviour
                     taken = true;
                     transform.position = Player3DExample.Instance.forward.transform.position;
                     transform.SetParent(Player3DExample.Instance.transform);
+                    transform.rotation = Quaternion.identity;
                     Player3DExample.Instance.carrying = true;
+                    Player3DExample.Instance.carriedObject = this;
                 }
                 else
 
@@ -64,6 +69,7 @@ public class TakableObject : MonoBehaviour
                         transform.position = Player3DExample.Instance.forward.transform.position;
                         transform.SetParent(Player3DExample.Instance.transform);
                         Player3DExample.Instance.carrying = true;
+                        Player3DExample.Instance.carriedObject = this ;
                     }
                     else
                     {
