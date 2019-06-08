@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Player3DExample : MonoBehaviour {
 
@@ -47,12 +49,17 @@ public class Player3DExample : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 
+    
+    
+
     private void Update()
     {
 
     }
 
     int countMagnet;
+
+    
 
     void FixedUpdate()
     {
@@ -131,19 +138,20 @@ public class Player3DExample : MonoBehaviour {
         }
         else
         {
-            fxPif.SetActive(false);
+
             handsAnim.CrossFade("handsIdle", 0.75f);
             if(isSitted)
             {
                 //playsitted
+                fxPif.SetActive(false);
             }
             else
             {
                 //play idle
+                fxPif.SetActive(true);
             }
 
         }
-
         if (carrying)
         {
             handsAnim.enabled = false;
@@ -171,9 +179,10 @@ public class Player3DExample : MonoBehaviour {
                 mainDroite.SetActive(true);
             }
         }
+
         
 
-
     }
+    
 
 }

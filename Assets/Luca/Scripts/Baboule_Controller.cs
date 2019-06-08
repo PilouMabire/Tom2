@@ -100,6 +100,7 @@ public class Baboule_Controller : MonoBehaviour
             {
                 transform.position = Player3DExample.Instance.forward.transform.position;
                 transform.SetParent(Player3DExample.Instance.transform);
+                col.enabled = true;
             }
             
             localPosition = transform.localPosition;
