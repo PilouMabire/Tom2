@@ -39,6 +39,8 @@ public class HouseManager : MonoBehaviour
     public List<GameObject> taches;
     public bool aspirateurDone;
     public GameObject aspirateurCheckBox;
+    public GameObject handL;
+    public GameObject handR;
 
     [Header("Rangement")]
     public List<GameObject> objects;
@@ -101,6 +103,7 @@ public class HouseManager : MonoBehaviour
         {
             if (aspirateur.activeInHierarchy)
             {
+                Player3DExample.Instance.carrying = true;
                 frame++;
                 if (frame == 10)
                 {
@@ -127,6 +130,8 @@ public class HouseManager : MonoBehaviour
                 Destroy(aspirateur);
                 Player3DExample.Instance.carrying = false;
                 aspirateurDone = true;
+                handL.SetActive(true);
+                handR.SetActive(true);
                 aspirateurCheckBox.SetActive(true);
             }
         }

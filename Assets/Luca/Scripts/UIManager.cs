@@ -68,6 +68,13 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public IEnumerator DoubleFade()
+    {
+        fade.Play("FadeOut");
+        yield return new WaitForSeconds(1f);
+        fade.Play("FadeIn");
+    }
+
     // Update is called once per frame
     void Update()
     {

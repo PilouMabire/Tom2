@@ -63,17 +63,18 @@ public class CameraFollow : MonoBehaviour
     public IEnumerator CinematicTo(GameObject goTo)
     {
         
-        for (int i = 0; i < 100; i++)
-        {
-            yield return new WaitForEndOfFrame();
-            transform.rotation = Quaternion.Lerp(transform.rotation, goTo.transform.rotation, Time.deltaTime + i/100);
-            transform.position = Vector3.Lerp(transform.position, goTo.transform.position, Time.deltaTime + i / 100);
-            cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, Vector3.zero, Time.deltaTime + i / 100);
-            cam.transform.localRotation = Quaternion.Lerp(cam.transform.localRotation, Quaternion.identity, Time.deltaTime + i / 100);
-        }
-        //transform.rotation = goTo.transform.rotation;
-        //transform.position = goTo.transform.position;
-        //cam.transform.localPosition = Vector3.zero;
-        //cam.transform.localRotation = Quaternion.identity;
+        //for (int i = 0; i < 100; i++)
+        //{
+        //    yield return new WaitForEndOfFrame();
+        //    transform.rotation = Quaternion.Lerp(transform.rotation, goTo.transform.rotation, Time.deltaTime + i/100);
+        //    transform.position = Vector3.Lerp(transform.position, goTo.transform.position, Time.deltaTime + i / 100);
+        //    cam.transform.localPosition = Vector3.Lerp(cam.transform.localPosition, Vector3.zero, Time.deltaTime + i / 100);
+        //    cam.transform.localRotation = Quaternion.Lerp(cam.transform.localRotation, Quaternion.identity, Time.deltaTime + i / 100);
+        //}
+        transform.rotation = goTo.transform.rotation;
+        transform.position = goTo.transform.position;
+        cam.transform.localPosition = Vector3.zero;
+        cam.transform.localRotation = Quaternion.identity;
+        yield return new WaitForEndOfFrame();
     }
 }
