@@ -21,6 +21,7 @@ public class HouseManager : MonoBehaviour
     public AudioSource listeFinie;
     public AudioSource vaisselleSound;
     public AudioSource aspirateurSound;
+    public AudioSource fridgeVoice;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -188,6 +189,7 @@ public class HouseManager : MonoBehaviour
             }
             else
             {
+                vaisselleSound.Stop();
                 tacheFinie.Play();
                 sponge.ChangePlate();
                 Player3DExample.Instance.canMove = true;
@@ -274,8 +276,15 @@ public class HouseManager : MonoBehaviour
         }
     }
 
+    bool voicelinePlayed;
+
     void OpenTasks()
     {
+        if (voicelinePlayed == false)
+        {
+            fridgeVoice.Play();
+            voicelinePlayed = true;
+        }
         listSound.Play();
         isOpeningTasks = true;
         Player3DExample.Instance.canMove = false;
