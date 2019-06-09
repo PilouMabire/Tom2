@@ -35,6 +35,8 @@ public class Assise : MonoBehaviour
 
     }
 
+
+
     private void OnTriggerStay(Collider other)
     {
         if (!playerIsOn && Player3DExample.Instance.carrying == false)

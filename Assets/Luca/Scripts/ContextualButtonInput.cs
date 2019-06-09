@@ -10,6 +10,7 @@ public class ContextualButtonInput : MonoBehaviour
      , IPointerExitHandler
     , IPointerDownHandler
     , IPointerUpHandler
+
 {
     public static ContextualButtonInput Instance;
 
@@ -17,11 +18,20 @@ public class ContextualButtonInput : MonoBehaviour
     public bool released;
     public bool maintain;
 
+    private void OnEnable()
+    {
+        pressed = false;
+        released = false;
+        maintain = false;
+    }
+
     private void Awake()
     {
         Instance = this;
         
     }
+
+    
 
     
 
