@@ -18,6 +18,8 @@ public class TakableObject : MonoBehaviour
     public GameObject emplacementMainDroite;
     public GameObject emplacementMainGauche;
 
+    public GameObject setInactive;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,7 @@ public class TakableObject : MonoBehaviour
     {
         if(isTakable)
         {
-            if (collision.gameObject.GetComponent<Player3DExample>())
+            if (collision.gameObject.GetComponent<Player3DExample>() && Player3DExample.Instance.carrying == false)
             {
                 UIManager.Instance.canInteract = true;
             }
@@ -76,6 +78,10 @@ public class TakableObject : MonoBehaviour
                         Vibration.Vibrate(50);
                         mask.SetActive(true);
                         Destroy(gameObject);
+                        if(setInactive)
+                        {
+                            setInactive.SetActive(false);
+                        }
                     }
 
                 }

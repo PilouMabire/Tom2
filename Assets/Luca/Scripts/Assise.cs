@@ -37,10 +37,10 @@ public class Assise : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (!playerIsOn)
+        if (!playerIsOn && Player3DExample.Instance.carrying == false)
         {
             UIManager.Instance.canInteract = true;
-            if (ContextualButtonInput.Instance.pressed)
+            if (ContextualButtonInput.Instance.pressed  )
             {
                 playerIsOn = true;
                 Player3DExample.Instance.isSitted = true;
