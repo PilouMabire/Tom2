@@ -103,6 +103,7 @@ public class HouseManager : MonoBehaviour
         {
             if (aspirateur.activeInHierarchy)
             {
+                Player3DExample.Instance.carrying = true;
                 frame++;
                 if (frame == 10)
                 {
