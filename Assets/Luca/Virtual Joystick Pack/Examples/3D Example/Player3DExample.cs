@@ -96,6 +96,7 @@ public class Player3DExample : MonoBehaviour {
                     {
                         if (!Physics.Linecast(transform.position, ray2.transform.position))
                         {
+                            print("climb");
                             transform.position += Vector3.up / 5;
                             countMagnet = 5;
                         }
