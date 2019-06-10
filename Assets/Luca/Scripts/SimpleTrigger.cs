@@ -69,4 +69,10 @@ public class SimpleTrigger : MonoBehaviour
            
         }
     }
+
+    public void JustPlayFunction()
+    {
+        functionOnTrigger.Invoke();
+
+    }
 }
