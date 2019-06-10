@@ -484,17 +484,17 @@ PrefabInstance:
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -504,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play3
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -515,6 +515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerOnce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202445355919284813, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: PostItIdle
       objectReference: {fileID: 0}
     - target: {fileID: 5352773904789727731, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -2697,51 +2702,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[0].name
-      value: 1VoixAttente
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[1].name
-      value: 1VoixSpa
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[2].name
-      value: 1VoixMaxSpa
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[3].name
-      value: 1VoixRue
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[4].name
-      value: 1VoixBaton
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[5].name
-      value: 1VoixForet1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[6].name
-      value: 1VoixForet2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: musicsAndVoices.Array.data[7].name
-      value: 1VoixForet3
-      objectReference: {fileID: 0}
     - target: {fileID: 2739067923149543790, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4539,6 +4499,51 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[0].name
+      value: 1VoixAttente
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[1].name
+      value: 1VoixSpa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[2].name
+      value: 1VoixMaxSpa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[3].name
+      value: 1VoixRue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[4].name
+      value: 1VoixBaton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[5].name
+      value: 1VoixForet1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[6].name
+      value: 1VoixForet2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247431731848889038, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: musicsAndVoices.Array.data[7].name
+      value: 1VoixForet3
+      objectReference: {fileID: 0}
     - target: {fileID: 7331410635322826566, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4719,18 +4724,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7331410635498457091 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 635496288, guid: f7f8e44157e438f46a852d276181bb79,
+--- !u!95 &7331410635498457091 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2648144990143565754, guid: f7f8e44157e438f46a852d276181bb79,
     type: 3}
   m_PrefabInstance: {fileID: 7331410635498457087}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7331410635498457089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d147d7d6ecdcda49be7c8bda16e8669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7331410635498457092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7331410636701907826, guid: f7f8e44157e438f46a852d276181bb79,

@@ -68,6 +68,17 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void DoubleFadeCall(float time)
+    {
+        StartCoroutine(DoubleFadeChoseTime(time));
+    }
+    public IEnumerator DoubleFadeChoseTime(float time)
+    {
+        fade.Play("FadeOut");
+        yield return new WaitForSeconds(time);
+        fade.Play("FadeIn");
+    }
+
     public IEnumerator DoubleFade()
     {
         fade.Play("FadeOut");

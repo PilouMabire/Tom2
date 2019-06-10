@@ -329,7 +329,7 @@ public class HouseManager : MonoBehaviour
 
     public void LeveMere()
     {
-        daronneDansLit.Play("Lever");
+        daronneDansLit.Play("SleepingToAssis");
         fauteil.isTakable = true;
     }
 }

@@ -193,6 +193,11 @@ public class Player3DExample : MonoBehaviour {
         
 
     }
+
+    public void CantMove()
+    {
+        canMove = false;
+    }
     
 
 }
