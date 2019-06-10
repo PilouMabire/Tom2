@@ -7,8 +7,6 @@ public class ObjectToClear : MonoBehaviour
     public string objectID;
     public GameObject setActive;
 
-    public bool transitionThenClear;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,33 +25,12 @@ public class ObjectToClear : MonoBehaviour
         {
             if(other.GetComponent<TakableObject>().objectID == objectID)
             {
-                if(transitionThenClear == false)
+                Destroy(gameObject);
+                if(setActive)
                 {
-                    Clear();
+                    setActive.SetActive(true);
                 }
-                else
-                {
-                    StartCoroutine(FadeAndClear());
-
-                }
-                
             }
-        }
-    }
-
-    IEnumerator FadeAndClear()
-    {
-        UIManager.Instance.DoubleFadeCall(1.5f);
-        yield return new WaitForSeconds(1.2f);
-        Clear();
-    }
-
-    public void Clear()
-    {
-        Destroy(gameObject);
-        if (setActive)
-        {
-            setActive.SetActive(true);
         }
     }
 }
