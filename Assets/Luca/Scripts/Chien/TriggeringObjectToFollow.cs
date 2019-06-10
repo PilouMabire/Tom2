@@ -26,7 +26,7 @@ public class TriggeringObjectToFollow : MonoBehaviour
         if(chien)
         {
             chien.objectToFollow = objectToFollow;
-            chien.ChienSpeed = Random.Range(4f, 4.5f);
+            //chien.ChienSpeed = Random.Range(2f, 4f);
         }
     }
 }
