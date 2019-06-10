@@ -25,6 +25,7 @@ public class GetItemOff : MonoBehaviour
         if(other.GetComponent<Player3DExample>())
         {
             setParent.transform.parent = null;
+            setParent.GetComponent<Animator>().enabled = false;
             setActive.SetActive(true);
             setInactive.SetActive(false);
         }
