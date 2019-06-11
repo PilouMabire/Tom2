@@ -6,12 +6,14 @@ public class Player3DExample : MonoBehaviour {
 
     public bool magnet = true;
     public bool canClimb = true;
+    public bool correctMovement = true;
 
 
     public bool isMoving;
     public bool isSitted;
     public float angleCorrector = -20;
     public float moveSpeed = 8f;
+    public float inertie = 1;
     public Joystick joystick;
     [HideInInspector]
     public Rigidbody rb;
@@ -66,6 +68,9 @@ public class Player3DExample : MonoBehaviour {
     bool rayGaucheHit;
     bool rayDroitHit;
 
+    float correctionMove;
+    int correctingFrame;
+
     public void CorrectingMove()
     {
         if ((Physics.Linecast(transform.position, rayGauche.transform.position)))
@@ -87,26 +92,40 @@ public class Player3DExample : MonoBehaviour {
 
         if (rayGaucheHit && !rayDroitHit)
         {
-            transform.position = rayDroit.transform.position;
+            correctionMove = 10;
+            correctingFrame = 10;
+            //transform.position = (transform.position + rayDroit.transform.position )/2;
         }
-        else
-        {
-
-        }
+        
         if (!rayGaucheHit && rayDroitHit)
         {
-            transform.position = rayGauche.transform.position;
+            correctionMove = -10;
+            correctingFrame = 10;
+            //transform.position = (transform.position + rayGauche.transform.position )/2;
+            
         }
-        else
+        if(!rayGaucheHit &&! rayDroitHit)
         {
+            correctionMove = Mathf.Lerp(correctionMove, 0, 0.1f);
 
         }
+        if (rayGaucheHit && rayDroitHit)
+        {
+            correctionMove = Mathf.Lerp(correctionMove, 0, 0.1f);
+        }
+
     }
 
 
     void FixedUpdate()
     {
-        //CorrectingMove();
+        if(correctMovement)
+        {
+            correctingFrame--;
+            if (correctingFrame <= 0)
+                CorrectingMove();
+        }
+        
 
         if (canMove)
         {
@@ -121,8 +140,8 @@ public class Player3DExample : MonoBehaviour {
             if (moveVector != Vector3.zero)
             {
                 isMoving = true;
-                transform.rotation = Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector, Vector3.up);
-                rb.velocity = (transform.forward) * moveSpeed * moveSpeedModifier;
+                transform.rotation = Quaternion.Lerp(transform.rotation,  Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector +correctionMove , Vector3.up), inertie);
+                rb.velocity = (transform.forward) * moveSpeed * moveSpeedModifier  ;
 
                 //rb.AddForce(transform.forward * moveSpeed * moveSpeedModifier);
                 //if(rb.velocity.magnitude > (transform.forward * moveSpeed * moveSpeedModifier).magnitude)
@@ -175,7 +194,11 @@ public class Player3DExample : MonoBehaviour {
         if (isMoving)
         {
             fxPif.SetActive(true);
-            handsAnim.Play("handsWalk");
+            if (handsAnim.isActiveAndEnabled)
+            {
+                handsAnim.Play("handsWalk");
+            }
+            
             anim.Play("walk");
             //play run
 
@@ -183,8 +206,11 @@ public class Player3DExample : MonoBehaviour {
         }
         else
         {
-
-            handsAnim.CrossFade("handsIdle", 0.75f);
+            if(handsAnim.isActiveAndEnabled)
+            {
+                handsAnim.CrossFade("handsIdle", 0.75f);
+            }
+           
             if(isSitted)
             {
                 //playsitted
