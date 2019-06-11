@@ -75,7 +75,7 @@ public class SimpleTrigger : MonoBehaviour
             {
                 if(!HouseManager.Instance.vaiselleDone)
                 {
-                    if(HouseManager.Instance.sponge.maskCount >= 7)
+                    if(HouseManager.Instance.sponge.maskCount >= 14)
                     {
                         if (other.GetComponent<Player3DExample>())
                         {

@@ -185,7 +185,7 @@ public class HouseManager : MonoBehaviour
             vaisselleSound.Play();
             trigOnceVaisselle = true;
         }
-        if(sponge.maskCount > 8)
+        if(sponge.maskCount > 14)
         {
             if (ContextualButtonInput.Instance.pressed)
             {
