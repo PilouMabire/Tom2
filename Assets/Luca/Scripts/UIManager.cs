@@ -63,6 +63,7 @@ public class UIManager : MonoBehaviour
 
     IEnumerator DelayForFade(string sceneName)
     {
+        fondu.color = color2;
         fade.Play("FadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
