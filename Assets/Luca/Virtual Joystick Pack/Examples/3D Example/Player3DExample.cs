@@ -32,6 +32,8 @@ public class Player3DExample : MonoBehaviour {
     public GameObject ray1;
     public GameObject ray2;
     public GameObject ray3;
+    public GameObject rayGauche;
+    public GameObject rayDroit;
 
     public GameObject mainGauche;
     public GameObject mainDroite;
@@ -61,11 +63,50 @@ public class Player3DExample : MonoBehaviour {
 
     int countMagnet;
 
-    
+    bool rayGaucheHit;
+    bool rayDroitHit;
+
+    public void CorrectingMove()
+    {
+        if ((Physics.Linecast(transform.position, rayGauche.transform.position)))
+        {
+            rayGaucheHit = true;
+        }
+        else
+        {
+            rayGaucheHit = false;
+        }
+        if ((Physics.Linecast(transform.position, rayDroit.transform.position)))
+        {
+            rayDroitHit = true;
+        }
+        else
+        {
+            rayDroitHit = false;
+        }
+
+        if (rayGaucheHit && !rayDroitHit)
+        {
+            transform.position = rayDroit.transform.position;
+        }
+        else
+        {
+
+        }
+        if (!rayGaucheHit && rayDroitHit)
+        {
+            transform.position = rayGauche.transform.position;
+        }
+        else
+        {
+
+        }
+    }
+
 
     void FixedUpdate()
     {
-
+        //CorrectingMove();
 
         if (canMove)
         {
