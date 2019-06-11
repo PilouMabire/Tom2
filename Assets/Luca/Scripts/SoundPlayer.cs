@@ -88,6 +88,7 @@ public class SoundPlayer : MonoBehaviour
     }
 
     public float FadeTime;
+    
 
     public void FadeAway()
     {
@@ -125,8 +126,45 @@ public class SoundPlayer : MonoBehaviour
             reference.sound.volume = startVolume;
         }
     }
-        
-  
+
+    public void FadeAway2()
+    {
+        StartCoroutine(FadeOut2(sound2, FadeTime));
+    }
+
+    IEnumerator FadeOut2(AudioSource _sound2, float FadeTime)
+    {
+        if (!affectReference)
+        {
+            float startVolume = _sound2.volume;
+
+            while (_sound2.volume > 0)
+            {
+                _sound2.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
+
+            _sound2.Stop();
+            _sound2.volume = startVolume;
+        }
+        else
+        {
+            float startVolume = reference.sound2.volume;
+
+            while (reference.sound2.volume > 0)
+            {
+                reference.sound2.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
+
+            reference.sound2.Stop();
+            reference.sound2.volume = startVolume;
+        }
+    }
+
+
 
     public void DestroyThisObjectIn()
     {
