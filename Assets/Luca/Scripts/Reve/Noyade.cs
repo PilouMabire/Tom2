@@ -17,7 +17,7 @@ public class Noyade : MonoBehaviour
     void Update()
     {
         UIManager.Instance.canInteract = true;
-        transform.position -= Vector3.up * Time.deltaTime * 4;
+        transform.position -= Vector3.up * Time.deltaTime * (2 + 0.1f * count);
 
         if(ContextualButtonInput.Instance.maintain)
         {
@@ -33,10 +33,12 @@ public class Noyade : MonoBehaviour
         StartCoroutine(Remonte());
     }
 
+    int count;
+
     IEnumerator Remonte()
     {
         //canPress = false;
-        
+        count++;
         yield return new WaitForSeconds(0.2f);
         for (int i = 0; i < 30; i++)
         {
