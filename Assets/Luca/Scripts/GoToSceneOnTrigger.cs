@@ -40,4 +40,9 @@ public class GoToSceneOnTrigger : MonoBehaviour
         yield return new WaitForSeconds(delay);
         UIManager.Instance.ChangeScene(sceneName);
     }
+
+    public void ForceChangeScene()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }

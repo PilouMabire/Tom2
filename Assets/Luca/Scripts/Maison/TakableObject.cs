@@ -41,7 +41,9 @@ public class TakableObject : MonoBehaviour
             {
                 UIManager.Instance.canInteract = true;
             }
-            if (ContextualButtonInput.Instance.maintain && Player3DExample.Instance.carrying == false && taken == false)
+            if (ContextualButtonInput.Instance.maintain
+                && Player3DExample.Instance.carrying == false 
+                && taken == false)
             {
 
                 if(!isMask)
@@ -53,9 +55,10 @@ public class TakableObject : MonoBehaviour
                     
                     Vibration.Vibrate(50);
                     taken = true;
+                    transform.localRotation = Quaternion.identity;
                     transform.position = Player3DExample.Instance.forward.transform.position;
                     transform.SetParent(Player3DExample.Instance.transform);
-                    transform.rotation = Quaternion.identity;
+                    transform.localRotation = Quaternion.identity;
                     Player3DExample.Instance.carrying = true;
                     Player3DExample.Instance.carriedObject = this;
                 }

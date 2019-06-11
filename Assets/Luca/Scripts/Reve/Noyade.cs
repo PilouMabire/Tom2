@@ -19,18 +19,24 @@ public class Noyade : MonoBehaviour
         UIManager.Instance.canInteract = true;
         transform.position -= Vector3.up * Time.deltaTime * 4;
 
-        if(ContextualButtonInput.Instance.pressed)
+        if(ContextualButtonInput.Instance.maintain)
         {
-            if(canPress)
+            if (canPress)
+                anim.Play("Nage");
+                //anim.CrossFade("Nage", 0.72f);
 
-            StartCoroutine(Remonte());
         }
+    }
+
+    public void RemonteCall()
+    {
+        StartCoroutine(Remonte());
     }
 
     IEnumerator Remonte()
     {
-        canPress = false;
-        anim.Play("Nage");
+        //canPress = false;
+        
         yield return new WaitForSeconds(0.2f);
         for (int i = 0; i < 30; i++)
         {
@@ -38,6 +44,6 @@ public class Noyade : MonoBehaviour
             transform.position += Vector3.up/20;
         }
         yield return new WaitForSeconds(0.3f);
-        canPress = true;
+        //canPress = true;
     }
 }
