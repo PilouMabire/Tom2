@@ -201,16 +201,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7331410635423668491, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: m_Name
-      value: Maison
-      objectReference: {fileID: 0}
-    - target: {fileID: 7331410635423668491, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4791294515100809850, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -307,6 +297,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4791227361548733555, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410635423668491, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_Name
+      value: Maison
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410635423668491, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -508,7 +508,7 @@ PrefabInstance:
     - target: {fileID: 7331410636369059704, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7331410636490935704, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -689,10 +689,40 @@ PrefabInstance:
       propertyPath: canClimb
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6849110292926299055, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8591500504911276670, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272908919474524060, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0145225525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272908919474524060, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99989456
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272908919474524060, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272908919474524060, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1.1368684e-13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272908919474524060, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -2.2737368e-13
       objectReference: {fileID: 0}
     - target: {fileID: 7331410634921005025, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -724,6 +754,11 @@ PrefabInstance:
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Vaiselle
       objectReference: {fileID: 0}
+    - target: {fileID: 7331410635016253299, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: showHandOnCondition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7331410635077603399, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -732,6 +767,11 @@ PrefabInstance:
     - target: {fileID: 7331410635087343019, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410635087343019, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7331410635174660633, guid: f7f8e44157e438f46a852d276181bb79,
@@ -974,6 +1014,11 @@ PrefabInstance:
       propertyPath: vaisselleSound
       value: 
       objectReference: {fileID: 7331410635498457098}
+    - target: {fileID: 7331410636701907823, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: rangementDone
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8591500506808400295, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -987,6 +1032,11 @@ PrefabInstance:
     - target: {fileID: 7331410636907005441, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410636907005441, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7485586490621859543, guid: f7f8e44157e438f46a852d276181bb79,
@@ -5041,6 +5091,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7331410635498457087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7331410635498457095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 946887169479374696, guid: f7f8e44157e438f46a852d276181bb79,
+    type: 3}
+  m_PrefabInstance: {fileID: 7331410635498457087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7331410635498457096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331410635498457095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2205997, y: 8.708175, z: 0.99945307}
+  m_Center: {x: 1.6103036, y: 4.354086, z: -0.14905645}
 --- !u!82 &7331410635498457097 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3948888854584466297, guid: f7f8e44157e438f46a852d276181bb79,
