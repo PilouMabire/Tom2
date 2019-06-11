@@ -28,6 +28,7 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         //if(Instance == null)
         //{
         //    Instance = this;

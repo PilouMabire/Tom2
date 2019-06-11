@@ -12,6 +12,7 @@ public class TakableObject : MonoBehaviour
 
 
     public AudioSource klaxonSound;
+    public AudioSource rangementSound;
 
     public bool isTakable = true;
 
@@ -96,6 +97,12 @@ public class TakableObject : MonoBehaviour
                 {
                     if (collision.gameObject.GetComponent<ObjectTaker>().objectID == objectID)
                     {
+                        
+                        if(objectID == "2")
+                        {
+                            SoundManager.Instance.Play("JouetRangement");
+                        }
+                        
                         Vibration.Vibrate(100);
                         Player3DExample.Instance.carrying = false;
                         Destroy(gameObject);
