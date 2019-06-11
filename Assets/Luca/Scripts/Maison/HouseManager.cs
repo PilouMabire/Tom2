@@ -57,10 +57,12 @@ public class HouseManager : MonoBehaviour
 
     int frame;
 
+    public static HouseManager Instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instance = this;
     }
 
     private void FixedUpdate()
@@ -183,28 +185,36 @@ public class HouseManager : MonoBehaviour
             vaisselleSound.Play();
             trigOnceVaisselle = true;
         }
-        if (ContextualButtonInput.Instance.pressed)
+        if(sponge.maskCount > 14)
         {
-            Vibration.Vibrate(100);
-            if(nbrOfPlates > 00)
+            if (ContextualButtonInput.Instance.pressed)
             {
-                nbrOfPlates--;
-                plateAnim.Play("ChangePlate");
-                sponge.ChangePlate();
+                Vibration.Vibrate(100);
+                if (nbrOfPlates > 00)
+                {
+                    nbrOfPlates--;
+                    plateAnim.Play("ChangePlate");
+                    sponge.ChangePlate();
+                }
+                else
+                {
+                    vaisselleSound.Stop();
+                    tacheFinie.Play();
+                    sponge.ChangePlate();
+                    Player3DExample.Instance.canMove = true;
+                    vaiselleUI.SetActive(false);
+                    isDoingVaiselle = false;
+                    vaiselleDone = true;
+                    vaiselleCheckBox.SetActive(true);
+                }
+
             }
-            else
-            {
-                vaisselleSound.Stop();
-                tacheFinie.Play();
-                sponge.ChangePlate();
-                Player3DExample.Instance.canMove = true;
-                vaiselleUI.SetActive(false);
-                isDoingVaiselle = false;
-                vaiselleDone = true;
-                vaiselleCheckBox.SetActive(true);
-            }
+        }
+        else
+        {
             
         }
+        
     }
 
     public void Vaiselle()

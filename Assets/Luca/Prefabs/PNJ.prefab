@@ -423,6 +423,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 0.1
+  dontPlayOnStart: 0
 --- !u!1 &445019225
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +720,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 994b738bae5ae214ebe9ac02852567b1, type: 3}
+  - {fileID: 2100000, guid: 1ce88dcb11eba9d48a2e4ad27609d960, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1070,10 +1071,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303440916}
     m_Modifications:
-    - target: {fileID: 100002, guid: 11786838caeeb444c84999594c4f6cb7, type: 3}
-      propertyPath: m_Name
-      value: Cheveux_maman
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 11786838caeeb444c84999594c4f6cb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.014
@@ -1118,6 +1115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 11786838caeeb444c84999594c4f6cb7, type: 3}
+      propertyPath: m_Name
+      value: Cheveux_maman
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11786838caeeb444c84999594c4f6cb7, type: 3}
 --- !u!4 &6847822180060071616 stripped
@@ -1133,14 +1134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 303440916}
     m_Modifications:
-    - target: {fileID: 100000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
-      propertyPath: m_Name
-      value: Cheveux_Secretaire
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.014
@@ -1196,6 +1189,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0824
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
+      propertyPath: m_Name
+      value: Cheveux_Secretaire
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ec340ec6654264ea5e1fa0527fab3f, type: 3}
