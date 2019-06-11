@@ -6,26 +6,22 @@ public class LitController : MonoBehaviour
 {
 
     public Joystick joystick;
-    public Animator anim;
+    public Vector3 localPos;
+
+    public float joystickModifier;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        localPos = transform.localPosition;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(joystick.Horizontal >0.3f)
-        {
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("LitRotateDroite"))
-                anim.CrossFade("LitRotateDroite", 0.75f);
-        }
-        if (joystick.Horizontal < 0.3f)
-        {
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("LitRotateGauche"))
-                anim.CrossFade("LitRotateGauche", 0.75f);
-        }
+        joystickModifier = Mathf.Lerp(joystickModifier, joystick.Horizontal, Time.deltaTime);
+        //transform.localPosition =Vector3.Lerp(localPos,  localPos + new Vector3(joystick.Horizontal, 0 , 0), Time.deltaTime);
+        //print(joystick.Horizontal);
+        transform.localPosition =localPos + new Vector3(joystickModifier / 5, 0, 0);
     }
 }
