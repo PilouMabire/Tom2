@@ -72,6 +72,7 @@ public class Balancoire : MonoBehaviour
     {
         if(!playerIsOn)
         {
+            hasDoneBalancoire = false;
             UIManager.Instance.canInteract = true;
             if (ContextualButtonInput.Instance.pressed)
             {
