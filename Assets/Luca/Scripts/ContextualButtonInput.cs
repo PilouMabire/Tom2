@@ -30,6 +30,10 @@ public class ContextualButtonInput : MonoBehaviour
         Instance = this;
         
     }
+    void Start()
+    {
+        Instance = this;
+    }
 
     
 
