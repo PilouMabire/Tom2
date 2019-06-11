@@ -16,7 +16,7 @@ public class SpngeController : MonoBehaviour
 
     public List<GameObject> masks;
 
-
+    public int maskCount;
 
     int waiter;
 
@@ -64,6 +64,7 @@ public class SpngeController : MonoBehaviour
             {
                 var _mask = Instantiate(mask, transform.position, transform.rotation);
                 masks.Add(_mask);
+                maskCount++;
                 waiter = 0;
             }
         }
@@ -74,6 +75,7 @@ public class SpngeController : MonoBehaviour
         for (int i = 0; i < masks.Count; i++)
         {
             Destroy(masks[i]);
+            maskCount = 0;
         }
     }
 
