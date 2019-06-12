@@ -69,12 +69,15 @@ public class Chien_Laisse : MonoBehaviour
         }
     }
 
+    bool tpDog;
+
     void FollowObject()
     {
         if (followObject) 
         {
             if (Vector3.Distance(transform.position, objectToFollow.transform.position) > 1.5f)
             {
+                tpDog = false;
                 anim.Play("Walk");
                 transform.Translate(Vector3.Normalize(objectToFollow.transform.position - transform.position)
                 * ChienSpeed * Time.deltaTime, Space.World);
@@ -82,6 +85,11 @@ public class Chien_Laisse : MonoBehaviour
             }
             else if(Vector3.Distance(transform.position, objectToFollow.transform.position) < 1.5f)
             {
+                if(tpDog == false)
+                {
+                    tpDog = true;
+
+                }
                 anim.Play("Sit");
             }
             
