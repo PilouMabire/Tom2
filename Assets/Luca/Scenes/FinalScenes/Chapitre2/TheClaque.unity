@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -147,6 +147,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 0.1
+  dontPlayOnStart: 0
 --- !u!82 &1969764250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bcd58f17046dde7479605cbce45c6d02, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 322566d944d0af24d9bb27f1b0511a5d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
