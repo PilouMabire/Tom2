@@ -63,6 +63,7 @@ public class Chien_Laisse : MonoBehaviour
                 //rb.velocity = Player3DExample.Instance.joystickVelocity * 1.1f;
                 rb.AddForce(Player3DExample.Instance.joystickVelocity * ChienSpeed *20);
                 transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
+
             }
             
         }
