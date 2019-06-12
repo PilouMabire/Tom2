@@ -5120,6 +5120,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1995835881}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: angleCorrector
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5175,31 +5195,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1995835881}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 3.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: angleCorrector
-      value: -45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4651860457010199525, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8928090913281015235, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -5216,6 +5211,11 @@ PrefabInstance:
     - target: {fileID: 344256082, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651860457010199525, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 179816417130000764, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
@@ -15738,6 +15738,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Walk 0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095459407}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chien_Running2
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -26548,6 +26559,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2865341352387915469, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 2865341352387915465, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26652,11 +26668,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2865341352387915469, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304aab7940cb1684c9b02e7ecbfffa2e, type: 3}
