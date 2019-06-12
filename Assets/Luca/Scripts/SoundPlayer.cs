@@ -31,8 +31,16 @@ public class SoundPlayer : MonoBehaviour
     {
         if(dontDestroyOnLoad)
         {
-            DontDestroyOnLoad(this.gameObject);
-            reference = this;
+            if(reference == null)
+            {
+                DontDestroyOnLoad(this.gameObject);
+                reference = this;
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
+                
         }
         
     }
@@ -128,7 +136,7 @@ public class SoundPlayer : MonoBehaviour
 
                 yield return null;
             }
-
+            reference = null;
             reference.sound.Stop();
             reference.sound.volume = startVolume;
         }
