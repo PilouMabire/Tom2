@@ -18,6 +18,8 @@ public class Chien_Laisse : MonoBehaviour
     public GameObject objectToFollow;
 
     public float ChienSpeed;
+
+    public GameObject leadAttached;
     
 
     // Start is called before the first frame update
@@ -80,7 +82,7 @@ public class Chien_Laisse : MonoBehaviour
         if (isAttatchedToPlayer)
         {
             leadRenderer.SetPosition(0, transform.position);
-            leadRenderer.SetPosition(1, Player3DExample.Instance.transform.position);
+            leadRenderer.SetPosition(1, leadAttached.transform.position);
         }
         else
         {

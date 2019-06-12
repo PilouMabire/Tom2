@@ -20,6 +20,7 @@ public class Baboule_Controller : MonoBehaviour
     public bool parcsStick;
     public int iterations;
     public GameObject toDisable;
+    public GameObject toEnable;
     public GameObject goTo;
 
     // Start is called before the first frame update
@@ -71,6 +72,7 @@ public class Baboule_Controller : MonoBehaviour
             toDisable.SetActive(false);
             col.enabled = false;
             rb.useGravity = false;
+            toEnable.SetActive(true);
         }
     }
 

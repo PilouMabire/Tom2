@@ -25,14 +25,12 @@ public class EnteringParc : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<Chien_Laisse>())
-        {
-            chien.isAttatchedToPlayer = false;
-        }
+
 
         if (other.GetComponent<Player3DExample>())
         {
             StartCoroutine(EnteringInParc());
+            chien.isAttatchedToPlayer = false;
         }
 
 

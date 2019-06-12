@@ -33,7 +33,16 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         Instance = this;
-        fondu.color = color;
+        if(dontFade)
+        {
+            fondu.color = Color.clear;
+            fondu.enabled = false;
+        }
+        else
+        {
+            fondu.color = color;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -58,14 +67,27 @@ public class UIManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        StartCoroutine(DelayForFade(sceneName));
+        StartCoroutine(DelayForFade(sceneName, "FadeOut"));
     }
 
-    IEnumerator DelayForFade(string sceneName)
+    public void ChangeSceneSlowly(string sceneName)
+    {
+        StartCoroutine(DelayForFade(sceneName, "FadeOutSlowly"));
+    }
+
+    IEnumerator DelayForFade(string sceneName, string type)
     {
         fondu.color = color2;
-        fade.Play("FadeOut");
-        yield return new WaitForSeconds(1f);
+        fade.Play(type);
+        if(type == "FadeOutSlowly")
+        {
+            yield return new WaitForSeconds(8f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+        }
+       
         SceneManager.LoadScene(sceneName);
     }
 
@@ -77,6 +99,7 @@ public class UIManager : MonoBehaviour
     {
         fade.Play("FadeOut");
         yield return new WaitForSeconds(time);
+        fondu.enabled = true;
         fade.Play("FadeIn");
     }
 
@@ -84,6 +107,7 @@ public class UIManager : MonoBehaviour
     {
         fade.Play("FadeOut");
         yield return new WaitForSeconds(1f);
+        fondu.enabled = true;
         fade.Play("FadeIn");
     }
 
