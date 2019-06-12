@@ -68,6 +68,7 @@ public class Baboule_Controller : MonoBehaviour
         }
         if (iterations >= 2)
         {
+            chien.ChienSpeed = 6;
             transform.position = Vector3.Lerp(transform.position, goTo.transform.position, 0.01f);
             toDisable.SetActive(false);
             col.enabled = false;
