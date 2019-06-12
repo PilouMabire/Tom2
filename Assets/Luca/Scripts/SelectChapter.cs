@@ -9,6 +9,7 @@ public class SelectChapter : MonoBehaviour
     public static SelectChapter selected;
     public static string chapterToGoTo;
     public string chapter;
+    public AudioSource retourSound;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,12 @@ public class SelectChapter : MonoBehaviour
 
         if(ContextualButtonInput.Instance.pressed)
         {
-            UIManager.Instance.ChangeScene(scene);
+            if(chapter == "Chapter 1")
+            {
+                retourSound.Play();
+                UIManager.Instance.ChangeScene(scene);
+            }
+            
         }
     }
 
