@@ -56,7 +56,7 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
-    m_BakeResolution: 40
+    m_BakeResolution: 20
     m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
@@ -71,9 +71,9 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 1
-    m_BakeBackend: 2
+    m_BakeBackend: 0
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
+    m_PVRDirectSampleCount: 8
     m_PVRSampleCount: 100
     m_PVRBounces: 2
     m_PVRFilterTypeDirect: 0
@@ -88,7 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000000, guid: 4bac44296d8070b4690a1c83c9a0103e,
+  m_LightingDataAsset: {fileID: 112000000, guid: 1c3a70ef6241c604c80d3ab531cf281c,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -651,7 +651,6 @@ GameObject:
   - component: {fileID: 36139486}
   - component: {fileID: 36139489}
   - component: {fileID: 36139488}
-  - component: {fileID: 36139487}
   m_Layer: 0
   m_Name: Trottoire (58)
   m_TagString: Untagged
@@ -673,19 +672,6 @@ Transform:
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 285
   m_LocalEulerAnglesHint: {x: 0, y: 206.819, z: 0}
---- !u!65 &36139487
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36139485}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &36139488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2319,7 +2305,6 @@ GameObject:
   - component: {fileID: 82981639}
   - component: {fileID: 82981642}
   - component: {fileID: 82981641}
-  - component: {fileID: 82981640}
   m_Layer: 0
   m_Name: Trottoire (30)
   m_TagString: Untagged
@@ -2335,25 +2320,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82981638}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -12.208378, y: -10.609455, z: -0.82811546}
+  m_LocalPosition: {x: -12.208378, y: -10.71, z: -0.82811546}
   m_LocalScale: {x: 1.0297995, y: 0.80457, z: 1.2125857}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &82981640
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82981638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &82981641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2500,7 +2472,6 @@ GameObject:
   - component: {fileID: 90329917}
   - component: {fileID: 90329920}
   - component: {fileID: 90329919}
-  - component: {fileID: 90329918}
   m_Layer: 0
   m_Name: Trottoire (55)
   m_TagString: Untagged
@@ -2516,25 +2487,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90329916}
   m_LocalRotation: {x: -0, y: 0.00016768277, z: -0, w: -1}
-  m_LocalPosition: {x: -95.088875, y: -10.766108, z: 0.076028824}
+  m_LocalPosition: {x: -95.088875, y: -10.85, z: 0.076028824}
   m_LocalScale: {x: 1.2642838, y: 0.9877706, z: 1.4886904}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 282
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &90329918
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90329916}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &90329919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3090,7 +3048,7 @@ PrefabInstance:
     - target: {fileID: 2981634237507708471, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2981634237507708471, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
@@ -3205,7 +3163,6 @@ GameObject:
   - component: {fileID: 111212899}
   - component: {fileID: 111212902}
   - component: {fileID: 111212901}
-  - component: {fileID: 111212900}
   m_Layer: 0
   m_Name: Trottoire (25)
   m_TagString: Untagged
@@ -3227,19 +3184,6 @@ Transform:
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 207
   m_LocalEulerAnglesHint: {x: 0, y: 206.819, z: 0}
---- !u!65 &111212900
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111212898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &111212901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4158,7 +4102,6 @@ GameObject:
   - component: {fileID: 153703456}
   - component: {fileID: 153703459}
   - component: {fileID: 153703458}
-  - component: {fileID: 153703457}
   m_Layer: 0
   m_Name: Trottoire (54)
   m_TagString: Untagged
@@ -4174,25 +4117,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153703455}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -138.00903, y: -10.609455, z: -0.82811546}
+  m_LocalPosition: {x: -138.00903, y: -10.68, z: -0.82811546}
   m_LocalScale: {x: 1.0297995, y: 0.80457, z: 1.2125857}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 281
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &153703457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153703455}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &153703458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4466,7 +4396,7 @@ Transform:
   - {fileID: 142762350}
   - {fileID: 392329836}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &166880727
 PrefabInstance:
@@ -5493,7 +5423,6 @@ GameObject:
   - component: {fileID: 215911791}
   - component: {fileID: 215911794}
   - component: {fileID: 215911793}
-  - component: {fileID: 215911792}
   m_Layer: 0
   m_Name: Trottoire (50)
   m_TagString: Untagged
@@ -5509,25 +5438,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215911790}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: 27.511126, y: -10.609455, z: 4.3855267}
+  m_LocalPosition: {x: 27.511126, y: -10.698, z: 4.3855267}
   m_LocalScale: {x: 0.8830323, y: 0.68990266, z: 1.039768}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 277
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &215911792
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215911790}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &215911793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9538,11 +9454,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401525680}
   m_LocalRotation: {x: 0.6676181, y: -0, z: -0, w: 0.7445039}
-  m_LocalPosition: {x: -175.1, y: 8.3, z: 8.4}
+  m_LocalPosition: {x: -172.48119, y: 6.400012, z: 4.9411736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 2098727656}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 83.767006, y: 0, z: 0}
 --- !u!1001 &403323978
 PrefabInstance:
@@ -10010,7 +9926,6 @@ GameObject:
   - component: {fileID: 423568544}
   - component: {fileID: 423568547}
   - component: {fileID: 423568546}
-  - component: {fileID: 423568545}
   m_Layer: 0
   m_Name: Trottoire (33)
   m_TagString: Untagged
@@ -10026,25 +9941,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423568543}
   m_LocalRotation: {x: -0, y: 0.00016768277, z: -0, w: -1}
-  m_LocalPosition: {x: -43.305412, y: -10.766108, z: 0.076028824}
+  m_LocalPosition: {x: -43.305412, y: -10.83, z: 0.076028824}
   m_LocalScale: {x: 1.2642838, y: 0.9877706, z: 1.4886904}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &423568545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423568543}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &423568546
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12410,7 +12312,6 @@ GameObject:
   - component: {fileID: 522954072}
   - component: {fileID: 522954075}
   - component: {fileID: 522954074}
-  - component: {fileID: 522954073}
   m_Layer: 0
   m_Name: Trottoire (45)
   m_TagString: Untagged
@@ -12426,25 +12327,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522954071}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -118.48887, y: -10.609455, z: 4.3855267}
+  m_LocalPosition: {x: -118.48887, y: -10.63, z: 4.3855267}
   m_LocalScale: {x: 0.8830323, y: 0.68990266, z: 1.039768}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 272
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &522954073
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522954071}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &522954074
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12771,7 +12659,6 @@ GameObject:
   - component: {fileID: 554034407}
   - component: {fileID: 554034410}
   - component: {fileID: 554034409}
-  - component: {fileID: 554034408}
   m_Layer: 0
   m_Name: Trottoire (44)
   m_TagString: Untagged
@@ -12793,19 +12680,6 @@ Transform:
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 271
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &554034408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554034406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &554034409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12862,7 +12736,6 @@ GameObject:
   - component: {fileID: 557452562}
   - component: {fileID: 557452565}
   - component: {fileID: 557452564}
-  - component: {fileID: 557452563}
   m_Layer: 0
   m_Name: Trottoire (23)
   m_TagString: Untagged
@@ -12878,25 +12751,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557452561}
   m_LocalRotation: {x: -0, y: 0.7072039, z: -0, w: 0.70700973}
-  m_LocalPosition: {x: 18.024002, y: -10.609455, z: 3.9053879}
+  m_LocalPosition: {x: 18.024002, y: -10.71, z: 3.9053879}
   m_LocalScale: {x: 1.0298014, y: 0.80457, z: 1.2125876}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 206
   m_LocalEulerAnglesHint: {x: 0, y: 90.01601, z: 0}
---- !u!65 &557452563
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557452561}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &557452564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14947,6 +14807,255 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 622933916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &623197266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623197269}
+  - component: {fileID: 623197268}
+  - component: {fileID: 623197270}
+  - component: {fileID: 623197267}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &623197267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623197266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d147d7d6ecdcda49be7c8bda16e8669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
+  affectReference: 0
+  sound: {fileID: 623197268}
+  sound2: {fileID: 623197270}
+  sound3: {fileID: 0}
+  sound4: {fileID: 0}
+  sound5: {fileID: 0}
+  sound6: {fileID: 0}
+  destroyDelay: 0
+  FadeTime: 0
+  FadeInTime: 0
+  timeToFadeIn: 1
+--- !u!82 &623197268
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623197266}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 53ddc2850cd993a4eb66988adfaa819b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.713
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &623197269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623197266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -58.96419, y: 5.5084953, z: 8.6333275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &623197270
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623197266}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d33ea6abc9cacb34e9956e0866aa768d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.499
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &624117492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15616,7 +15725,6 @@ GameObject:
   - component: {fileID: 636007568}
   - component: {fileID: 636007571}
   - component: {fileID: 636007570}
-  - component: {fileID: 636007569}
   m_Layer: 0
   m_Name: Trottoire (35)
   m_TagString: Untagged
@@ -15632,25 +15740,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636007567}
   m_LocalRotation: {x: -0, y: 0.00005941093, z: -0, w: -1}
-  m_LocalPosition: {x: -60.4356, y: -10.609455, z: 1.3034172}
+  m_LocalPosition: {x: -60.4356, y: -10.77, z: 1.3034172}
   m_LocalScale: {x: 1.1634833, y: 0.9090158, z: 1.369998}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 226
   m_LocalEulerAnglesHint: {x: 0, y: 359.993, z: 0}
---- !u!65 &636007569
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636007567}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &636007570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15834,12 +15929,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641968273}
-  m_LocalRotation: {x: 0.9474273, y: -0, z: -0, w: 0.3199711}
-  m_LocalPosition: {x: -96.2, y: 14.31, z: 34.02}
+  m_LocalRotation: {x: 0.94742733, y: -0, z: -0, w: 0.31997114}
+  m_LocalPosition: {x: -93.58117, y: 12.410012, z: 30.561174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 2098727656}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 142.678, y: -0.000015258789, z: -0.000015258789}
 --- !u!1 &646009373
 GameObject:
@@ -16861,6 +16956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415288173954100842, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2415288173954100842, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
@@ -18687,7 +18787,6 @@ GameObject:
   - component: {fileID: 793755921}
   - component: {fileID: 793755924}
   - component: {fileID: 793755923}
-  - component: {fileID: 793755922}
   m_Layer: 0
   m_Name: Trottoire (29)
   m_TagString: Untagged
@@ -18703,25 +18802,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793755920}
   m_LocalRotation: {x: -0, y: 0.0001644492, z: -0, w: -1}
-  m_LocalPosition: {x: -6.6296463, y: -10.609455, z: 3.0037212}
+  m_LocalPosition: {x: -6.6296463, y: -10.77, z: 3.0037212}
   m_LocalScale: {x: 1.2799367, y: 1, z: 1.5071216}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 220
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &793755922
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793755920}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &793755923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22958,7 +23044,6 @@ GameObject:
   - component: {fileID: 933797033}
   - component: {fileID: 933797036}
   - component: {fileID: 933797035}
-  - component: {fileID: 933797034}
   m_Layer: 0
   m_Name: Trottoire (22)
   m_TagString: Untagged
@@ -22974,25 +23059,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933797032}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00007645785}
-  m_LocalPosition: {x: 23.294704, y: -10.609455, z: -0.74380493}
+  m_LocalPosition: {x: 23.294704, y: -10.82, z: -0.74380493}
   m_LocalScale: {x: 1.2799374, y: 1, z: 1.5071223}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 205
   m_LocalEulerAnglesHint: {x: 0, y: 179.99101, z: 0}
---- !u!65 &933797034
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933797032}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &933797035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24903,7 +24975,6 @@ GameObject:
   - component: {fileID: 1006204984}
   - component: {fileID: 1006204987}
   - component: {fileID: 1006204986}
-  - component: {fileID: 1006204985}
   m_Layer: 0
   m_Name: Trottoire (53)
   m_TagString: Untagged
@@ -24925,19 +24996,6 @@ Transform:
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 280
   m_LocalEulerAnglesHint: {x: 0, y: 206.819, z: 0}
---- !u!65 &1006204985
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006204983}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1006204986
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25209,7 +25267,6 @@ GameObject:
   - component: {fileID: 1021833063}
   - component: {fileID: 1021833066}
   - component: {fileID: 1021833065}
-  - component: {fileID: 1021833064}
   m_Layer: 0
   m_Name: Trottoire (43)
   m_TagString: Untagged
@@ -25225,25 +25282,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021833062}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -85.99821, y: -10.609455, z: 0.030492783}
+  m_LocalPosition: {x: -85.99821, y: -10.73, z: 0.030492783}
   m_LocalScale: {x: 1.0297995, y: 0.80457, z: 1.2125857}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 270
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1021833064
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021833062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1021833065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25618,11 +25662,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033530683}
   m_LocalRotation: {x: 0.9121157, y: -0.031442527, z: 0.023621673, w: 0.40804216}
-  m_LocalPosition: {x: -176.83, y: 20.9, z: 54.48}
+  m_LocalPosition: {x: -174.21118, y: 19.000011, z: 51.02117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 2098727656}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 131.768, y: -1.5, z: 3.2769928}
 --- !u!1001 &1034189197
 PrefabInstance:
@@ -27706,11 +27750,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108725553}
   m_LocalRotation: {x: 0.73437274, y: -0, z: -0, w: 0.6787464}
-  m_LocalPosition: {x: -70.62, y: 3.03, z: 1.28}
+  m_LocalPosition: {x: -68.001175, y: 1.1300116, z: -2.178826}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 2098727656}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 94.507996, y: -0.000015258789, z: -0.000015258789}
 --- !u!1 &1110328335
 GameObject:
@@ -28345,7 +28389,6 @@ GameObject:
   - component: {fileID: 1132395235}
   - component: {fileID: 1132395238}
   - component: {fileID: 1132395237}
-  - component: {fileID: 1132395236}
   m_Layer: 0
   m_Name: Trottoire (60)
   m_TagString: Untagged
@@ -28361,25 +28404,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132395234}
   m_LocalRotation: {x: -0, y: 0.00016768277, z: -0, w: -1}
-  m_LocalPosition: {x: -153.0882, y: -10.766108, z: 0.076028824}
+  m_LocalPosition: {x: -153.0882, y: -10.78, z: 0.076028824}
   m_LocalScale: {x: 1.2642838, y: 0.9877706, z: 1.4886904}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 287
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &1132395236
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132395234}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1132395237
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28837,7 +28867,6 @@ GameObject:
   - component: {fileID: 1146746211}
   - component: {fileID: 1146746214}
   - component: {fileID: 1146746213}
-  - component: {fileID: 1146746212}
   m_Layer: 0
   m_Name: Trottoire (31)
   m_TagString: Untagged
@@ -28853,25 +28882,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146746210}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -14.0154, y: -10.609455, z: 0.030492783}
+  m_LocalPosition: {x: -14.0154, y: -10.69, z: 0.030492783}
   m_LocalScale: {x: 1.0297995, y: 0.80457, z: 1.2125857}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 222
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1146746212
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146746210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1146746213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28928,7 +28944,6 @@ GameObject:
   - component: {fileID: 1151303572}
   - component: {fileID: 1151303575}
   - component: {fileID: 1151303574}
-  - component: {fileID: 1151303573}
   m_Layer: 0
   m_Name: Trottoire (49)
   m_TagString: Untagged
@@ -28944,25 +28959,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151303571}
   m_LocalRotation: {x: -0, y: 0.00016768277, z: -0, w: -1}
-  m_LocalPosition: {x: 30.711784, y: -10.766108, z: 0.076028824}
+  m_LocalPosition: {x: 30.711784, y: -10.81, z: 0.076028824}
   m_LocalScale: {x: 1.2642838, y: 0.9877706, z: 1.4886904}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 276
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &1151303573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151303571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1151303574
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30142,7 +30144,6 @@ GameObject:
   - component: {fileID: 1207884742}
   - component: {fileID: 1207884745}
   - component: {fileID: 1207884744}
-  - component: {fileID: 1207884743}
   m_Layer: 0
   m_Name: Trottoire (34)
   m_TagString: Untagged
@@ -30158,25 +30159,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207884741}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -46.506065, y: -10.609455, z: 4.3855267}
+  m_LocalPosition: {x: -46.506065, y: -10.675, z: 4.3855267}
   m_LocalScale: {x: 0.8830323, y: 0.68990266, z: 1.039768}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 225
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1207884743
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207884741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1207884744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32455,7 +32443,7 @@ Transform:
   - {fileID: 1895448590}
   - {fileID: 1511859746}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1288921861
 PrefabInstance:
@@ -33013,7 +33001,6 @@ GameObject:
   - component: {fileID: 1308388685}
   - component: {fileID: 1308388688}
   - component: {fileID: 1308388687}
-  - component: {fileID: 1308388686}
   m_Layer: 0
   m_Name: Trottoire (26)
   m_TagString: Untagged
@@ -33029,25 +33016,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308388684}
   m_LocalRotation: {x: -0, y: 0.9670432, z: -0, w: 0.2546124}
-  m_LocalPosition: {x: 24.404823, y: -10.609455, z: -1.5536327}
+  m_LocalPosition: {x: 24.404823, y: -10.63, z: -1.5536327}
   m_LocalScale: {x: 0.7401892, y: 0.5783, z: 0.8715707}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 208
   m_LocalEulerAnglesHint: {x: 0, y: 150.49901, z: 0}
---- !u!65 &1308388686
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308388684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1308388687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42202,7 +42176,6 @@ GameObject:
   - component: {fileID: 1633203150}
   - component: {fileID: 1633203153}
   - component: {fileID: 1633203152}
-  - component: {fileID: 1633203151}
   m_Layer: 0
   m_Name: Trottoire (52)
   m_TagString: Untagged
@@ -42218,25 +42191,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633203149}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00007645785}
-  m_LocalPosition: {x: -102.50596, y: -10.609455, z: -0.74380493}
+  m_LocalPosition: {x: -102.50596, y: -10.82, z: -0.74380493}
   m_LocalScale: {x: 1.2799374, y: 1, z: 1.5071223}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 279
   m_LocalEulerAnglesHint: {x: 0, y: 179.99101, z: 0}
---- !u!65 &1633203151
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633203149}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1633203152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42583,7 +42543,6 @@ GameObject:
   - component: {fileID: 1639943395}
   - component: {fileID: 1639943398}
   - component: {fileID: 1639943397}
-  - component: {fileID: 1639943396}
   m_Layer: 0
   m_Name: Trottoire (42)
   m_TagString: Untagged
@@ -42599,25 +42558,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639943394}
   m_LocalRotation: {x: -0, y: 0.0001644492, z: -0, w: -1}
-  m_LocalPosition: {x: -78.61245, y: -10.609455, z: 3.0037212}
+  m_LocalPosition: {x: -78.61245, y: -10.82, z: 3.0037212}
   m_LocalScale: {x: 1.2799367, y: 1, z: 1.5071216}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 269
   m_LocalEulerAnglesHint: {x: 0, y: 359.981, z: 0}
---- !u!65 &1639943396
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639943394}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1639943397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44831,7 +44777,6 @@ GameObject:
   - component: {fileID: 1736110201}
   - component: {fileID: 1736110204}
   - component: {fileID: 1736110203}
-  - component: {fileID: 1736110202}
   m_Layer: 0
   m_Name: Trottoire (61)
   m_TagString: Untagged
@@ -44847,25 +44792,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736110200}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -168.30887, y: -10.609455, z: 4.981045}
+  m_LocalPosition: {x: -168.30887, y: -10.65, z: 4.981045}
   m_LocalScale: {x: 0.8830323, y: 0.68990266, z: 1.039768}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 288
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1736110202
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736110200}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1736110203
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45966,7 +45898,6 @@ GameObject:
   - component: {fileID: 1769076301}
   - component: {fileID: 1769076304}
   - component: {fileID: 1769076303}
-  - component: {fileID: 1769076302}
   m_Layer: 0
   m_Name: Trottoire (48)
   m_TagString: Untagged
@@ -45982,25 +45913,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769076300}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: 60.001793, y: -10.609455, z: 0.030492783}
+  m_LocalPosition: {x: 60.001793, y: -10.69, z: 0.030492783}
   m_LocalScale: {x: 1.0297995, y: 0.80457, z: 1.2125857}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 275
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1769076302
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769076300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1769076303
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46057,7 +45975,6 @@ GameObject:
   - component: {fileID: 1770156943}
   - component: {fileID: 1770156946}
   - component: {fileID: 1770156945}
-  - component: {fileID: 1770156944}
   m_Layer: 0
   m_Name: Trottoire (56)
   m_TagString: Untagged
@@ -46073,25 +45990,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770156942}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -98.28954, y: -10.609455, z: 4.3855267}
+  m_LocalPosition: {x: -98.28954, y: -10.68, z: 4.3855267}
   m_LocalScale: {x: 0.8830323, y: 0.68990266, z: 1.039768}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 283
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1770156944
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770156942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1770156945
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47192,7 +47096,6 @@ GameObject:
   - component: {fileID: 1814386017}
   - component: {fileID: 1814386020}
   - component: {fileID: 1814386019}
-  - component: {fileID: 1814386018}
   m_Layer: 0
   m_Name: Trottoire (32)
   m_TagString: Untagged
@@ -47208,25 +47111,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814386016}
   m_LocalRotation: {x: -0, y: 0.7070715, z: -0, w: -0.7071421}
-  m_LocalPosition: {x: -31.306034, y: -10.609455, z: 4.1478634}
+  m_LocalPosition: {x: -31.306034, y: -10.75, z: 4.1478634}
   m_LocalScale: {x: 1.2642847, y: 0.9877706, z: 1.4886913}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 0, y: 270.00598, z: 0}
---- !u!65 &1814386018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814386016}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1814386019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48223,6 +48113,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.5529412
       objectReference: {fileID: 0}
+    - target: {fileID: 1531019130, guid: 3f87234fa4f11ee418b99b3b68fc0f48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.6665177
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f87234fa4f11ee418b99b3b68fc0f48, type: 3}
 --- !u!1001 &1858024986
@@ -48816,7 +48710,6 @@ GameObject:
   - component: {fileID: 1872172079}
   - component: {fileID: 1872172082}
   - component: {fileID: 1872172081}
-  - component: {fileID: 1872172080}
   m_Layer: 0
   m_Name: Trottoire (46)
   m_TagString: Untagged
@@ -48832,25 +48725,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872172078}
   m_LocalRotation: {x: -0, y: 0.00005941093, z: -0, w: -1}
-  m_LocalPosition: {x: -132.4184, y: -10.609455, z: 1.3034172}
+  m_LocalPosition: {x: -132.4184, y: -10.77, z: 1.3034172}
   m_LocalScale: {x: 1.1634833, y: 0.9090158, z: 1.369998}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 273
   m_LocalEulerAnglesHint: {x: 0, y: 359.993, z: 0}
---- !u!65 &1872172080
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872172078}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1872172081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52496,7 +52376,6 @@ GameObject:
   - component: {fileID: 2060220801}
   - component: {fileID: 2060220804}
   - component: {fileID: 2060220803}
-  - component: {fileID: 2060220802}
   m_Layer: 0
   m_Name: Trottoire (51)
   m_TagString: Untagged
@@ -52512,25 +52391,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060220800}
   m_LocalRotation: {x: -0, y: 0.00005941093, z: -0, w: -1}
-  m_LocalPosition: {x: 13.581596, y: -10.609455, z: 1.3034172}
+  m_LocalPosition: {x: 13.581596, y: -10.68, z: 1.3034172}
   m_LocalScale: {x: 1.1634833, y: 0.9090158, z: 1.369998}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 278
   m_LocalEulerAnglesHint: {x: 0, y: 359.993, z: 0}
---- !u!65 &2060220802
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060220800}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2060220803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53138,7 +53004,6 @@ GameObject:
   - component: {fileID: 2082481056}
   - component: {fileID: 2082481059}
   - component: {fileID: 2082481058}
-  - component: {fileID: 2082481057}
   m_Layer: 0
   m_Name: Trottoire (57)
   m_TagString: Untagged
@@ -53154,25 +53019,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082481055}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00007645785}
-  m_LocalPosition: {x: -171.74887, y: -10.609455, z: -0.098955154}
+  m_LocalPosition: {x: -171.74887, y: -10.78, z: -0.098955154}
   m_LocalScale: {x: 1.2799374, y: 1, z: 1.5071223}
   m_Children: []
   m_Father: {fileID: 1763261978712462640}
   m_RootOrder: 284
   m_LocalEulerAnglesHint: {x: 0, y: 179.99101, z: 0}
---- !u!65 &2082481057
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082481055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2082481058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53439,6 +53291,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2095624100}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2098727655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098727656}
+  m_Layer: 0
+  m_Name: Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098727656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098727655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6188262, y: 1.8999884, z: 3.458826}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 641968275}
+  - {fileID: 1033530685}
+  - {fileID: 401525682}
+  - {fileID: 1108725555}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2102034459
 PrefabInstance:
   m_ObjectHideFlags: 0
