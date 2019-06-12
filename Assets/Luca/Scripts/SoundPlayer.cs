@@ -128,17 +128,21 @@ public class SoundPlayer : MonoBehaviour
         }
         else
         {
-            float startVolume = reference.sound.volume;
-
-            while (reference.sound.volume > 0)
+            if(reference != null)
             {
-                reference.sound.volume -= startVolume * Time.deltaTime / FadeTime;
+                float startVolume = reference.sound.volume;
 
-                yield return null;
+                while (reference.sound.volume > 0)
+                {
+                    reference.sound.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                    yield return null;
+                }
+                reference = null;
+                reference.sound.Stop();
+                reference.sound.volume = startVolume;
             }
-            reference = null;
-            reference.sound.Stop();
-            reference.sound.volume = startVolume;
+            
         }
     }
 

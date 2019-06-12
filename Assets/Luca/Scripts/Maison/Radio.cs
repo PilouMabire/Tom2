@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Radio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    bool radioOn;
+    public AudioSource sound;
+
+    public void ToogleRadio()
     {
-        
+        radioOn = !radioOn;
+        if(radioOn)
+        {
+            sound.Play();
+        }
+        else
+        {
+            sound.Stop();
+        }
+
+
     }
 }
