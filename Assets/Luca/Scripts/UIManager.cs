@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         Instance = this;
         if(dontFade)
         {
@@ -158,7 +159,25 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
-        inGame.SetActive(false); 
+        inGame.SetActive(false);
+        AudioListener.pause = true;
+        if (soundOn)
+        {
+            soundAnim.Play("BoutonSonOn");
+        }
+        else
+        {
+            soundAnim.Play("BoutonSonOff");
+        }
+
+        if (Vibration.vibrateOn)
+        {
+            vibrationAnim.Play("BoutonVibrationOn");
+        }
+        else
+        {
+            vibrationAnim.Play("BoutonVibrationOff");
+        }
     }
 
     void UnPause()
@@ -166,6 +185,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
         inGame.SetActive(true);
+        AudioListener.pause = false;
     }
 
     public void ToogleVibration()
@@ -189,10 +209,12 @@ public class UIManager : MonoBehaviour
         if(soundOn)
         {
             soundAnim.Play("BoutonSonOn");
+            AudioListener.volume = 1;
         }
         else
         {
             soundAnim.Play("BoutonSonOff");
+            AudioListener.volume = 0;
         }
     }
 
