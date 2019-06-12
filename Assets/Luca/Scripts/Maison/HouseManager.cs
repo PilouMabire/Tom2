@@ -22,6 +22,7 @@ public class HouseManager : MonoBehaviour
     public AudioSource vaisselleSound;
     public AudioSource aspirateurSound;
     public AudioSource fridgeVoice;
+    public AudioSource mereVoice;
 
     [Header ("Vaiselle")]
     public GameObject vaiselleUI;
@@ -90,6 +91,7 @@ public class HouseManager : MonoBehaviour
 
             if (objects.Count == 0)
             {
+                mereVoice.Play();
                 tacheFinie.Play();
                 rangementDone = true;
                 rangementCheckBox.SetActive(true);
