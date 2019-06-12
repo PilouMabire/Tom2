@@ -25,20 +25,25 @@ public class EnteringParc : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<Chien_Laisse>())
-        {
-            chien.isAttatchedToPlayer = false;
-        }
+
 
         if (other.GetComponent<Player3DExample>())
         {
-            cam.followPlayer = false;
-            cam.StartCoroutine(cam.CinematicTo(goToCam));
-            cam.objectToFollow = goToCam;
-            player.transform.position = playerGoTo.transform.position;
-            chien.gameObject.transform.position = playerGoTo.transform.position + new Vector3(1, 0, 1);
+            StartCoroutine(EnteringInParc());
+            chien.isAttatchedToPlayer = false;
         }
 
 
+    }
+
+    IEnumerator EnteringInParc()
+    {
+        StartCoroutine(UIManager.Instance.DoubleFade());
+        yield return new WaitForSeconds(1f);
+        cam.followPlayer = false;
+        cam.objectToFollow = goToCam;
+        cam.StartCoroutine(cam.CinematicTo(goToCam));
+        player.transform.position = playerGoTo.transform.position;
+        chien.gameObject.transform.position = playerGoTo.transform.position + new Vector3(1, 0, 1);
     }
 }

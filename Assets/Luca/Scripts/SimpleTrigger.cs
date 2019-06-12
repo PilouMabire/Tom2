@@ -11,6 +11,8 @@ public class SimpleTrigger : MonoBehaviour
 
     bool alreadyTriggered;
 
+    public bool showHandOnCondition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class SimpleTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,19 +56,75 @@ public class SimpleTrigger : MonoBehaviour
 
         if (needInteraction)
         {
-            if (other.GetComponent<Player3DExample>())
-            {
-                UIManager.Instance.canInteract = true;
-            }
-            
-            if (ContextualButtonInput.Instance.pressed)
+            if(!showHandOnCondition)
             {
                 if (other.GetComponent<Player3DExample>())
                 {
-                    functionOnTrigger.Invoke();
+                    UIManager.Instance.canInteract = true;
+                }
+
+                if (ContextualButtonInput.Instance.pressed)
+                {
+                    if (other.GetComponent<Player3DExample>())
+                    {
+                        functionOnTrigger.Invoke();
+                    }
                 }
             }
+            else
+            {
+                if(!HouseManager.Instance.vaiselleDone)
+                {
+                    if(HouseManager.Instance.sponge.maskCount >= 14)
+                    {
+                        if (other.GetComponent<Player3DExample>())
+                        {
+                            UIManager.Instance.canInteract = true;
+                        }
+
+                        if (ContextualButtonInput.Instance.pressed)
+                        {
+                            if (other.GetComponent<Player3DExample>())
+                            {
+                                functionOnTrigger.Invoke();
+                            }
+                        }
+                    }
+                    else if(!HouseManager.Instance.sponge.isActiveAndEnabled)
+                    {
+                        if (other.GetComponent<Player3DExample>())
+                        {
+                            UIManager.Instance.canInteract = true;
+                        }
+
+                        if (ContextualButtonInput.Instance.pressed)
+                        {
+                            if (other.GetComponent<Player3DExample>())
+                            {
+                                functionOnTrigger.Invoke();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        UIManager.Instance.canInteract = false;
+                    }
+                    
+                }
+                else
+                {
+                    UIManager.Instance.canInteract = false;
+                }
+                
+            }
+            
            
         }
+    }
+
+    public void JustPlayFunction()
+    {
+        functionOnTrigger.Invoke();
+
     }
 }

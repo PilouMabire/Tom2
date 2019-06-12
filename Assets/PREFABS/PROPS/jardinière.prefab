@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 9124093726299087145}
   - component: {fileID: 9124093726297760073}
   - component: {fileID: 9124093726296662793}
+  - component: {fileID: 3548648229161977956}
   m_Layer: 0
   m_Name: "jardini\xE8re"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9124093726299087145
 Transform:
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9124093726298930505}
-  m_LocalRotation: {x: -0.5000007, y: -0.4999993, z: -0.4999993, w: 0.5000007}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 7.08, y: 3.1564, z: -20.54}
   m_LocalScale: {x: 2.3443177, y: 2.0804467, z: 1.8061}
   m_Children: []
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3548648229161977956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9124093726298930505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.61368847, y: 1.9413468, z: 3.3357484}
+  m_Center: {x: 0.000004296852, y: 0.0000037817902, z: 1.6678773}

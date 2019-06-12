@@ -8,6 +8,8 @@ public class GoToSceneOnTrigger : MonoBehaviour
 
     public string sceneName;
 
+    public float delay = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,17 @@ public class GoToSceneOnTrigger : MonoBehaviour
     }
 
     public void GoTo()
+    {
+        StartCoroutine(DelayGoTo());
+    }
+
+    IEnumerator DelayGoTo()
+    {
+        yield return new WaitForSeconds(delay);
+        UIManager.Instance.ChangeScene(sceneName);
+    }
+
+    public void ForceChangeScene()
     {
         SceneManager.LoadScene(sceneName);
     }

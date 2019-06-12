@@ -34,9 +34,12 @@ public class DrawOnFog : MonoBehaviour
     {
         for (int i = 0; i < timers.Count; i++)
         {
-            if(globalTimer > timers[i] + 1)
+            if(globalTimer > timers[i] + 1.8f)
             {
-                trails[i].transform.localScale = Vector3.Lerp(trails[i].transform.localScale, Vector3.zero, 0.14f - trails[i].transform.localScale.y/11);
+                trails[i].transform.localScale = Vector3.Lerp(trails[i].transform.localScale, Vector3.zero, 0.1f);
+                //0.14f - trails[i].transform.localScale.y/11
+                //print("resize");
+                //trails[i].SetActive(false);
             }
         }
 
@@ -51,9 +54,9 @@ public class DrawOnFog : MonoBehaviour
             trails[index].transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
             //trails[index].transform.position = new Vector3(trails[index].transform.position.x, 11, trails[index].transform.position.z);
             //trails[index].transform.LookAt(Camera.main.transform);
-            if (index > 198)
+            if (index > trails.Count-2)
             {
-                index = 1;
+                index = 0;
             }
             //Instantiate(trailPrefab, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10)), Quaternion.identity);
         }
