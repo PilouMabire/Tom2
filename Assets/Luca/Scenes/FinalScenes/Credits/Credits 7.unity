@@ -356,6 +356,92 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790164455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790164458}
+  - component: {fileID: 1790164457}
+  - component: {fileID: 1790164456}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790164456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790164455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa59d0d3c7405446be6d9b7e97c0ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1790164457}
+        m_MethodName: FadeAway
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  delay: 0.1
+  dontPlayOnStart: 0
+--- !u!114 &1790164457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790164455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d147d7d6ecdcda49be7c8bda16e8669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
+  affectReference: 1
+  sound: {fileID: 0}
+  sound2: {fileID: 0}
+  sound3: {fileID: 0}
+  sound4: {fileID: 0}
+  sound5: {fileID: 0}
+  sound6: {fileID: 0}
+  destroyDelay: 0
+  FadeTime: 1
+  FadeInTime: 0
+  timeToFadeIn: 1
+--- !u!4 &1790164458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790164455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -58.96419, y: 5.5084953, z: 8.6333275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2511625537548171867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,20 +565,15 @@ PrefabInstance:
       propertyPath: m_subTextObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1227445521}
-    - target: {fileID: 2511625538520998756, guid: 276320a3f0189d14d966620366e2f78c,
-        type: 3}
-      propertyPath: sceneName
-      value: Menu
-      objectReference: {fileID: 0}
     - target: {fileID: 2511625539052298172, guid: 276320a3f0189d14d966620366e2f78c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 2511625538254265525, guid: 276320a3f0189d14d966620366e2f78c,
+    - target: {fileID: 2511625538520998756, guid: 276320a3f0189d14d966620366e2f78c,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: sceneName
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 2511625539052298173, guid: 276320a3f0189d14d966620366e2f78c,
         type: 3}
@@ -505,6 +586,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21707460921091680, guid: 43716e84475d7784b9ef9732dfe8858d,
         type: 2}
+    - target: {fileID: 2511625538254265525, guid: 276320a3f0189d14d966620366e2f78c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 276320a3f0189d14d966620366e2f78c, type: 3}
 --- !u!224 &2511625537548171868 stripped
