@@ -3,7 +3,7 @@ using System.Collections;
 
 public static class Vibration
 {
-
+    public static bool vibrateOn = true;
 
 #if UNITY_ANDROID && !UNITY_EDITOR
     public static AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -17,11 +17,14 @@ public static class Vibration
 
     public static void Vibrate()
     {
-        
+        if(vibrateOn)
+        {
             if (isAndroid())
                 vibrator.Call("vibrate");
             else
                 Handheld.Vibrate();
+        }
+            
         
 
     }

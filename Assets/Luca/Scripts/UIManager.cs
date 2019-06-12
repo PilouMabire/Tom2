@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         Instance = this;
         if(dontFade)
         {
@@ -77,6 +78,7 @@ public class UIManager : MonoBehaviour
 
     IEnumerator DelayForFade(string sceneName, string type)
     {
+        UnPause();
         fondu.color = color2;
         fade.Play(type);
         if(type == "FadeOutSlowly")
@@ -126,19 +128,95 @@ public class UIManager : MonoBehaviour
             contextualButton.SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            pause = !pause;
-            if(pause)
-            {
-                Time.timeScale = 0;
-            }
-            else
-            {
-                Time.timeScale = 1;
-            }
-        }
+      
 
        
     }
+
+    bool gameIsPaused;
+
+    public GameObject pauseMenu;
+    public GameObject inGame;
+    public Animator soundAnim;
+    public Animator vibrationAnim;
+
+    
+
+    public void InteractWithPause()
+    {
+        gameIsPaused = !gameIsPaused;
+        if (gameIsPaused)
+        {
+            Pause();
+        }
+        else
+        {
+            UnPause();
+        }
+    }
+
+    void Pause()
+    {
+        Time.timeScale = 0;
+        pauseMenu.SetActive(true);
+        inGame.SetActive(false);
+        AudioListener.pause = true;
+        if (soundOn)
+        {
+            soundAnim.Play("BoutonSonOn");
+        }
+        else
+        {
+            soundAnim.Play("BoutonSonOff");
+        }
+
+        if (Vibration.vibrateOn)
+        {
+            vibrationAnim.Play("BoutonVibrationOn");
+        }
+        else
+        {
+            vibrationAnim.Play("BoutonVibrationOff");
+        }
+    }
+
+    void UnPause()
+    {
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+        inGame.SetActive(true);
+        AudioListener.pause = false;
+    }
+
+    public void ToogleVibration()
+    {
+        Vibration.vibrateOn = !Vibration.vibrateOn;
+        if(Vibration.vibrateOn)
+        {
+            vibrationAnim.Play("BoutonVibrationOn");
+        }
+        else
+        {
+            vibrationAnim.Play("BoutonVibrationOff");
+        }
+    }
+
+    public static bool soundOn = true;
+
+    public void ToogleSound()
+    {
+        soundOn = !soundOn;
+        if(soundOn)
+        {
+            soundAnim.Play("BoutonSonOn");
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            soundAnim.Play("BoutonSonOff");
+            AudioListener.volume = 0;
+        }
+    }
+
+   
 }

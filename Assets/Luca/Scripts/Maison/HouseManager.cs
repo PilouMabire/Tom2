@@ -91,7 +91,11 @@ public class HouseManager : MonoBehaviour
 
             if (objects.Count == 0)
             {
-                mereVoice.Play();
+                if(mereVoice != null)
+                {
+                    mereVoice.Play();
+                }
+                
                 tacheFinie.Play();
                 rangementDone = true;
                 rangementCheckBox.SetActive(true);

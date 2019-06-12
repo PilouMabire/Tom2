@@ -19,6 +19,8 @@ public class Chien_Laisse : MonoBehaviour
 
     public float ChienSpeed;
 
+    public Animator anim;
+
     public GameObject leadAttached;
     
 
@@ -61,27 +63,46 @@ public class Chien_Laisse : MonoBehaviour
                 //rb.velocity = Player3DExample.Instance.joystickVelocity * 1.1f;
                 rb.AddForce(Player3DExample.Instance.joystickVelocity * ChienSpeed *20);
                 transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
+
             }
             
         }
     }
 
+    bool tpDog;
+
     void FollowObject()
     {
-        if (followObject && Vector3.Distance(transform.position, objectToFollow.transform.position) > 1.5f) 
+        if (followObject) 
         {
-            transform.Translate(Vector3.Normalize( objectToFollow.transform.position - transform.position)
-                * ChienSpeed * Time.deltaTime , Space.World);
-            transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
+            if (Vector3.Distance(transform.position, objectToFollow.transform.position) > 1.5f)
+            {
+                tpDog = false;
+                anim.Play("Walk");
+                transform.Translate(Vector3.Normalize(objectToFollow.transform.position - transform.position)
+                * ChienSpeed * Time.deltaTime, Space.World);
+                transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
+            }
+            else if(Vector3.Distance(transform.position, objectToFollow.transform.position) < 1.5f)
+            {
+                if(tpDog == false)
+                {
+                    tpDog = true;
+
+                }
+                anim.Play("Sit");
+            }
+            
 
         }
     }
+    public GameObject leadAttach1;
 
     void LeadRendering()
     {
         if (isAttatchedToPlayer)
         {
-            leadRenderer.SetPosition(0, transform.position);
+            leadRenderer.SetPosition(0, leadAttach1.transform.position);
             leadRenderer.SetPosition(1, leadAttached.transform.position);
         }
         else
