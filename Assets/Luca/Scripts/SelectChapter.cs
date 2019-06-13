@@ -11,12 +11,7 @@ public class SelectChapter : MonoBehaviour
     public string chapter;
     public AudioSource retourSound;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void Update()
     {

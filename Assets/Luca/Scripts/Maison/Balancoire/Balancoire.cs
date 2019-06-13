@@ -10,11 +10,7 @@ public class Balancoire : MonoBehaviour
     public bool playerIsOn;
     public bool hasDoneBalancoire;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

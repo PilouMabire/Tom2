@@ -14,20 +14,10 @@ public class SimpleTrigger : MonoBehaviour
     public bool showHandOnCondition;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        if(needInteraction)
-        {
 
-        }
-    }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+   
     private void OnTriggerEnter(Collider other)
     {
         if (!needInteraction)

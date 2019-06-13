@@ -5120,11 +5120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5180,15 +5175,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8928090913281015235, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1368732274, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246206226, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 344256082, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4651860457010199525, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 179816417130000764, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2586591789858442441, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
@@ -5199,23 +5216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 344256082, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1368732274, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246206226, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 179816417130000764, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
@@ -15758,12 +15758,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Chien_Running2
+          m_StringArgument: Chien_Running3
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  delay: 0.1
+  delay: 0
   dontPlayOnStart: 0
 --- !u!1001 &1102049453
 PrefabInstance:
@@ -26569,11 +26569,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2865341352387915469, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
-      objectReference: {fileID: 0}
     - target: {fileID: 2865341352387915465, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26678,6 +26673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865341352387915469, guid: 304aab7940cb1684c9b02e7ecbfffa2e,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304aab7940cb1684c9b02e7ecbfffa2e, type: 3}
