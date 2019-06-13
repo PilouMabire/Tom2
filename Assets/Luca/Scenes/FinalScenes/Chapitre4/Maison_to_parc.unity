@@ -21466,7 +21466,7 @@ MonoBehaviour:
   sound5: {fileID: 0}
   sound6: {fileID: 0}
   destroyDelay: 0
-  FadeTime: 0
+  FadeTime: 5
   FadeInTime: 0
   timeToFadeIn: 1
 --- !u!4 &1032822665
@@ -54903,6 +54903,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: "b\xE2ton"
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d26132fa5ca4e24ea49dbddbd5257bc, type: 2}
+    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: abb392fda9392544083625c1171cbc77, type: 2}
+    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.251148
@@ -54945,18 +54957,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3d26132fa5ca4e24ea49dbddbd5257bc, type: 2}
-    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: abb392fda9392544083625c1171cbc77, type: 2}
-    - target: {fileID: 2300000, guid: 547e8d272e410ae418aefa09e8294206, type: 3}
-      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
