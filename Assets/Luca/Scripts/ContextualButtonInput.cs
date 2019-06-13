@@ -18,6 +18,8 @@ public class ContextualButtonInput : MonoBehaviour
     public bool released;
     public bool maintain;
 
+    public Animator anim;
+
     private void OnEnable()
     {
         pressed = false;
@@ -49,6 +51,7 @@ public class ContextualButtonInput : MonoBehaviour
     public void ButtonPressed()
     {
         //print("relaché");
+
         released = true;
         StartCoroutine(OneFrameDelay());
     }
@@ -93,7 +96,14 @@ public class ContextualButtonInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if(maintain)
+        {
+            anim.Play("pressed");
+        }
+        else
+        {
+            anim.Play("idle");
+        }
     }
 }
  

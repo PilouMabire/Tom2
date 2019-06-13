@@ -203,6 +203,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7331410635052441315, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
+      propertyPath: m_Name
+      value: Maison
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410635423668491, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -368,8 +373,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4789808120689173689, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4791227361548733555, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
@@ -395,11 +400,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531968337760795583, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 971567797, guid: f7f8e44157e438f46a852d276181bb79, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -560,11 +560,6 @@ PrefabInstance:
       propertyPath: sceneName
       value: House_01_Day4
       objectReference: {fileID: 0}
-    - target: {fileID: 8048557365395565071, guid: f7f8e44157e438f46a852d276181bb79,
-        type: 3}
-      propertyPath: sound2
-      value: 
-      objectReference: {fileID: 7331410635498457101}
     - target: {fileID: 7331410635763179028, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -972,6 +967,11 @@ PrefabInstance:
     - target: {fileID: 7331410636266896818, guid: f7f8e44157e438f46a852d276181bb79,
         type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331410636266896818, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7331410636299751614, guid: f7f8e44157e438f46a852d276181bb79,
@@ -6286,6 +6286,16 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -0.6130867
       objectReference: {fileID: 0}
+    - target: {fileID: 6531968337760795583, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048557365395565071, guid: f7f8e44157e438f46a852d276181bb79,
+        type: 3}
+      propertyPath: sound2
+      value: 
+      objectReference: {fileID: 7331410635498457101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f8e44157e438f46a852d276181bb79, type: 3}
 --- !u!1 &7331410635498457088 stripped
