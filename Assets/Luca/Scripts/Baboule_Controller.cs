@@ -50,7 +50,7 @@ public class Baboule_Controller : MonoBehaviour
                 }
                 kickSound.Play();
                 Vibration.Vibrate(100);
-                rb.velocity = ((Player3DExample.Instance.transform.forward ) * Random.Range(9, 15));
+                rb.velocity = ((Player3DExample.Instance.transform.forward ) * Random.Range(14, 15));
                 caughtByPlayer = false;
                 transform.SetParent(null);
                 col.enabled = true;

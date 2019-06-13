@@ -1218,6 +1218,8 @@ MonoBehaviour:
   sound6: {fileID: 0}
   destroyDelay: 0
   FadeTime: 0
+  FadeInTime: 0
+  timeToFadeIn: 1
 --- !u!4 &779792817
 Transform:
   m_ObjectHideFlags: 0
@@ -4104,6 +4106,7 @@ GameObject:
   - component: {fileID: 4347657832127694744}
   - component: {fileID: 4347657832127694746}
   - component: {fileID: 4347657832127694745}
+  - component: {fileID: 4347657832127694747}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4152,6 +4155,8 @@ MonoBehaviour:
   sound6: {fileID: 0}
   destroyDelay: 0
   FadeTime: 0
+  FadeInTime: 0
+  timeToFadeIn: 1
 --- !u!82 &4347657832127694746
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4248,6 +4253,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4347657832127694747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347657832127694743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7ecfa325c5f34f9f97e5e1b096ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4420473804148621373
 Transform:
   m_ObjectHideFlags: 0
