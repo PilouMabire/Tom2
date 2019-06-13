@@ -113,7 +113,8 @@ public class SimpleTrigger : MonoBehaviour
                 }
                 else
                 {
-                    UIManager.Instance.canInteract = false;
+                    Destroy(gameObject);
+                    
                 }
                 
             }
