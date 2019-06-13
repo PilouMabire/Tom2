@@ -75,7 +75,7 @@ public class Chien_Laisse : MonoBehaviour
     {
         if (followObject) 
         {
-            if (Vector3.Distance(transform.position, objectToFollow.transform.position) > 1.5f)
+            if (Vector3.Distance(transform.position, objectToFollow.transform.position) > 2f)
             {
                 tpDog = false;
                 anim.Play("Walk");
@@ -83,10 +83,11 @@ public class Chien_Laisse : MonoBehaviour
                 * ChienSpeed * Time.deltaTime, Space.World);
                 transform.rotation = Quaternion.LookRotation(Vector3.Normalize(objectToFollow.transform.position - transform.position));
             }
-            else if(Vector3.Distance(transform.position, objectToFollow.transform.position) < 1.5f)
+            else if(Vector3.Distance(transform.position, objectToFollow.transform.position) < 2f)
             {
                 if(tpDog == false)
                 {
+                    transform.position = (transform.position * 3 + objectToFollow.transform.position) / 4;
                     tpDog = true;
 
                 }

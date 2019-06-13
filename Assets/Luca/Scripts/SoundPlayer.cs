@@ -138,9 +138,9 @@ public class SoundPlayer : MonoBehaviour
 
                     yield return null;
                 }
-                reference = null;
                 reference.sound.Stop();
                 reference.sound.volume = startVolume;
+                reference = null;
             }
             
         }
