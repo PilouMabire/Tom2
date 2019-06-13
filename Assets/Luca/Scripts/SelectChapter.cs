@@ -42,6 +42,7 @@ public class SelectChapter : MonoBehaviour
         sprite.color = Color.white;
         selected = this;
         chapterToGoTo = chapter;
+        UIManager.Instance.ChangeScene("Menu");
     }
 
 
