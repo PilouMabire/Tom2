@@ -27,7 +27,7 @@ public class Barque : MonoBehaviour
         if (moveVector != Vector3.zero)
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector , Vector3.up), 0.11f);
-            rb.velocity = (transform.forward) * moveSpeed;
+            rb.velocity = (transform.forward) * moveSpeed * 2;
 
         }
     }
