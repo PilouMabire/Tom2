@@ -58,6 +58,10 @@ public class Balancoire : MonoBehaviour
                 Player3DExample.Instance.canMove = false;
             }
         }
+        else
+        {
+            anim.Play("New State");
+        }
 
 
         
