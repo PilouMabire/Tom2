@@ -423,7 +423,7 @@ PrefabInstance:
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
@@ -438,12 +438,12 @@ PrefabInstance:
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Play2
+      value: FadeIn
       objectReference: {fileID: 0}
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5553942571347213660, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
@@ -595,7 +595,7 @@ MonoBehaviour:
   sound5: {fileID: 0}
   sound6: {fileID: 0}
   destroyDelay: 0
-  FadeTime: 0
+  FadeTime: 2
   FadeInTime: 0
   timeToFadeIn: 3
 --- !u!82 &54081304
@@ -2852,6 +2852,7 @@ GameObject:
   - component: {fileID: 1734195553}
   - component: {fileID: 1734195552}
   - component: {fileID: 1734195551}
+  - component: {fileID: 1734195555}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2931,6 +2932,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1734195555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734195550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa59d0d3c7405446be6d9b7e97c0ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 54081302}
+        m_MethodName: FadeAway
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 54081302}
+        m_MethodName: FadeAway2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  delay: 0
+  dontPlayOnStart: 0
 --- !u!1001 &1817763328
 PrefabInstance:
   m_ObjectHideFlags: 0
