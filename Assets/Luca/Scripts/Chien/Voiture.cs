@@ -14,11 +14,6 @@ public class Voiture : MonoBehaviour
 
     public string nextScene;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void LateUpdate()

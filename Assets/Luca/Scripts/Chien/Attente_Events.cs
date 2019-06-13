@@ -13,12 +13,7 @@ public class Attente_Events : MonoBehaviour
         StartCoroutine("Event");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+ 
     public IEnumerator Event()
     {
         yield return new WaitForSeconds(15f);

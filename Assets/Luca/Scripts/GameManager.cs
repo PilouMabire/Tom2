@@ -12,16 +12,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void LoadScene(string sceneName)
     {

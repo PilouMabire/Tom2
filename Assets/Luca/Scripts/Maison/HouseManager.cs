@@ -73,11 +73,7 @@ public class HouseManager : MonoBehaviour
             AspirateurUpdate();
             RangementUpdate();
         }
-        else
-        {
-            
-        }
-        
+
 
     }
     void RangementUpdate()
@@ -216,10 +212,7 @@ public class HouseManager : MonoBehaviour
 
             }
         }
-        else
-        {
-            
-        }
+       
         
     }
 

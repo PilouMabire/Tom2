@@ -250,16 +250,24 @@ public class Player3DExample : MonoBehaviour {
                 mainGauche.SetActive(false);
                 mainDroite.SetActive(false);
             }
-            else
+           
+        }
+        if(aspirateurHere)
+        {
+            if (HouseManager.Instance.aspirateurDone)
             {
                 mainGauche.SetActive(true);
                 mainDroite.SetActive(true);
             }
         }
+        
+        
 
         
 
     }
+
+    public bool aspirateurHere;
 
     public void CantMove()
     {

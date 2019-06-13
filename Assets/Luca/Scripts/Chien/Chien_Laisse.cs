@@ -140,9 +140,5 @@ public class Chien_Laisse : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }

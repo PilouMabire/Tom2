@@ -27,16 +27,12 @@ public class ContextualButtonInput : MonoBehaviour
         maintain = false;
     }
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
         
     }
-    void Start()
-    {
-        Instance = this;
-    }
-
+    
     
 
     
@@ -89,11 +85,7 @@ public class ContextualButtonInput : MonoBehaviour
 
         }
     }
-    private void LateUpdate()
-    {
-        
-    }
-
+ 
     private void FixedUpdate()
     {
         if(maintain)
