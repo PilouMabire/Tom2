@@ -773,6 +773,7 @@ GameObject:
   - component: {fileID: 2865341352028837222}
   - component: {fileID: 2865341352028837216}
   - component: {fileID: 2865341352028837223}
+  - component: {fileID: 7243687082030222700}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -789,7 +790,7 @@ RectTransform:
   m_GameObject: {fileID: 2865341352028837221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 105.00002}
-  m_LocalScale: {x: 1.3324001, y: 1.3324001, z: 1.3324001}
+  m_LocalScale: {x: 1.3324, y: 1.3324, z: 1.3324}
   m_Children: []
   m_Father: {fileID: 4583302880590081787}
   m_RootOrder: 3
@@ -851,6 +852,7 @@ MonoBehaviour:
   pressed: 0
   released: 0
   maintain: 0
+  anim: {fileID: 7243687082030222700}
 --- !u!65 &2865341352028837223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -864,6 +866,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &7243687082030222700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2865341352028837221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 427a7707795616948a0abf054c64619e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2865341352387915469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,15 +2030,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2865341351804189392}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2656276950989359222 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224970073469743782, guid: cdd5474b97f1a9d40bea678ca8dec2bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 2865341351804189392}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2656859693327446440 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224250993973611384, guid: cdd5474b97f1a9d40bea678ca8dec2bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2865341351804189392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2656276950989359222 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224970073469743782, guid: cdd5474b97f1a9d40bea678ca8dec2bb,
     type: 3}
   m_PrefabInstance: {fileID: 2865341351804189392}
   m_PrefabAsset: {fileID: 0}
