@@ -127,6 +127,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2981634237507708471, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -181,16 +191,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
-        type: 3}
-      propertyPath: m_Name
-      value: SimpleTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
@@ -296,6 +296,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleTrigger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2981634237507708471, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -350,16 +360,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
-        type: 3}
-      propertyPath: m_Name
-      value: SimpleTrigger (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5165585952960584992, guid: 82adba8cc7c431d4e9a1ec396b555538,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
@@ -451,6 +451,11 @@ PrefabInstance:
       propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8876259792615519844, guid: 82adba8cc7c431d4e9a1ec396b555538,
+        type: 3}
+      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 54081304}
     - target: {fileID: 5553942571347213660, guid: 82adba8cc7c431d4e9a1ec396b555538,
         type: 3}
       propertyPath: m_Enabled
@@ -616,7 +621,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3f1279775577301438f8c510be841438, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.168
+  m_Volume: 0.113
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1751,7 +1756,7 @@ MonoBehaviour:
   sound5: {fileID: 0}
   sound6: {fileID: 0}
   destroyDelay: 0
-  FadeTime: 2
+  FadeTime: 5
   FadeInTime: 0
   timeToFadeIn: 6
 --- !u!82 &279744435
@@ -5790,6 +5795,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8928090913281015235, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5804,11 +5814,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476312, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
