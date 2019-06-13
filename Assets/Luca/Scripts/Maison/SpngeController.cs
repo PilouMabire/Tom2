@@ -18,6 +18,8 @@ public class SpngeController : MonoBehaviour
 
     public int maskCount;
 
+    public List<GameObject> taches;
+
     int waiter;
 
     private void Start()
@@ -72,8 +74,13 @@ public class SpngeController : MonoBehaviour
 
     public void ChangePlate()
     {
+        for (int i = 0; i < taches.Count; i++)
+        {
+            taches[i].transform.rotation = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
+        }
         for (int i = 0; i < masks.Count; i++)
         {
+           
             Destroy(masks[i]);
             maskCount = 0;
         }
