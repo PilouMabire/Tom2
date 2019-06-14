@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour
     public Animator fade;
     bool desactivationSecurity;
 
+    public float aditionalDelay = 0;
+
 
     bool pause;
 
@@ -87,7 +89,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1f + aditionalDelay);
         }
        
         SceneManager.LoadScene(sceneName);

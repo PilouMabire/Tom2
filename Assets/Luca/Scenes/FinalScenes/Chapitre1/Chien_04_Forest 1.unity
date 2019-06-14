@@ -90,7 +90,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000000, guid: f538045f775a64f43b2a45be9d6875bc,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5333,16 +5333,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1995835881}
-    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
-        type: 3}
-      propertyPath: angleCorrector
-      value: -45
-      objectReference: {fileID: 0}
     - target: {fileID: 4347657832289476316, guid: a99f42baa041aad46b20d9d3528332a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5397,6 +5387,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1995835881}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: angleCorrector
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347657832289476317, guid: a99f42baa041aad46b20d9d3528332a7,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99f42baa041aad46b20d9d3528332a7, type: 3}
@@ -25709,6 +25714,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayOnStart
       objectReference: {fileID: 0}
+    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
+      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 199544836}
+    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
+      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayLongSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
+      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: VoixForet2
+      objectReference: {fileID: 0}
+    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7694096202683183350, guid: 64f351b4ca315b746b7d86d89be89532,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25763,22 +25784,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
-      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 199544836}
-    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
-      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayLongSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
-      propertyPath: functionOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: VoixForet2
-      objectReference: {fileID: 0}
-    - target: {fileID: 592276965, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}
-      propertyPath: delay
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f351b4ca315b746b7d86d89be89532, type: 3}

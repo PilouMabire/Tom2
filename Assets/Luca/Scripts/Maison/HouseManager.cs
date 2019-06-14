@@ -111,7 +111,7 @@ public class HouseManager : MonoBehaviour
                 frame++;
                 if (frame == 10)
                 {
-                    Vibration.Vibrate(100);
+                    Vibration.Vibrate(50);
                     frame = 0;
                 }
 

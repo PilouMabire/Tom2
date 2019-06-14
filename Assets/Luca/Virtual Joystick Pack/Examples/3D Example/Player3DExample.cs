@@ -116,6 +116,7 @@ public class Player3DExample : MonoBehaviour {
 
     }
 
+   
 
     void FixedUpdate()
     {
@@ -140,7 +141,8 @@ public class Player3DExample : MonoBehaviour {
             if (moveVector != Vector3.zero)
             {
                 isMoving = true;
-                transform.rotation = Quaternion.Lerp(transform.rotation,  Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector +correctionMove , Vector3.up), inertie);
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(moveVector) * Quaternion.AngleAxis(angleCorrector + correctionMove, Vector3.up), inertie);
+
                 rb.velocity = (transform.forward) * moveSpeed * moveSpeedModifier  ;
 
                 //rb.AddForce(transform.forward * moveSpeed * moveSpeedModifier);

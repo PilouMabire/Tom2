@@ -30,7 +30,7 @@ public class Voiture : MonoBehaviour
     IEnumerator WaitAndGoToScene()
     {
         yield return new WaitForSeconds(39f);
-        SceneManager.LoadScene(nextScene);
+        UIManager.Instance.ChangeScene(nextScene);
     }
 
     private void OnCollisionEnter(Collision collision)
