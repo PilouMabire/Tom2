@@ -7,6 +7,8 @@ public class BalancoireManager : MonoBehaviour
     public GameObject fugueItem;
     public Animator anim;
 
+    public bool soundAlreadyPlayed;
+    public AudioSource sound;
  
 
     public void Fugue()
@@ -19,5 +21,14 @@ public class BalancoireManager : MonoBehaviour
     {
         anim.Play("retourMaison");
         Player3DExample.Instance.canMove = false;
+    }
+
+    public void PlayRetour()
+    {
+        if(!soundAlreadyPlayed)
+        {
+            soundAlreadyPlayed = true;
+            sound.Play();
+        }
     }
 }

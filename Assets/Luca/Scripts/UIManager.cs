@@ -80,7 +80,7 @@ public class UIManager : MonoBehaviour
 
     IEnumerator DelayForFade(string sceneName, string type)
     {
-        UnPause();
+        UnPause(false);
         fondu.color = color2;
         fade.Play(type);
         if(type == "FadeOutSlowly")
@@ -153,7 +153,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            UnPause();
+            UnPause(true);
         }
     }
 
@@ -182,12 +182,17 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void UnPause()
+    void UnPause(bool igSetActive)
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
-        inGame.SetActive(true);
+        if(igSetActive == true)
+        {
+            inGame.SetActive(true);
+        }
+        
         AudioListener.pause = false;
+        
     }
 
     public void ToogleVibration()
