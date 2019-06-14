@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour
 {
 
+    public bool setInterfaceInvisible;
 
     public static UIManager Instance;
 
@@ -48,8 +50,23 @@ public class UIManager : MonoBehaviour
         
     }
 
+    public UnityEvent setUIInvisible;
+    public List<Image> image;
+
     private void FixedUpdate()
     {
+        if(setInterfaceInvisible)
+        {
+            Cursor.visible = false;
+            setUIInvisible.Invoke();
+            for (int i = 0; i < image.Count; i++)
+            {
+                image[i].color = Color.clear;
+            }
+            
+            
+
+        }
         frame++;
         if (frame == 20)
         {

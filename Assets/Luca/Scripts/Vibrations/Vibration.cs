@@ -32,11 +32,14 @@ public static class Vibration
 
     public static void Vibrate(long milliseconds)
     {
-        
+        if(vibrateOn)
+        {
             if (isAndroid())
                 vibrator.Call("vibrate", milliseconds);
             else
                 Handheld.Vibrate();
+        }
+            
         
 
     }
